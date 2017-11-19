@@ -42,7 +42,7 @@ public class Booking {
 			 // Second Class passangers
 			if(freeSecondClassSeats >= numberOfTickets ) {
 				flights.get(flightIndex).setSecondClassSeats(freeSecondClassSeats-numberOfTickets);
-				totalSeatPrice+=numberOfTickets*pricelist.getSecoundClassTicketPrice();
+				totalSeatPrice+=numberOfTickets*pricelist.getSecoundClassTicketPrice(); // Change to = if only 1 bocking per customer
 				return "Boking Flight : "+ flights.get(flightIndex).getFlightType()+"\nSecond Class Seats Booked: "+numberOfTickets+"\nTotal Flight Cost: "+totalSeatPrice;
 			}
 			else {
