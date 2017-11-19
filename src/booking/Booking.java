@@ -7,14 +7,15 @@ import java.util.List;
 public class Booking {
 	
 	public List<Flights> flights = new ArrayList<>();
-	
-	
+	private SeatPrices pricelist = new SeatPrices();
+	int totalSeatPrice=0;
 	public Booking() {
 		// The Flights
-		flights.add(new Flights("Boing 740", 10,20));
-		flights.add(new Flights("AirBuss 320", 10,10));
-		flights.add(new Flights("Aroflot 140", 10,10));
-		flights.add(new Flights("Jumbo",1,1));
+		flights.add(new Flights("Boing 740", 5,5));
+		flights.add(new Flights("AirBuss 320", 5,5));
+		flights.add(new Flights("Aroflot 140", 5,5));
+		pricelist.setFirstClassTicketPrice(20000);
+		pricelist.setSecoundClassTicketPrice(5000);
 
 	}
 	
@@ -41,7 +42,8 @@ public class Booking {
 			 // Second Class passangers
 			if(freeSecondClassSeats >= numberOfTickets ) {
 				flights.get(flightIndex).setSecondClassSeats(freeSecondClassSeats-numberOfTickets);
-				return "Boking Flight : "+ flights.get(flightIndex).getFlightType()+" Second Class Seats Booked: "+numberOfTickets;
+				totalSeatPrice+=numberOfTickets*pricelist.getSecoundClassTicketPrice();
+				return "Boking Flight : "+ flights.get(flightIndex).getFlightType()+"\nSecond Class Seats Booked: "+numberOfTickets+"\nTotal Flight Cost: "+totalSeatPrice;
 			}
 			else {
 				return "There ar only "+freeSecondClassSeats+" SecondClass Tickets Availibel";
