@@ -1,11 +1,11 @@
 package booking;
 
-public class Flights {
+public class TravelTickets {
 	private String flightType;
 	private int firstClassSeats;
 	private int secondClassSeats;
 	
-	public Flights(String flightType, int firstClassSeats, int secondClassSeats) {
+	public TravelTickets(String flightType, int firstClassSeats, int secondClassSeats) {
 		super();
 		this.flightType = flightType;
 		this.firstClassSeats = firstClassSeats;
