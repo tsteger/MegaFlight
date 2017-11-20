@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+
+
 public class Booking {
 	//---- Flights thread ---------------------------------------
 	FlightsInTheAirThread runable = new FlightsInTheAirThread();
@@ -26,6 +28,7 @@ public class Booking {
 		totalCustomerPrice=0;
 		flightIsInTheAir=false;
 	}
+	
 	
 	public boolean checkIfFlightIsAvailable() {
 		// TODO Auto-generated method stub
