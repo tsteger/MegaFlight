@@ -23,7 +23,7 @@ import booking.Flight;
 import booking.Customer;
 import booking.FlightMenu;
 import booking.FlightMenyBooking;
-import booking.FoodClass;
+import booking.SeatClass;
 
 import javax.swing.JTextArea;
 import javax.swing.JButton;
@@ -477,7 +477,7 @@ public class BookingUI {
 		// TODO Auto-generated method stub
 		FlightMenu foodMenu;	
 		if(index==0) {
-			foodMenu = new FlightMenu(FoodClass.FIRST);
+			foodMenu = new FlightMenu(SeatClass.FIRST);
 			Iterator<String> it = foodMenu.getMenu().keySet().iterator();
 			comboBox_food_meny.removeAllItems();
 			while(it.hasNext())
@@ -488,7 +488,7 @@ public class BookingUI {
 		}
 		else
 		{	
-			foodMenu = new FlightMenu(FoodClass.SECOND);
+			foodMenu = new FlightMenu(SeatClass.ECONOMY);
 			Iterator<String> it = foodMenu.getMenu().keySet().iterator();
 			comboBox_food_meny.removeAllItems();
 			while(it.hasNext())

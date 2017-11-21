@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class FlightMenyBooking {
 
-	FlightMenu fmenu = new FlightMenu(FoodClass.FIRST);
-	FlightMenu smenu = new FlightMenu(FoodClass.SECOND);
+	FlightMenu fmenu = new FlightMenu(SeatClass.FIRST);
+	FlightMenu smenu = new FlightMenu(SeatClass.ECONOMY);
 
 	public String foodMenuOrderItems(int customerid, String foodkey, int amount, int passangerClass) {
 		return "Customer id " + customerid + " has ordered " + amount + " of " + foodkey + "for a total price of"

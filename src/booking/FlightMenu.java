@@ -6,16 +6,16 @@ public class FlightMenu {
 
 	HashMap<String, Integer> menu = new HashMap<String, Integer>();
 
-	public FlightMenu(FoodClass foo) {
+	public FlightMenu(SeatClass foo) {
 
 		init(foo);
 
 	}
 
 	
-	public Map<String, Integer> init(FoodClass foo) {
+	public Map<String, Integer> init(SeatClass foo) {
 		
-		if (foo.name().equals(FoodClass.FIRST.toString())) {
+		if (foo.name().equals(SeatClass.FIRST.toString())) {
 			
 			menu.put("Clams", 180);
 			menu.put("Lobster", 230);

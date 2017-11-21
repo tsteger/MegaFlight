@@ -48,7 +48,7 @@ public class Booking {
 		String returnString = "";
 		
 		Flight flight = flights.get(flightIndex);
-		String  className = flightClassIndex==0 ? "Economy" : "First";
+		String  className = flightClassIndex==0 ? SeatClass.ECONOMY.toString() : SeatClass.FIRST.toString();
 
 		Boolean isPossibleToBook = SeatsBooking.book(flight, flightClassIndex, numberOfSeats);				
 		if(isPossibleToBook) {		
@@ -61,7 +61,7 @@ public class Booking {
 		totalCustomerCost+=total;
 		
 		returnString = String.format(
-				"BOOKED: "+ flight.getName()+"\n%s Class Seat(s)." + numberOfSeats +"\nCost: "+ total +"\nTotal: " + totalCustomerCost,
+				"\nBOOKED: "+ "\nFlight: "+ flight.getName()+"\nSeat(s): " + numberOfSeats +", %s" +"\nCost: "+ total +"\nTotal: " + totalCustomerCost,
 			                      	className);	
 		} else {
 			int availableSeatsOfTheClass = flightClassIndex==0 ? flight.getNumberOfSeatsEconomyClassAvailable() : flight.getNumberOfSeatsFirstClassAvailable();
