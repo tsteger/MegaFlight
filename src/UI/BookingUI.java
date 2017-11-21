@@ -20,6 +20,7 @@ import javax.swing.SpinnerNumberModel;
 
 import booking.Booking;
 import booking.Flight;
+import booking.Customer;
 import booking.FlightMenu;
 import booking.FlightMenyBooking;
 import booking.FoodClass;
@@ -49,10 +50,16 @@ public class BookingUI {
     private JButton btnButton_BookFlight;
     private Booking booking = new Booking();
     private FlightMenyBooking meny = new FlightMenyBooking();
-	private List<Flight> flights = new ArrayList<>(booking.flights);
+
 	private JTextField textField;
 	private JTextField textField_1;
 
+    private Customer newCustomer;// = new Customer();
+    private List<Flight> flights = new ArrayList<>(booking.flights);
+	private JTextField textField_Customer_Id;
+	private JTextField textField_FirstName;
+	private JTextField textField_LastName;
+	private int customerID=0;
     
 	/**
 	 * Launch the application.
