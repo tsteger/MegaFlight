@@ -7,33 +7,36 @@ public class FlightMenyBooking {
 
 	FlightMenu fmenu = new FlightMenu(FoodClass.FIRST);
 	FlightMenu smenu = new FlightMenu(FoodClass.SECOND);
+	
 
 	public String foodMenuOrderItems(int customerid, String foodkey, int amount, int passangerClass) {
-		return "Customer id " + customerid + " has ordered " + amount + " of " + foodkey + "for a total price of"
-				+ getTotalPrice(foodkey, passangerClass, amount);
+		return "Customer id " + customerid + " has ordered " + amount + " of " + foodkey + ", your current total price is "
+				+ getTotalPrice(foodkey, passangerClass, amount)+ " kr.\n";
 	}
 
 	public String foodMenuUnOrderItems(int customerid, String foodkey, int amount, int passangerClass) {
 		
-		return "Customer id " + customerid + " has removed " + amount + " of " + foodkey + "for a total price of"
-				+ getTotalPrice(foodkey, passangerClass, amount);
+		return "Customer id " + customerid + " has removed " + amount + " of " + foodkey + ", your current total price is "
+				+ getTotalPrice(foodkey, passangerClass, amount) + " kr.\n";
 	}
 
 	public String newCustomer(int customerid, String fname, String sname) {
 
-		return "Hello new customer " + fname + " " + sname + "," + " your ID is " + customerid + ".";
+		return "Hello new customer " + fname + " " + sname + ", " + " your ID is " + customerid + ".";
 	}
-
+		int totalPrice = 0;
+		int menuPrice =  0;
+	  
 	public int getTotalPrice(String foodkey, int passangerClass, int amount) {
 
-		int totalPrice = 0;
+		
 
 		if (passangerClass == 1) {
 			Iterator it1 = fmenu.getMenu().entrySet().iterator();
 			while (it1.hasNext()) {
 				Map.Entry pair = (Map.Entry) it1.next();
 				if (pair.getKey().equals(foodkey)) {
-					totalPrice += (Integer) pair.getValue();
+					menuPrice += (Integer) pair.getValue();
 					it1.remove(); // avoids a ConcurrentModificationException
 				}
 
@@ -46,7 +49,7 @@ public class FlightMenyBooking {
 				while (it1.hasNext()) {
 					Map.Entry pair = (Map.Entry) it1.next();
 					if (pair.getKey().equals(foodkey)) {
-						totalPrice += (Integer) pair.getValue();
+						menuPrice += (Integer) pair.getValue();
 						it1.remove(); // avoids a ConcurrentModificationException
 					}
 				}
@@ -54,8 +57,8 @@ public class FlightMenyBooking {
 			}
 
 		}
-
-		return totalPrice*amount;
+		totalPrice += (menuPrice*amount);
+		return totalPrice;
 
 	}
 }
