@@ -14,8 +14,9 @@ public class FlightMenyBooking {
 	}
 
 	public String foodMenuUnOrderItems(int customerid, String foodkey, int amount, int passangerClass) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return "Customer id " + customerid + " has removed " + amount + " of " + foodkey + "for a total price of"
+				+ getTotalPrice(foodkey, passangerClass, amount);
 	}
 
 	public String newCustomer(int customerid, String fname, String sname) {
