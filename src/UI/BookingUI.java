@@ -18,11 +18,10 @@ import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 
 import booking.Booking;
+import booking.Flight;
 import booking.FlightMenu;
 import booking.FlightMenyBooking;
 import booking.FoodClass;
-import booking.TravelTickets;
-
 
 import javax.swing.JTextArea;
 import javax.swing.JButton;
@@ -44,7 +43,7 @@ public class BookingUI {
     JTextPane textPane_Profit;
     private Booking booking = new Booking();
     private FlightMenyBooking meny = new FlightMenyBooking();
-	private List<TravelTickets> flights = new ArrayList<>(booking.flights);
+	private List<Flight> flights = new ArrayList<>(booking.flights);
 	private JTextField textField;
 	private JTextField textField_1;
     
@@ -393,7 +392,7 @@ public class BookingUI {
 		btnButton_BookFlight.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				String sRetInfo=booking.bookFlightAndSets(comboBox_flight.getSelectedIndex(),comboBox_passangerClass.getSelectedIndex(),
+				String sRetInfo=booking.bookFlightAndSeats(comboBox_flight.getSelectedIndex(),comboBox_passangerClass.getSelectedIndex(),
 						(Integer) spinner_ticketsQuantity.getValue());
 				textArea_booking.append(sRetInfo+"\n");
 
@@ -446,8 +445,8 @@ public class BookingUI {
 		
 
 		if(!flights.isEmpty()) {
-			for (TravelTickets nextFlight : flights) {
-			comboBox_flight.addItem(nextFlight.getFlightType());
+			for (Flight nextFlight : flights) {
+			comboBox_flight.addItem(nextFlight.getName());
 			}
 		}
 		else {
