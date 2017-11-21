@@ -353,6 +353,7 @@ public class BookingUI {
 				
 				String food_meny = meny.foodMenuUnOrderItems(customerID,comboBox_food_meny.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());
 				textArea_booking.append(food_meny+"\n");
+				
 			}
 		});
 		GroupLayout gl_panel_food = new GroupLayout(panel_food);
