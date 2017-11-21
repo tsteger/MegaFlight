@@ -18,6 +18,7 @@ import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 
 import booking.Booking;
+import booking.Customer;
 import booking.FlightMenu;
 import booking.FlightMenyBooking;
 import booking.FoodClass;
@@ -39,14 +40,18 @@ public class BookingUI {
 	public JFrame frame;
     private JComboBox<String> comboBox_flight;
     private JComboBox<String> comboBox_passangerClass;
+    private JComboBox<String> comboBox_food_meny;
     JTextArea textArea_booking;
     JTextPane textPane_TotalIncome;
     JTextPane textPane_Profit;
     private Booking booking = new Booking();
     private FlightMenyBooking meny = new FlightMenyBooking();
+    private Customer newCustomer;// = new Customer();
 	private List<TravelTickets> flights = new ArrayList<>(booking.flights);
-	private JTextField textField;
-	private JTextField textField_1;
+	private JTextField textField_Customer_Id;
+	private JTextField textField_FirstName;
+	private JTextField textField_LastName;
+	private int customerID=0;
     
 	/**
 	 * Launch the application.
@@ -70,8 +75,10 @@ public class BookingUI {
 	public BookingUI() {
 		
 		initialize();
-		
+		setupFoodMenu(0); // init setup of food menu .. maybe not here ... later
 	    loadData();
+	   
+	    
 	}
 
 	
@@ -144,6 +151,9 @@ public class BookingUI {
 		JButton btnNewCustomer = new JButton("New Customer");
 		btnNewCustomer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				customerID++;
+				newCustomer  = new Customer(customerID,textField_FirstName.toString(),textField_LastName.toString());
+				textField_Customer_Id.setText(Integer.toString(newCustomer.getId()));
 				textArea_booking.setText("New Customer\n");
 				booking.resetCustomerPrice();
 				String food_meny = meny.newCustomer(10,"Jocke","Svensson");
@@ -153,15 +163,21 @@ public class BookingUI {
 		JLabel lblCustomer = new JLabel("Customer");
 		lblCustomer.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		
-		JLabel lblNewLabel_5 = new JLabel("Firstname:");
+		JLabel lblNewLabel_5 = new JLabel("IdNr:");
 		
-		textField = new JTextField();
-		textField.setColumns(10);
+		textField_Customer_Id = new JTextField();
+		textField_Customer_Id.setEditable(false);
+		textField_Customer_Id.setColumns(10);
 		
-		JLabel lblNewLabel_6 = new JLabel("Lastname:");
+		JLabel lblNewLabel_6 = new JLabel("Firstname:");
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
+		textField_FirstName = new JTextField();
+		textField_FirstName.setColumns(10);
+		
+		textField_LastName = new JTextField();
+		textField_LastName.setColumns(10);
+		
+		JLabel lblLastname = new JLabel("Lastname:");
 		GroupLayout gl_panel_1 = new GroupLayout(panel_1);
 		gl_panel_1.setHorizontalGroup(
 			gl_panel_1.createParallelGroup(Alignment.LEADING)
@@ -170,16 +186,25 @@ public class BookingUI {
 					.addGroup(gl_panel_1.createParallelGroup(Alignment.LEADING)
 						.addComponent(lblCustomer)
 						.addGroup(gl_panel_1.createSequentialGroup()
-							.addComponent(lblNewLabel_5)
-							.addGap(87)
-							.addComponent(lblNewLabel_6))
-						.addGroup(gl_panel_1.createSequentialGroup()
-							.addComponent(textField, GroupLayout.PREFERRED_SIZE, 134, GroupLayout.PREFERRED_SIZE)
+							.addGroup(gl_panel_1.createParallelGroup(Alignment.TRAILING)
+								.addComponent(textField_Customer_Id, 0, 0, Short.MAX_VALUE)
+								.addComponent(lblNewLabel_5))
 							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(textField_1, GroupLayout.PREFERRED_SIZE, 142, GroupLayout.PREFERRED_SIZE)
-							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(btnNewCustomer)))
-					.addContainerGap(22, Short.MAX_VALUE))
+							.addGroup(gl_panel_1.createParallelGroup(Alignment.TRAILING)
+								.addGroup(gl_panel_1.createSequentialGroup()
+									.addComponent(lblNewLabel_6)
+									.addGap(63))
+								.addGroup(gl_panel_1.createSequentialGroup()
+									.addComponent(textField_FirstName, GroupLayout.PREFERRED_SIZE, 108, GroupLayout.PREFERRED_SIZE)
+									.addPreferredGap(ComponentPlacement.UNRELATED)))
+							.addGroup(gl_panel_1.createParallelGroup(Alignment.LEADING)
+								.addGroup(Alignment.TRAILING, gl_panel_1.createSequentialGroup()
+									.addPreferredGap(ComponentPlacement.RELATED)
+									.addComponent(textField_LastName, GroupLayout.DEFAULT_SIZE, 133, Short.MAX_VALUE)
+									.addGap(18)
+									.addComponent(btnNewCustomer))
+								.addComponent(lblLastname))))
+					.addGap(22))
 		);
 		gl_panel_1.setVerticalGroup(
 			gl_panel_1.createParallelGroup(Alignment.LEADING)
@@ -189,13 +214,15 @@ public class BookingUI {
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_panel_1.createParallelGroup(Alignment.BASELINE)
 						.addComponent(lblNewLabel_5)
-						.addComponent(lblNewLabel_6))
+						.addComponent(lblNewLabel_6)
+						.addComponent(lblLastname))
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_panel_1.createParallelGroup(Alignment.BASELINE)
-						.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(textField_1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(btnNewCustomer))
-					.addContainerGap(40, Short.MAX_VALUE))
+						.addComponent(btnNewCustomer)
+						.addComponent(textField_Customer_Id, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(textField_FirstName, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(textField_LastName, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+					.addContainerGap(28, Short.MAX_VALUE))
 		);
 		panel_1.setLayout(gl_panel_1);
 		
@@ -208,6 +235,14 @@ public class BookingUI {
 		textPane_Profit = new JTextPane();
 		
 		JButton button = new JButton("Company profit");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				double totalcost =booking.getTotalFlightCost();
+				textPane_TotalIncome.setText(Double.toString(totalcost)+" SEK");
+				textPane_Profit.setText(Double.toString(totalcost*0.3)+" SEK");
+				
+			}
+		});
 		GroupLayout gl_panel = new GroupLayout(panel);
 		gl_panel.setHorizontalGroup(
 			gl_panel.createParallelGroup(Alignment.LEADING)
@@ -271,50 +306,47 @@ public class BookingUI {
 		
 		JLabel lblNewLabel_4 = new JLabel("Food meny:");
 		
-		JComboBox<String> comboBox_food_meny = new JComboBox<>();
+		comboBox_food_meny = new JComboBox<>();  
 		
 		JSpinner spinner_foodQuantity = new JSpinner();
 		
 		JButton btnAdd_Food = new JButton("Add");
 		btnAdd_Food.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String food_meny = meny.foodMenuOrderItems(1,"Coffee",10);
+				
+				
+				String food_meny = meny.foodMenuOrderItems(customerID,comboBox_food_meny.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue());
 			}
 		});
 		
 		JButton btnRemove_Food = new JButton("Remove");
 		btnRemove_Food.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String food_meny = meny.foodMenuUnOrderItems(1,"Coffee",10);
+				
+				String food_meny = meny.foodMenuOrderItems(customerID,comboBox_food_meny.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue());
 			}
 		});
-		
-		JRadioButton rdbtnNewRadioButton = new JRadioButton("First Class Meny");
-		
-		JRadioButton rdbtnNewRadioButton_1 = new JRadioButton("Second Class Meny");
 		GroupLayout gl_panel_food = new GroupLayout(panel_food);
 		gl_panel_food.setHorizontalGroup(
 			gl_panel_food.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_panel_food.createSequentialGroup()
 					.addContainerGap()
 					.addGroup(gl_panel_food.createParallelGroup(Alignment.LEADING)
-						.addComponent(lblNewLabel_2)
-						.addGroup(Alignment.TRAILING, gl_panel_food.createSequentialGroup()
-							.addGroup(gl_panel_food.createParallelGroup(Alignment.TRAILING)
-								.addComponent(lblNewLabel_4, Alignment.LEADING)
-								.addComponent(comboBox_food_meny, 0, 212, Short.MAX_VALUE))
+						.addGroup(gl_panel_food.createSequentialGroup()
+							.addComponent(lblNewLabel_2)
+							.addContainerGap(331, Short.MAX_VALUE))
+						.addGroup(gl_panel_food.createSequentialGroup()
+							.addComponent(lblNewLabel_4)
+							.addContainerGap(355, Short.MAX_VALUE))
+						.addGroup(gl_panel_food.createSequentialGroup()
+							.addComponent(comboBox_food_meny, 0, 212, Short.MAX_VALUE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(spinner_foodQuantity, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(btnAdd_Food)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(btnRemove_Food)
-							.addGap(31))
-						.addGroup(gl_panel_food.createSequentialGroup()
-							.addComponent(rdbtnNewRadioButton)
-							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(rdbtnNewRadioButton_1)
-							.addContainerGap())))
+							.addGap(31))))
 		);
 		gl_panel_food.setVerticalGroup(
 			gl_panel_food.createParallelGroup(Alignment.LEADING)
@@ -322,10 +354,6 @@ public class BookingUI {
 					.addContainerGap()
 					.addComponent(lblNewLabel_2)
 					.addGap(18)
-					.addGroup(gl_panel_food.createParallelGroup(Alignment.BASELINE)
-						.addComponent(rdbtnNewRadioButton)
-						.addComponent(rdbtnNewRadioButton_1))
-					.addPreferredGap(ComponentPlacement.RELATED)
 					.addComponent(lblNewLabel_4)
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_panel_food.createParallelGroup(Alignment.BASELINE)
@@ -333,7 +361,7 @@ public class BookingUI {
 						.addComponent(spinner_foodQuantity, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addComponent(btnAdd_Food)
 						.addComponent(btnRemove_Food))
-					.addGap(158))
+					.addGap(193))
 		);
 		panel_food.setLayout(gl_panel_food);
 		
@@ -350,36 +378,8 @@ public class BookingUI {
 		comboBox_passangerClass.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int index = comboBox_passangerClass.getSelectedIndex();
-				if(index==0) {
-					FlightMenu foodMenu = new FlightMenu(FoodClass.FIRST);
-					
-					
-					
-					Iterator<String> it = foodMenu.getMenu().keySet().iterator();
-					comboBox_food_meny.removeAllItems();
-					while(it.hasNext())
-					{
-						String tmp = (String) it.next();
-					    comboBox_food_meny.addItem((tmp));
-					}
-					
-					//comboBox_food_meny.setSelectedItem(foodMenu.getMenu());
-					
-				}
-				else
-				{
-					
-					FlightMenu foodMenu = new FlightMenu(FoodClass.SECOND);
-					Iterator<String> it = foodMenu.getMenu().keySet().iterator();
-					comboBox_food_meny.removeAllItems();
-					while(it.hasNext())
-					{
-						String tmp = (String) it.next();
-					    comboBox_food_meny.addItem((tmp));
-					}
-					
-						
-				}
+				setupFoodMenu(index);
+		
 
 			}
 		});
@@ -441,6 +441,31 @@ public class BookingUI {
 		);
 		panel_flight.setLayout(gl_panel_flight);
 		frame.getContentPane().setLayout(groupLayout);
+	}
+	protected void setupFoodMenu(int index) {
+		// TODO Auto-generated method stub
+		FlightMenu foodMenu;	
+		if(index==0) {
+			foodMenu = new FlightMenu(FoodClass.FIRST);
+			Iterator<String> it = foodMenu.getMenu().keySet().iterator();
+			comboBox_food_meny.removeAllItems();
+			while(it.hasNext())
+			{
+				String tmp = (String) it.next();
+			    comboBox_food_meny.addItem((tmp));
+			}	
+		}
+		else
+		{	
+			foodMenu = new FlightMenu(FoodClass.SECOND);
+			Iterator<String> it = foodMenu.getMenu().keySet().iterator();
+			comboBox_food_meny.removeAllItems();
+			while(it.hasNext())
+			{
+				String tmp = (String) it.next();
+			    comboBox_food_meny.addItem((tmp));
+			}		
+		}
 	}
 	public void loadData() {
 		
