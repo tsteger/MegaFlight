@@ -339,7 +339,7 @@ public class BookingUI {
 				
 
 				String food_meny = meny.foodMenuOrderItems(customerID,comboBox_food_meny.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());
-
+				textArea_booking.append(food_meny+"\n");
 			}
 		});
 		
@@ -348,7 +348,9 @@ public class BookingUI {
 		btnRemove_Food.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				String food_meny = meny.foodMenuOrderItems(customerID,comboBox_food_meny.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());
+				String food_meny = meny.foodMenuUnOrderItems(customerID,comboBox_food_meny.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());
+				textArea_booking.append(food_meny+"\n");
+				
 			}
 		});
 		GroupLayout gl_panel_food = new GroupLayout(panel_food);
