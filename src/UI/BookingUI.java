@@ -32,7 +32,6 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextPane;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
-import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 
 public class BookingUI {
@@ -41,9 +40,14 @@ public class BookingUI {
     private JComboBox<String> comboBox_flight;
     private JComboBox<String> comboBox_passangerClass;
     private JComboBox<String> comboBox_food_meny;
-    JTextArea textArea_booking;
-    JTextPane textPane_TotalIncome;
-    JTextPane textPane_Profit;
+    private JSpinner spinner_ticketsQuantity;
+    private JTextArea textArea_booking;
+    private JSpinner spinner_foodQuantity;
+    private JButton btnAdd_Food;
+    private JButton btnRemove_Food;
+    private JTextPane textPane_TotalIncome;
+    private JTextPane textPane_Profit;
+    private JButton btnButton_BookFlight;
     private Booking booking = new Booking();
     private FlightMenyBooking meny = new FlightMenyBooking();
     private Customer newCustomer;// = new Customer();
@@ -154,8 +158,17 @@ public class BookingUI {
 				customerID++;
 				newCustomer  = new Customer(customerID,textField_FirstName.toString(),textField_LastName.toString());
 				textField_Customer_Id.setText(Integer.toString(newCustomer.getId()));
-				textArea_booking.setText("New Customer\n");
+				textArea_booking.setText("New Customer:"+textField_FirstName.getText()+" "+textField_LastName.getText()+"\n\n");
 				booking.resetCustomerPrice();
+				
+				comboBox_flight.setEnabled(true);
+				comboBox_passangerClass.setEnabled(true);
+				spinner_ticketsQuantity.setEnabled(true);
+				btnButton_BookFlight.setEnabled(true);
+				comboBox_food_meny.setEnabled(true);
+				spinner_foodQuantity.setEnabled(true);
+				btnAdd_Food.setEnabled(true);
+				btnRemove_Food.setEnabled(true);
 				String food_meny = meny.newCustomer(10,"Jocke","Svensson");
 			}
 		});
@@ -307,19 +320,23 @@ public class BookingUI {
 		JLabel lblNewLabel_4 = new JLabel("Food meny:");
 		
 		comboBox_food_meny = new JComboBox<>();  
+		comboBox_food_meny.setEnabled(false);
 		
-		JSpinner spinner_foodQuantity = new JSpinner();
+		spinner_foodQuantity = new JSpinner();
+		spinner_foodQuantity.setEnabled(false);
 		
-		JButton btnAdd_Food = new JButton("Add");
+		btnAdd_Food = new JButton("Add");
+		btnAdd_Food.setEnabled(false);
 		btnAdd_Food.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 				
 				String food_meny = meny.foodMenuOrderItems(customerID,comboBox_food_meny.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue());
+				
 			}
 		});
 		
-		JButton btnRemove_Food = new JButton("Remove");
+		btnRemove_Food = new JButton("Remove");
 		btnRemove_Food.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -371,10 +388,12 @@ public class BookingUI {
 		JLabel lblNewLabel_3 = new JLabel("Flight Nr:");
 		
 		comboBox_flight = new JComboBox<>();
+		comboBox_flight.setEnabled(false);
 		
 		JLabel lblPassangerClass = new JLabel("Passanger Class:");
 		
 		comboBox_passangerClass = new JComboBox<>();
+		comboBox_passangerClass.setEnabled(false);
 		comboBox_passangerClass.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int index = comboBox_passangerClass.getSelectedIndex();
@@ -386,10 +405,12 @@ public class BookingUI {
 		
 		JLabel lblTickets = new JLabel("Tickets:");
 		
-		JSpinner spinner_ticketsQuantity = new JSpinner();
+		spinner_ticketsQuantity = new JSpinner(); 
+		spinner_ticketsQuantity.setEnabled(false);
 		spinner_ticketsQuantity.setModel(new SpinnerNumberModel(new Integer(1), new Integer(0), null, new Integer(1)));
 		
-		JButton btnButton_BookFlight = new JButton("Reserv This Flight");
+		btnButton_BookFlight = new JButton("Reserv This Flight"); 
+		btnButton_BookFlight.setEnabled(false);
 		btnButton_BookFlight.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
