@@ -8,6 +8,7 @@ import javax.swing.GroupLayout.Alignment;
 import javax.swing.JLabel;
 import java.awt.Font;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import javax.swing.JPanel;
@@ -17,6 +18,9 @@ import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 
 import booking.Booking;
+import booking.FlightMenu;
+import booking.FlightMenyBooking;
+import booking.FoodClass;
 import booking.TravelTickets;
 
 
@@ -39,6 +43,7 @@ public class BookingUI {
     JTextPane textPane_TotalIncome;
     JTextPane textPane_Profit;
     private Booking booking = new Booking();
+    private FlightMenyBooking meny = new FlightMenyBooking();
 	private List<TravelTickets> flights = new ArrayList<>(booking.flights);
 	private JTextField textField;
 	private JTextField textField_1;
@@ -141,6 +146,7 @@ public class BookingUI {
 			public void actionPerformed(ActionEvent e) {
 				textArea_booking.setText("New Customer\n");
 				booking.resetCustomerPrice();
+				String food_meny = meny.newCustomer(10,"Jocke","Svensson");
 			}
 		});
 		
@@ -272,11 +278,16 @@ public class BookingUI {
 		JButton btnAdd_Food = new JButton("Add");
 		btnAdd_Food.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				String food_meny = booking.bookFoodMeny();
+				String food_meny = meny.foodMenuOrderItems(1,"Coffee",10);
 			}
 		});
 		
 		JButton btnRemove_Food = new JButton("Remove");
+		btnRemove_Food.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String food_meny = meny.foodMenuUnOrderItems(1,"Coffee",10);
+			}
+		});
 		
 		JRadioButton rdbtnNewRadioButton = new JRadioButton("First Class Meny");
 		
@@ -336,6 +347,42 @@ public class BookingUI {
 		JLabel lblPassangerClass = new JLabel("Passanger Class:");
 		
 		comboBox_passangerClass = new JComboBox<>();
+		comboBox_passangerClass.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int index = comboBox_passangerClass.getSelectedIndex();
+				if(index==0) {
+					FlightMenu foodMenu = new FlightMenu(FoodClass.FIRST);
+					
+					
+					
+					Iterator<String> it = foodMenu.getMenu().keySet().iterator();
+					comboBox_food_meny.removeAllItems();
+					while(it.hasNext())
+					{
+						String tmp = (String) it.next();
+					    comboBox_food_meny.addItem((tmp));
+					}
+					
+					//comboBox_food_meny.setSelectedItem(foodMenu.getMenu());
+					
+				}
+				else
+				{
+					
+					FlightMenu foodMenu = new FlightMenu(FoodClass.SECOND);
+					Iterator<String> it = foodMenu.getMenu().keySet().iterator();
+					comboBox_food_meny.removeAllItems();
+					while(it.hasNext())
+					{
+						String tmp = (String) it.next();
+					    comboBox_food_meny.addItem((tmp));
+					}
+					
+						
+				}
+
+			}
+		});
 		
 		JLabel lblTickets = new JLabel("Tickets:");
 		

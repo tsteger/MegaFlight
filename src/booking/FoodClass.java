@@ -1,3 +1,4 @@
+package booking;
 
 public enum FoodClass {
 
