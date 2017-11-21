@@ -17,14 +17,14 @@ class BookingTest {
 	
 		
 		String sRetInfo=booking.bookFlightAndSeats(0,0,1);
-		assertEquals("Boking Flight", sRetInfo.substring(0,13));
+		assertEquals("BOOKED", sRetInfo.substring(0,6));
 	}
 	@Test
 	void testBookFiveSeatOnSecondClass() {
 	
 		
 		String sRetInfo=booking.bookFlightAndSeats(0,0,5);
-		assertEquals("Boking Flight", sRetInfo.substring(0,13));
+		assertEquals("BOOKED", sRetInfo.substring(0,6));
 	}
 	@Test
 	void testBookSixSeatOnSecondClass() {
@@ -47,14 +47,14 @@ class BookingTest {
 	
 		
 		String sRetInfo=booking.bookFlightAndSeats(0,1,1);
-		assertEquals("Boking Flight", sRetInfo.substring(0,13));
+		assertEquals("BOOKED", sRetInfo.substring(0,6));
 	}
 	@Test
 	void testBookFiveSeatOnFirstClass() {
 	
 		
 		String sRetInfo=booking.bookFlightAndSeats(0,1,5);
-		assertEquals("Boking Flight", sRetInfo.substring(0,13));
+		assertEquals("BOOKED", sRetInfo.substring(0,6));
 	}
 	@Test
 	void testBookSixSeatOnFirstClass() {
