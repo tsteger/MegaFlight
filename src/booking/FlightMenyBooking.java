@@ -2,13 +2,13 @@ package booking;
 
 public class FlightMenyBooking {
 
-	public String foodMenuOrderItems(int customerid, String foodkey, int amount) {
+	public String foodMenuOrderItems(int customerid, String foodkey, int amount, int passangerClass) {
 		// TODO Auto-generated method stub
 		return null;
 		
 	}
 
-	public String foodMenuUnOrderItems(int customerid, String foodkey, int amount) {
+	public String foodMenuUnOrderItems(int customerid, String foodkey, int amount,int passangerClass) {
 		// TODO Auto-generated method stub
 		return null;
 	}
