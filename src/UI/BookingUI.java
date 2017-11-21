@@ -51,9 +51,6 @@ public class BookingUI {
     private Booking booking = new Booking();
     private FlightMenyBooking meny = new FlightMenyBooking();
 
-	private JTextField textField;
-	private JTextField textField_1;
-
     private Customer newCustomer;// = new Customer();
     private List<Flight> flights = new ArrayList<>(booking.flights);
 	private JTextField textField_Customer_Id;
@@ -168,7 +165,7 @@ public class BookingUI {
 				newCustomer  = new Customer(customerID,textField_FirstName.toString(),textField_LastName.toString());
 				textField_Customer_Id.setText(Integer.toString(newCustomer.getId()));
 				textArea_booking.setText("New Customer:"+textField_FirstName.getText()+" "+textField_LastName.getText()+"\n\n");
-				booking.resetCustomerPrice();
+				booking.resetTotalCustomerCost();
 				
 				comboBox_flight.setEnabled(true);
 				comboBox_passangerClass.setEnabled(true);
@@ -342,7 +339,7 @@ public class BookingUI {
 				
 
 				String food_meny = meny.foodMenuOrderItems(customerID,comboBox_food_meny.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());
-				textArea_booking.append(food_meny);
+				textArea_booking.append(food_meny+"\n");
 			}
 		});
 		
@@ -351,8 +348,9 @@ public class BookingUI {
 		btnRemove_Food.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				String food_meny = meny.foodMenuOrderItems(customerID,comboBox_food_meny.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());
-				textArea_booking.append(food_meny);
+				String food_meny = meny.foodMenuUnOrderItems(customerID,comboBox_food_meny.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());
+				textArea_booking.append(food_meny+"\n");
+				
 			}
 		});
 		GroupLayout gl_panel_food = new GroupLayout(panel_food);

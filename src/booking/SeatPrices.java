@@ -2,18 +2,19 @@ package booking;
 
 public class SeatPrices {
 	private int firstClassTicketPrice;
-	private int secoundClassTicketPrice;
+	private int economyClassTicketPrice;
+	
 	public int getFirstClassTicketPrice() {
 		return firstClassTicketPrice;
 	}
 	public void setFirstClassTicketPrice(int firstClassTicketPrice) {
 		this.firstClassTicketPrice = firstClassTicketPrice;
 	}
-	public int getSecoundClassTicketPrice() {
-		return secoundClassTicketPrice;
+	public int getEconomyClassTicketPrice() {
+		return economyClassTicketPrice;
 	}
-	public void setSecoundClassTicketPrice(int secoundClassTicketPrice) {
-		this.secoundClassTicketPrice = secoundClassTicketPrice;
+	public void setEconomyClassTicketPrice(int secoundClassTicketPrice) {
+		this.economyClassTicketPrice = secoundClassTicketPrice;
 	}
 	
 	
