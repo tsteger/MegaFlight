@@ -12,6 +12,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.JComboBox;
 import javax.swing.JSpinner;
@@ -94,7 +95,7 @@ public class BookingUI {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 1024, 800);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
+		;
 		JLabel lblNewLabel = new JLabel("MegaFlight Booking System v.1.2");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		
@@ -155,6 +156,11 @@ public class BookingUI {
 		JButton btnNewCustomer = new JButton("New Customer");
 		btnNewCustomer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				if(textField_FirstName.getText().equals("")) {
+					textArea_booking.append("Please set name of the booking person\n");
+					return;
+				}
+					
 				customerID++;
 				newCustomer  = new Customer(customerID,textField_FirstName.toString(),textField_LastName.toString());
 				textField_Customer_Id.setText(Integer.toString(newCustomer.getId()));
@@ -290,6 +296,7 @@ public class BookingUI {
 		panel.setLayout(gl_panel);
 		
 		textArea_booking = new JTextArea();
+		textArea_booking.setFont(new Font("Arial", Font.PLAIN, 12));
 		
 		JLabel lblFlightsTicetsBookd = new JLabel("Customer bookings and cost");
 		lblFlightsTicetsBookd.setFont(new Font("Tahoma", Font.PLAIN, 16));
