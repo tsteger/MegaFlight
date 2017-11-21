@@ -268,9 +268,9 @@ public class BookingUI {
 					.addGroup(gl_panel.createParallelGroup(Alignment.TRAILING, false)
 						.addComponent(textPane_TotalIncome)
 						.addComponent(textPane_Profit, GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE))
-					.addGap(103)
-					.addComponent(button, GroupLayout.PREFERRED_SIZE, 107, GroupLayout.PREFERRED_SIZE)
-					.addContainerGap())
+					.addGap(63)
+					.addComponent(button, GroupLayout.PREFERRED_SIZE, 138, GroupLayout.PREFERRED_SIZE)
+					.addGap(19))
 		);
 		gl_panel.setVerticalGroup(
 			gl_panel.createParallelGroup(Alignment.LEADING)
@@ -285,7 +285,7 @@ public class BookingUI {
 					.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
 						.addComponent(lblNewLabel_8)
 						.addComponent(textPane_Profit, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+					.addContainerGap(40, Short.MAX_VALUE))
 		);
 		panel.setLayout(gl_panel);
 		
@@ -337,6 +337,7 @@ public class BookingUI {
 		});
 		
 		btnRemove_Food = new JButton("Remove");
+		btnRemove_Food.setEnabled(false);
 		btnRemove_Food.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
