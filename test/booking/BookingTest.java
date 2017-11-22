@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class BookingTest {
-	private Booking booking = new Booking();
+	private BookingDesk booking = new BookingDesk();
 
 	@BeforeEach
 	void setUp() throws Exception {
