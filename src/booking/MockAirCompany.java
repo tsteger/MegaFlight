@@ -23,6 +23,7 @@ public class MockAirCompany {
 		//Prices		
 		bookingDesk.setPrices(20000, 5000); 
 		
+		//Simulator
 		PlaneDispatcherSimulator(planes);
 	}
 	
@@ -30,8 +31,18 @@ public class MockAirCompany {
 		return airCompany;
      }
 	
-	public void PlaneDispatcherSimulator(List<AirPlane> planes) {
-		//planes.get(0).setIsInTheAirport(false);
+	public void PlaneDispatcherSimulator(List<AirPlane> planes) {	
+		sendOff(planes.get(0));
+		sendOff(planes.get(0));
 	}
 	
+	public static void sendOff(AirPlane plane){			
+		if(!plane.getIsInTheAirport()) {	
+			return;	
+		}
+		
+		FlySimulator flySimulator = new FlySimulator(plane);
+		Thread thr = new Thread(flySimulator);
+		thr.start();
+	}
 }
