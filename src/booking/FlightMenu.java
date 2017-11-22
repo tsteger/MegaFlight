@@ -4,18 +4,37 @@ import java.util.Map;
 
 public class FlightMenu {
 
-	HashMap<String, Integer> menu = new HashMap<String, Integer>();
+	Map<String, Integer> menu = new HashMap<String, Integer>();
 
 	public FlightMenu(SeatClass foo) {
-
-		init(foo);
-
+		menu = init(foo);
 	}
 
 	
 	public Map<String, Integer> init(SeatClass foo) {
 		
 		if (foo.name().equals(SeatClass.ECONOMY.toString())) {
+			
+			menu.put("Lasagna", 120);
+			menu.put("Spaghetti Bolognese", 120);
+			menu.put("Meatballs", 120);
+			menu.put("Sparkling Water", 20);
+			menu.put("Whiskey", 120);
+			menu.put("Carlsberg", 60);
+			menu.put("Coca cola", 20);
+			menu.put("Fanta", 20);
+			menu.put("Sprite", 20);
+			menu.put("Orange juice", 25);
+			menu.put("Snickers", 20);
+			menu.put("Cheetos", 30);
+			menu.put("Chips", 25);
+			menu.put("Marabou", 25);
+			menu.put("Bun", 15);
+			
+		}
+
+		else if (foo.name().equals(SeatClass.FIRST.toString())) {
+			
 			
 			menu.put("Clams", 180);
 			menu.put("Lobster", 230);
@@ -35,38 +54,17 @@ public class FlightMenu {
 			menu.put("Marabou", 25);
 			menu.put("Bun", 15);
 			
-
-		}
-
-		else {
-			
-			menu.put("Lasagna", 120);
-			menu.put("Spaghetti Bolognese", 120);
-			menu.put("Meatballs", 120);
-			menu.put("Sparkling Water", 20);
-			menu.put("Whiskey", 120);
-			menu.put("Carlsberg", 60);
-			menu.put("Coca cola", 20);
-			menu.put("Fanta", 20);
-			menu.put("Sprite", 20);
-			menu.put("Orange juice", 25);
-			menu.put("Snickers", 20);
-			menu.put("Cheetos", 30);
-			menu.put("Chips", 25);
-			menu.put("Marabou", 25);
-			menu.put("Bun", 15);
-			
 		}
 		return menu;
 	}
 	
 	
-	public HashMap<String, Integer> getMenu() {
+	public Map<String, Integer> getMenu() {
 		return menu;
 	}
 
 
-	public void setMenu(HashMap<String, Integer> menu) {
+	public void setMenu(Map<String, Integer> menu) {
 		this.menu = menu;
 	}
 
