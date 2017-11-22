@@ -17,6 +17,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.JComboBox;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
+import javax.swing.SwingUtilities;
 
 import booking.AirCompany;
 import booking.BookingDesk;
@@ -50,6 +51,7 @@ public class BookingUI {
     private JTextPane textPane_TotalIncome;
     private JTextPane textPane_Profit;
     private JButton btnButton_BookFlight;
+    private JTextArea textArea_FlightTicker;
     
     private AirCompany airCompany = new MockAirCompany().Get();
     private BookingDesk bookingDesk = airCompany.getBookingDesk(); 
@@ -169,7 +171,7 @@ public class BookingUI {
 		JLabel lblNewLabel_12 = new JLabel("Flight Ticker");
 		lblNewLabel_12.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		
-		JTextArea textArea_FlightTicker = new JTextArea();
+		textArea_FlightTicker = new JTextArea();
 		
 		JButton btnNewButton = new JButton("Update");
 		btnNewButton.addActionListener(new ActionListener() {
@@ -218,7 +220,7 @@ public class BookingUI {
 				newCustomer  = new Customer(customerID,textField_FirstName.toString(),textField_LastName.toString());
 				textField_Customer_Id.setText(Integer.toString(newCustomer.getId()));
 
-				textArea_booking.setText("New Customer:"+textField_FirstName.getText()+" "+textField_LastName.getText()+"\n\n");
+				textArea_booking.setText("Customer:"+textField_FirstName.getText()+" "+textField_LastName.getText()+"\n\n");
 				bookingDesk.resetTotalCustomerCost();
 
 				
@@ -581,9 +583,9 @@ public class BookingUI {
 		);
 		panel_flight.setLayout(gl_panel_flight);
 		frame.getContentPane().setLayout(groupLayout);
+		
 	}
 	protected void setupFoodMenu(int index) {
-		// TODO Auto-generated method stub
 		FlightMenu foodMenu;	
 		if(index==0) {
 			foodMenu = new FlightMenu(SeatClass.FIRST);
@@ -609,7 +611,6 @@ public class BookingUI {
 	}
 	public void loadData() {
 		
-
 		if(!flights.isEmpty()) {
 			for (Flight nextFlight : flights) {
 			comboBox_flight.addItem(nextFlight.getName());
@@ -619,11 +620,19 @@ public class BookingUI {
 			
 			System.out.println("list Empty");
 		}
-	//	String[] passangerClassList = SeatClass.values(); // { SeatClass.ECONOMY, SeatClass.FIRST};
-		SeatClass[] passangerClassList = SeatClass.values(); // { SeatClass.ECONOMY, SeatClass.FIRST};
-	
+		SeatClass[] passangerClassList = SeatClass.values(); // { SeatClass.ECONOMY, SeatClass.FIRST};	
 		comboBox_passangerClass.addItem(passangerClassList[0].toString());
 		comboBox_passangerClass.addItem(passangerClassList[1].toString());
 						
 	}
+//	public void myTicker() {
+//		SwingUtilities.invokeLater(new Runnable()
+//	    {
+//	        @Override
+//	        public void run()
+//	        {
+//	        	textArea_FlightTicker.setText(airCompany.getLogReport()); 
+//	        }            
+//	    });
+//	}
 }
