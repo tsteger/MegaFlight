@@ -48,6 +48,9 @@ public class BookingDesk {
 		totalCustomerCost=0;		
 	}
 
+	public int getTotalCustomerCost() {
+		return totalCustomerCost;
+	}
 
 			
 	public String bookFlightAndSeats(int flightIndex, int seatClassIndex, int numberOfSeats) {
