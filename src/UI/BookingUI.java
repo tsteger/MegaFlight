@@ -18,11 +18,13 @@ import javax.swing.JComboBox;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 
-import booking.Booking;
+import booking.AirCompany;
+import booking.BookingDesk;
 import booking.Flight;
 import booking.Customer;
 import booking.FlightMenu;
 import booking.FlightMenyBooking;
+import booking.MockAirCompany;
 import booking.SeatClass;
 
 import javax.swing.JTextArea;
@@ -48,11 +50,15 @@ public class BookingUI {
     private JTextPane textPane_TotalIncome;
     private JTextPane textPane_Profit;
     private JButton btnButton_BookFlight;
-    private Booking booking = new Booking();
+    
+    private AirCompany airCompany = new MockAirCompany().Get();
+    private BookingDesk bookingDesk = airCompany.getBookingDesk(); 
+    private List<Flight> flights = new ArrayList<>(bookingDesk.getFlights());
+    
     private FlightMenyBooking meny = new FlightMenyBooking();
 
-    private Customer newCustomer;// = new Customer();
-    private List<Flight> flights = new ArrayList<>(booking.flights);
+    private Customer newCustomer;
+   
 	private JTextField textField_Customer_Id;
 	private JTextField textField_FirstName;
 	private JTextField textField_LastName;
@@ -165,8 +171,9 @@ public class BookingUI {
 				customerID++;
 				newCustomer  = new Customer(customerID,textField_FirstName.toString(),textField_LastName.toString());
 				textField_Customer_Id.setText(Integer.toString(newCustomer.getId()));
-				textArea_booking.setText("Customer: "+textField_FirstName.getText()+" "+textField_LastName.getText()+"\n\n");
-				booking.resetTotalCustomerCost();
+				textArea_booking.setText("New Customer:"+textField_FirstName.getText()+" "+textField_LastName.getText()+"\n\n");
+				bookingDesk.resetTotalCustomerCost();
+
 				
 				comboBox_flight.setEnabled(true);
 				comboBox_passangerClass.setEnabled(true);
@@ -257,10 +264,14 @@ public class BookingUI {
 		JButton button = new JButton("Company profit");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				double totalFlightCost = booking.getTotalFlightCost();
-				double totalFoodCost   = meny.getTotalCompanyEarnedAmount();
-				textPane_TotalIncome.setText(Double.toString(totalFlightCost+totalFoodCost)+" SEK");
-				textPane_Profit.setText(Double.toString((totalFlightCost+totalFoodCost)*0.3)+" SEK");
+
+				//textPane_TotalIncome.setText(Double.toString(totalFlightCost+totalFoodCost)+" SEK");
+				//textPane_Profit.setText(Double.toString((totalFlightCost+totalFoodCost)*0.3)+" SEK");
+
+				double totalcost =bookingDesk.getTotalFlightCost();
+				textPane_TotalIncome.setText(Double.toString(totalcost)+" SEK");
+				textPane_Profit.setText(Double.toString(totalcost*0.3)+" SEK");
+
 				
 			}
 		});
@@ -437,10 +448,10 @@ public class BookingUI {
 		btnButton_BookFlight.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				String sRetInfo=booking.bookFlightAndSeats(comboBox_flight.getSelectedIndex(),comboBox_passangerClass.getSelectedIndex(),
+				String sRetInfo=bookingDesk.bookFlightAndSeats(comboBox_flight.getSelectedIndex(),comboBox_passangerClass.getSelectedIndex(),
 						(Integer) spinner_ticketsQuantity.getValue());
 				textArea_booking.append(sRetInfo+"\n");
-				textPane_TotalCustomerPrice.setText(Integer.toString(booking.getTotalCustomerCost()));
+			//	textPane_TotalCustomerPrice.setText(Integer.toString(booking.getTotalCustomerCost()));
 
 			}
 		});
