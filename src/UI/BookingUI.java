@@ -453,6 +453,8 @@ public class BookingUI {
 				String food_meny = meny.foodMenuOrderItems(customerID,comboBox_food_meny.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());
 				
 				textArea_booking.append(food_meny+"\n");
+				
+				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCost()));
 				textPane_TotalMenuPrice.setText(Integer.toString(meny.GettotalCustomerPrice()));
 				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCost()+meny.GettotalCustomerPrice()));
 			}
@@ -465,6 +467,7 @@ public class BookingUI {
 				
 				String food_meny = meny.foodMenuUnOrderItems(customerID,comboBox_food_meny.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());
 				textArea_booking.append(food_meny+"\n");
+				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCost()));
 				textPane_TotalMenuPrice.setText(Integer.toString(meny.GettotalCustomerPrice()));
 				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCost()+meny.GettotalCustomerPrice()));
 			}
@@ -543,8 +546,9 @@ public class BookingUI {
 				String sRetInfo=bookingDesk.bookFlightAndSeats(comboBox_flight.getSelectedIndex(),comboBox_passangerClass.getSelectedIndex(),
 						(Integer) spinner_ticketsQuantity.getValue());
 				textArea_booking.append(sRetInfo+"\n");
-				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCost()));
-				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCost()+meny.getTotalCompanyEarnedAmount()));
+				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCost())); 
+				textPane_TotalMenuPrice.setText(Integer.toString(meny.GettotalCustomerPrice()));
+				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCost()+meny.GettotalCustomerPrice()));
 			}
 		});
 		GroupLayout gl_panel_flight = new GroupLayout(panel_flight);
