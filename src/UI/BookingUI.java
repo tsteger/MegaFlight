@@ -588,7 +588,7 @@ public class BookingUI {
 	protected void setupFoodMenu(int index) {
 		FlightMenu foodMenu;	
 		if(index==0) {
-			foodMenu = new FlightMenu(SeatClass.FIRST);
+			foodMenu = new FlightMenu(SeatClass.ECONOMY);
 			Iterator<String> it = foodMenu.getMenu().keySet().iterator();
 			comboBox_food_meny.removeAllItems();
 			while(it.hasNext())
@@ -599,7 +599,7 @@ public class BookingUI {
 		}
 		else
 		{	
-			foodMenu = new FlightMenu(SeatClass.ECONOMY);
+			foodMenu = new FlightMenu(SeatClass.FIRST);
 			Iterator<String> it = foodMenu.getMenu().keySet().iterator();
 			comboBox_food_meny.removeAllItems();
 			while(it.hasNext())
