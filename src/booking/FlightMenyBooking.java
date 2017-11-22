@@ -7,28 +7,35 @@ public class FlightMenyBooking {
 
 	FlightMenu fmenu = new FlightMenu(SeatClass.FIRST);
 	FlightMenu smenu = new FlightMenu(SeatClass.ECONOMY);
-
+	int totalCompanyRevenue= 0 ;
+	int totalCustomerPrice = 0;
+	int menuPrice =  0;
+	
+	public int getTotalCompanyEarnedAmount() {
+		return totalCompanyRevenue;
+	}
+	public int GettotalCustomerPrice() {
+		return totalCustomerPrice;
+	}
 	public String foodMenuOrderItems(int customerid, String foodkey, int amount, int passangerClass) {
-		return "Customer id " + customerid + " has ordered " + amount + " of " + foodkey + ", your current total price is "
+		return "Customer id " + customerid + " has ordered\n " + amount + " of " + foodkey + ", your current total price is "
 				+ getTotalPrice(foodkey, passangerClass, amount)+ " kr.\n";
 	}
 
 	public String foodMenuUnOrderItems(int customerid, String foodkey, int amount, int passangerClass) {
-		
+
 		return "Customer id " + customerid + " has removed " + amount + " of " + foodkey + ", your current total price is "
 				+ getTotalPrice(foodkey, passangerClass, amount) + " kr.\n";
 	}
 
-	public String newCustomer(int customerid, String fname, String sname) {
-
-		return "Hello new customer " + fname + " " + sname + ", " + " your ID is " + customerid + ".";
+	public void newCustomer() {		
+		totalCustomerPrice = 0;	
 	}
-		int totalPrice = 0;
-		int menuPrice =  0;
-	  
-	public int getTotalPrice(String foodkey, int passangerClass, int amount) {
+	
 
-		
+	private int getTotalPrice(String foodkey, int passangerClass, int amount) {
+
+
 
 		if (passangerClass == 1) {
 			Iterator it1 = fmenu.getMenu().entrySet().iterator();
@@ -56,8 +63,9 @@ public class FlightMenyBooking {
 			}
 
 		}
-		totalPrice += (menuPrice*amount);
-		return totalPrice;
+		totalCustomerPrice += (menuPrice*amount);
+		totalCompanyRevenue+=totalCustomerPrice; // need fix
+		return totalCustomerPrice;
 
 	}
 }
