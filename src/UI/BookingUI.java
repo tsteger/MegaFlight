@@ -57,6 +57,7 @@ public class BookingUI {
 	private JTextField textField_FirstName;
 	private JTextField textField_LastName;
 	private int customerID=0;
+	private int totalFoadCostForAllCustomers;
     
 	/**
 	 * Launch the application.
@@ -164,7 +165,7 @@ public class BookingUI {
 				customerID++;
 				newCustomer  = new Customer(customerID,textField_FirstName.toString(),textField_LastName.toString());
 				textField_Customer_Id.setText(Integer.toString(newCustomer.getId()));
-				textArea_booking.setText("New Customer:"+textField_FirstName.getText()+" "+textField_LastName.getText()+"\n\n");
+				textArea_booking.setText("Customer: "+textField_FirstName.getText()+" "+textField_LastName.getText()+"\n\n");
 				booking.resetTotalCustomerCost();
 				
 				comboBox_flight.setEnabled(true);
@@ -175,7 +176,7 @@ public class BookingUI {
 				spinner_foodQuantity.setEnabled(true);
 				btnAdd_Food.setEnabled(true);
 				btnRemove_Food.setEnabled(true);
-				String food_meny = meny.newCustomer(10,"Jocke","Svensson");
+				meny.newCustomer();
 			}
 		});
 		
@@ -188,7 +189,7 @@ public class BookingUI {
 		textField_Customer_Id.setEditable(false);
 		textField_Customer_Id.setColumns(10);
 		
-		JLabel lblNewLabel_6 = new JLabel("Firstname:");
+		JLabel lblNewLabel_6 = new JLabel("Surname:");
 		
 		textField_FirstName = new JTextField();
 		textField_FirstName.setColumns(10);
@@ -196,7 +197,7 @@ public class BookingUI {
 		textField_LastName = new JTextField();
 		textField_LastName.setColumns(10);
 		
-		JLabel lblLastname = new JLabel("Lastname:");
+		JLabel lblLastname = new JLabel("Name:");
 		GroupLayout gl_panel_1 = new GroupLayout(panel_1);
 		gl_panel_1.setHorizontalGroup(
 			gl_panel_1.createParallelGroup(Alignment.LEADING)
@@ -256,9 +257,10 @@ public class BookingUI {
 		JButton button = new JButton("Company profit");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				double totalcost =booking.getTotalFlightCost();
-				textPane_TotalIncome.setText(Double.toString(totalcost)+" SEK");
-				textPane_Profit.setText(Double.toString(totalcost*0.3)+" SEK");
+				double totalFlightCost = booking.getTotalFlightCost();
+				double totalFoodCost   = meny.getTotalCompanyEarnedAmount();
+				textPane_TotalIncome.setText(Double.toString(totalFlightCost+totalFoodCost)+" SEK");
+				textPane_Profit.setText(Double.toString((totalFlightCost+totalFoodCost)*0.3)+" SEK");
 				
 			}
 		});
@@ -300,14 +302,20 @@ public class BookingUI {
 		
 		JLabel lblFlightsTicetsBookd = new JLabel("Customer bookings and cost");
 		lblFlightsTicetsBookd.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		
+		JLabel lblNewLabel_9 = new JLabel("Total:");
+		
+		JTextPane textPane_TotalCustomerPrice = new JTextPane();
 		GroupLayout gl_panel_report = new GroupLayout(panel_report);
 		gl_panel_report.setHorizontalGroup(
 			gl_panel_report.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_panel_report.createSequentialGroup()
 					.addContainerGap()
-					.addGroup(gl_panel_report.createParallelGroup(Alignment.LEADING)
-						.addComponent(textArea_booking, GroupLayout.PREFERRED_SIZE, 478, GroupLayout.PREFERRED_SIZE)
-						.addComponent(lblFlightsTicetsBookd))
+					.addGroup(gl_panel_report.createParallelGroup(Alignment.LEADING, false)
+						.addComponent(textArea_booking, GroupLayout.DEFAULT_SIZE, 478, Short.MAX_VALUE)
+						.addComponent(lblFlightsTicetsBookd)
+						.addComponent(lblNewLabel_9)
+						.addComponent(textPane_TotalCustomerPrice))
 					.addContainerGap(13, Short.MAX_VALUE))
 		);
 		gl_panel_report.setVerticalGroup(
@@ -316,15 +324,19 @@ public class BookingUI {
 					.addContainerGap()
 					.addComponent(lblFlightsTicetsBookd)
 					.addGap(27)
-					.addComponent(textArea_booking, GroupLayout.DEFAULT_SIZE, 469, Short.MAX_VALUE)
-					.addContainerGap())
+					.addComponent(textArea_booking, GroupLayout.PREFERRED_SIZE, 390, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(lblNewLabel_9)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(textPane_TotalCustomerPrice, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addContainerGap(29, Short.MAX_VALUE))
 		);
 		panel_report.setLayout(gl_panel_report);
 		
 		JLabel lblNewLabel_2 = new JLabel("Select Food");
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		
-		JLabel lblNewLabel_4 = new JLabel("Food meny:");
+		JLabel lblNewLabel_4 = new JLabel("Menu:");
 		
 		comboBox_food_meny = new JComboBox<>();  
 		comboBox_food_meny.setEnabled(false);
@@ -339,6 +351,7 @@ public class BookingUI {
 				
 
 				String food_meny = meny.foodMenuOrderItems(customerID,comboBox_food_meny.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());
+				
 				textArea_booking.append(food_meny+"\n");
 			}
 		});
@@ -400,7 +413,7 @@ public class BookingUI {
 		comboBox_flight = new JComboBox<>();
 		comboBox_flight.setEnabled(false);
 		
-		JLabel lblPassangerClass = new JLabel("Passanger Class:");
+		JLabel lblPassangerClass = new JLabel("Class:");
 		
 		comboBox_passangerClass = new JComboBox<>();
 		comboBox_passangerClass.setEnabled(false);
@@ -413,13 +426,13 @@ public class BookingUI {
 			}
 		});
 		
-		JLabel lblTickets = new JLabel("Tickets:");
+		JLabel lblTickets = new JLabel("Number Of Seats:");
 		
 		spinner_ticketsQuantity = new JSpinner(); 
 		spinner_ticketsQuantity.setEnabled(false);
 		spinner_ticketsQuantity.setModel(new SpinnerNumberModel(new Integer(1), new Integer(0), null, new Integer(1)));
 		
-		btnButton_BookFlight = new JButton("Reserv This Flight"); 
+		btnButton_BookFlight = new JButton("Book"); 
 		btnButton_BookFlight.setEnabled(false);
 		btnButton_BookFlight.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -427,7 +440,7 @@ public class BookingUI {
 				String sRetInfo=booking.bookFlightAndSeats(comboBox_flight.getSelectedIndex(),comboBox_passangerClass.getSelectedIndex(),
 						(Integer) spinner_ticketsQuantity.getValue());
 				textArea_booking.append(sRetInfo+"\n");
-
+				textPane_TotalCustomerPrice.setText(Integer.toString(booking.getTotalCustomerCost()));
 
 			}
 		});
@@ -446,8 +459,8 @@ public class BookingUI {
 						.addGroup(gl_panel_flight.createSequentialGroup()
 							.addComponent(spinner_ticketsQuantity, GroupLayout.PREFERRED_SIZE, 97, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(btnButton_BookFlight)))
-					.addContainerGap(218, Short.MAX_VALUE))
+							.addComponent(btnButton_BookFlight, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+					.addContainerGap(192, Short.MAX_VALUE))
 		);
 		gl_panel_flight.setVerticalGroup(
 			gl_panel_flight.createParallelGroup(Alignment.LEADING)
@@ -510,9 +523,11 @@ public class BookingUI {
 			
 			System.out.println("list Empty");
 		}
-		String[] passangerClassList = {"Second Class", "First Class"};
-		comboBox_passangerClass.addItem(passangerClassList[0]);
-		comboBox_passangerClass.addItem(passangerClassList[1]);
+	//	String[] passangerClassList = SeatClass.values(); // { SeatClass.ECONOMY, SeatClass.FIRST};
+		SeatClass[] passangerClassList = SeatClass.values(); // { SeatClass.ECONOMY, SeatClass.FIRST};
+	
+		comboBox_passangerClass.addItem(passangerClassList[0].toString());
+		comboBox_passangerClass.addItem(passangerClassList[1].toString());
 						
 	}
 }

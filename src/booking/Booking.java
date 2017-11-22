@@ -43,7 +43,9 @@ public class Booking {
 	public void resetTotalCustomerCost() {
 		totalCustomerCost=0;		
 	}
-			
+	public int getTotalCustomerCost() {
+		return totalCustomerCost;
+	}
 	public String bookFlightAndSeats(int flightIndex, int flightClassIndex, int numberOfSeats) {
 		String returnString = "";
 		
