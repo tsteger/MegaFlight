@@ -1,13 +1,11 @@
 package booking;
 
-import java.time.LocalDateTime;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class BookingDesk {
 	//---- Flights thread ---------------------------------------
-	FlightsInTheAirThread runable = new FlightsInTheAirThread();
-	Thread th;// = new Thread(runable);
 	
 	//-----------------------------------------------------------
 	private List<Flight> flights = new ArrayList<>();	
