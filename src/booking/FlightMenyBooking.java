@@ -60,7 +60,9 @@ public class FlightMenyBooking {
 	
 	
 	private int getTotalPrice(String foodkey, int passangerClass, int amount) {
+
 		int menuPrice =  0; // important that this stay here.
+
 
 		if (passangerClass == 1) {
 			Iterator it1 = fmenu.getMenu().entrySet().iterator();
@@ -89,7 +91,7 @@ public class FlightMenyBooking {
 
 		}
 		totalCustomerPrice += (menuPrice*amount);
-		totalCompanyRevenue+=totalCustomerPrice; // need fix
+		totalCompanyRevenue+= (menuPrice*amount); // need fix
 		return totalCustomerPrice;
 
 	}
