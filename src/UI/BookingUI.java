@@ -175,8 +175,8 @@ public class BookingUI {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				textArea_FlightTicker.append(airCompany.getLogReport());
-				//textArea_FlightTicker.setText(airCompany.getLogReport());
+				//textArea_FlightTicker.append(airCompany.getLogReport());
+				textArea_FlightTicker.setText(airCompany.getLogReport());
 				
 			}
 		});
