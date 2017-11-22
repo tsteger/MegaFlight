@@ -22,10 +22,16 @@ public class MockAirCompany {
 		
 		//Prices		
 		bookingDesk.setPrices(20000, 5000); 
+		
+		PlaneDispatcherSimulator(planes);
 	}
 	
 	public AirCompany Get(){ 
 		return airCompany;
-}
+     }
+	
+	public void PlaneDispatcherSimulator(List<AirPlane> planes) {
+		//planes.get(0).setIsInTheAirport(false);
+	}
 	
 }
