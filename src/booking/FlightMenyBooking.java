@@ -17,25 +17,49 @@ public class FlightMenyBooking {
 	public int GettotalCustomerPrice() {
 		return totalCustomerPrice;
 	}
+	
+	
+	
+	
 	public String foodMenuOrderItems(int customerid, String foodkey, int amount, int passangerClass) {
-		return "Customer id " + customerid + " has ordered\n " + amount + " of " + foodkey + ", your current total price is "
-				+ getTotalPrice(foodkey, passangerClass, amount)+ " kr.\n";
+		FlightMenu thisMenu = getCorrectMenu(passangerClass);
+		
+		
+		return "Customer ID: " + customerid + "\nOrdered: " + amount + " " + foodkey + "\nCost: "
+			+ thisMenu.getMenu().get(foodkey).intValue()	+ " kr.\n" + "Total Cost: " + getTotalPrice(foodkey, passangerClass, amount) + "kr.\n";
 	}
-
+	
 	public String foodMenuUnOrderItems(int customerid, String foodkey, int amount, int passangerClass) {
-
-		return "Customer id " + customerid + " has removed " + amount + " of " + foodkey + ", your current total price is "
-				+ getTotalPrice(foodkey, passangerClass, amount) + " kr.\n";
+		FlightMenu thisMenu = getCorrectMenu(passangerClass);
+		
+		return "Customer ID: " + customerid + "\nRemoved: " + amount + " " + foodkey + "\nCost: "
+		+  thisMenu.getMenu().get(foodkey).intValue()	+ " kr.\n" +  "Total Cost: " + getTotalPrice(foodkey, passangerClass, amount) + " kr.\n";
 	}
 
 	public void newCustomer() {		
 		totalCustomerPrice = 0;	
 	}
 	
+	
+	private FlightMenu getCorrectMenu(int passangerClass) {
+		
+		if(passangerClass == 0) {
+			return smenu;
+		}else {
+			
+			return fmenu;
+			
+		}
+			
+	}
+	
+	
+	
+	
+	
 
 	private int getTotalPrice(String foodkey, int passangerClass, int amount) {
-
-
+		
 
 		if (passangerClass == 1) {
 			Iterator it1 = fmenu.getMenu().entrySet().iterator();
@@ -51,7 +75,7 @@ public class FlightMenyBooking {
 
 		else {
 			if (passangerClass == 0) {
-				Iterator it1 = fmenu.getMenu().entrySet().iterator();
+				Iterator it1 = smenu.getMenu().entrySet().iterator();
 				while (it1.hasNext()) {
 					Map.Entry pair = (Map.Entry) it1.next();
 					if (pair.getKey().equals(foodkey)) {

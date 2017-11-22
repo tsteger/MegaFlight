@@ -15,7 +15,7 @@ public class FlightMenu {
 	
 	public Map<String, Integer> init(SeatClass foo) {
 		
-		if (foo.name().equals(SeatClass.FIRST.toString())) {
+		if (foo.name().equals(SeatClass.ECONOMY.toString())) {
 			
 			menu.put("Clams", 180);
 			menu.put("Lobster", 230);
