@@ -1,5 +1,6 @@
 package booking;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,12 +15,10 @@ public class BookingDesk {
 	
 	int totalFlightCost;
 	int totalCustomerCost;
-	boolean airplaneIsInTheAir;
 	
 	public BookingDesk() {		
 		totalFlightCost=0;
 		totalCustomerCost=0;
-		airplaneIsInTheAir=false;
 	}
 		
 	public List<Flight> getFlights() {
@@ -34,13 +33,7 @@ public class BookingDesk {
 		pricelist.setFirstClassTicketPrice(firstClassPrice);
 		pricelist.setEconomyClassTicketPrice(economyClassPrice);
 	}
-	
-	public boolean checkIfFlightIsAvailable() {
-		// TODO Auto-generated method stub
-		// Multi-flights in the air reports back if available
-		// Multi-thread assignment
-		return airplaneIsInTheAir;
-	}
+		
 	public int getTotalFlightCost() {
 		return totalFlightCost;
 	}
@@ -59,6 +52,11 @@ public class BookingDesk {
 		Flight flight = flights.get(flightIndex);		
 		String  className = seatClassIndex==0 ? SeatClass.ECONOMY.toString() : SeatClass.FIRST.toString();
 
+		Boolean isPlaneInAirport = isPlaneInAirportByFlight(flight) ;
+		if(!isPlaneInAirport) {
+			return "The plane is not in the airport. \nPlease try another flight.";	
+		}
+				
 		Boolean isPossibleToBook = SeatsBooking.book(flight, seatClassIndex, numberOfSeats);				
 		if(isPossibleToBook) {		
 		int price = seatClassIndex==0 ? pricelist.getEconomyClassTicketPrice() : pricelist.getFirstClassTicketPrice();
@@ -76,9 +74,13 @@ public class BookingDesk {
 					       availableSeatsOfTheClass, className);
 		}
 		
-		return returnString;	
+		return returnString;
 		}
-
+	
+	private Boolean isPlaneInAirportByFlight(Flight flight) {
+	return flight.getAirplane().getIsInTheAirport();	
+	}
+		
 	public String bookFoodMeny() {
 		// TODO Auto-generated method stub
 		

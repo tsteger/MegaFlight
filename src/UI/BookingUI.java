@@ -17,6 +17,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.JComboBox;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
+import javax.swing.SwingUtilities;
 
 import booking.AirCompany;
 import booking.BookingDesk;
@@ -50,6 +51,7 @@ public class BookingUI {
     private JTextPane textPane_TotalIncome;
     private JTextPane textPane_Profit;
     private JButton btnButton_BookFlight;
+    private JTextArea textArea_FlightTicker;
     
     private AirCompany airCompany = new MockAirCompany().Get();
     private BookingDesk bookingDesk = airCompany.getBookingDesk(); 
@@ -100,7 +102,7 @@ public class BookingUI {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 1024, 800);
+		frame.setBounds(100, 100, 1095, 796);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		;
 		JLabel lblNewLabel = new JLabel("MegaFlight Booking System v.1.2");
@@ -120,6 +122,9 @@ public class BookingUI {
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBorder(new LineBorder(new Color(0, 0, 0)));
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBorder(new LineBorder(new Color(0, 0, 0)));
 		GroupLayout groupLayout = new GroupLayout(frame.getContentPane());
 		groupLayout.setHorizontalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
@@ -129,36 +134,79 @@ public class BookingUI {
 						.addComponent(lblNewLabel)
 						.addGroup(groupLayout.createSequentialGroup()
 							.addPreferredGap(ComponentPlacement.RELATED)
-							.addComponent(panel_1, GroupLayout.PREFERRED_SIZE, 425, GroupLayout.PREFERRED_SIZE)
-							.addGap(18)
-							.addComponent(panel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-						.addGroup(groupLayout.createSequentialGroup()
+							.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+								.addComponent(panel_1, GroupLayout.PREFERRED_SIZE, 425, GroupLayout.PREFERRED_SIZE)
+								.addGroup(groupLayout.createParallelGroup(Alignment.LEADING, false)
+									.addComponent(panel_flight, 0, 0, Short.MAX_VALUE)
+									.addComponent(panel_food, GroupLayout.DEFAULT_SIZE, 424, Short.MAX_VALUE)))
 							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(panel_report, GroupLayout.PREFERRED_SIZE, 328, GroupLayout.PREFERRED_SIZE)
+							.addGap(6)
 							.addGroup(groupLayout.createParallelGroup(Alignment.LEADING, false)
-								.addComponent(panel_flight, 0, 0, Short.MAX_VALUE)
-								.addComponent(panel_food, GroupLayout.DEFAULT_SIZE, 424, Short.MAX_VALUE))
-							.addGap(18)
-							.addComponent(panel_report, GroupLayout.PREFERRED_SIZE, 503, GroupLayout.PREFERRED_SIZE)))
-					.addContainerGap(51, Short.MAX_VALUE))
+								.addComponent(panel, 0, 0, Short.MAX_VALUE)
+								.addComponent(panel_2, GroupLayout.DEFAULT_SIZE, 288, Short.MAX_VALUE))))
+					.addContainerGap(14, Short.MAX_VALUE))
 		);
 		groupLayout.setVerticalGroup(
-			groupLayout.createParallelGroup(Alignment.TRAILING)
-				.addGroup(groupLayout.createSequentialGroup()
+			groupLayout.createParallelGroup(Alignment.LEADING)
+				.addGroup(Alignment.TRAILING, groupLayout.createSequentialGroup()
 					.addGap(13)
 					.addComponent(lblNewLabel)
 					.addPreferredGap(ComponentPlacement.UNRELATED)
-					.addGroup(groupLayout.createParallelGroup(Alignment.TRAILING, false)
-						.addComponent(panel, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-						.addComponent(panel_1, GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE))
-					.addPreferredGap(ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
-					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)
+					.addGroup(groupLayout.createParallelGroup(Alignment.TRAILING)
+						.addComponent(panel_report, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 659, Short.MAX_VALUE)
 						.addGroup(groupLayout.createSequentialGroup()
+							.addComponent(panel_1, GroupLayout.PREFERRED_SIZE, 118, GroupLayout.PREFERRED_SIZE)
+							.addPreferredGap(ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
 							.addComponent(panel_flight, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addComponent(panel_food, GroupLayout.PREFERRED_SIZE, 284, GroupLayout.PREFERRED_SIZE))
-						.addComponent(panel_report, GroupLayout.PREFERRED_SIZE, 525, GroupLayout.PREFERRED_SIZE))
+						.addGroup(Alignment.LEADING, groupLayout.createSequentialGroup()
+							.addComponent(panel, GroupLayout.PREFERRED_SIZE, 260, GroupLayout.PREFERRED_SIZE)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(panel_2, GroupLayout.DEFAULT_SIZE, 383, Short.MAX_VALUE)))
 					.addGap(65))
 		);
+		
+		JLabel lblNewLabel_12 = new JLabel("Flight Ticker");
+		lblNewLabel_12.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		
+		textArea_FlightTicker = new JTextArea();
+		
+		JButton btnNewButton = new JButton("Update");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				//textArea_FlightTicker.append(airCompany.getLogReport());
+				textArea_FlightTicker.setText(airCompany.getLogReport());
+				
+			}
+		});
+		GroupLayout gl_panel_2 = new GroupLayout(panel_2);
+		gl_panel_2.setHorizontalGroup(
+			gl_panel_2.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_panel_2.createSequentialGroup()
+					.addContainerGap()
+					.addGroup(gl_panel_2.createParallelGroup(Alignment.LEADING)
+						.addGroup(gl_panel_2.createSequentialGroup()
+							.addComponent(lblNewLabel_12)
+							.addPreferredGap(ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
+							.addComponent(btnNewButton))
+						.addComponent(textArea_FlightTicker, GroupLayout.PREFERRED_SIZE, 264, GroupLayout.PREFERRED_SIZE))
+					.addContainerGap())
+		);
+		gl_panel_2.setVerticalGroup(
+			gl_panel_2.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_panel_2.createSequentialGroup()
+					.addContainerGap()
+					.addGroup(gl_panel_2.createParallelGroup(Alignment.BASELINE)
+						.addComponent(lblNewLabel_12)
+						.addComponent(btnNewButton))
+					.addPreferredGap(ComponentPlacement.UNRELATED)
+					.addComponent(textArea_FlightTicker, GroupLayout.PREFERRED_SIZE, 328, GroupLayout.PREFERRED_SIZE)
+					.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+		);
+		panel_2.setLayout(gl_panel_2);
 		
 		JButton btnNewCustomer = new JButton("New Customer");
 		btnNewCustomer.addActionListener(new ActionListener() {
@@ -172,7 +220,7 @@ public class BookingUI {
 				newCustomer  = new Customer(customerID,textField_FirstName.toString(),textField_LastName.toString());
 				textField_Customer_Id.setText(Integer.toString(newCustomer.getId()));
 
-				textArea_booking.setText("New Customer:"+textField_FirstName.getText()+" "+textField_LastName.getText()+"\n\n");
+				textArea_booking.setText("Customer:"+textField_FirstName.getText()+" "+textField_LastName.getText()+"\n\n");
 				bookingDesk.resetTotalCustomerCost();
 
 				
@@ -266,47 +314,58 @@ public class BookingUI {
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
-
-				//textPane_TotalIncome.setText(Double.toString(totalFlightCost+totalFoodCost)+" SEK");
-				//textPane_Profit.setText(Double.toString((totalFlightCost+totalFoodCost)*0.3)+" SEK");
-
+				double totalMenuCost = meny.getTotalCompanyEarnedAmount();
 				double totalcost =bookingDesk.getTotalFlightCost();
-				textPane_TotalIncome.setText(Double.toString(totalcost)+" SEK");
-				textPane_Profit.setText(Double.toString(totalcost*0.3)+" SEK");
+				textPane_TotalIncome.setText(Double.toString(totalcost+totalMenuCost)+" SEK");
+				textPane_Profit.setText(Double.toString((totalcost+totalMenuCost)*0.3)+" SEK");
 
 				
 			}
 		});
+		
+		JLabel lblNewLabel_11 = new JLabel("Company Information");
+		lblNewLabel_11.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		GroupLayout gl_panel = new GroupLayout(panel);
 		gl_panel.setHorizontalGroup(
 			gl_panel.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_panel.createSequentialGroup()
 					.addContainerGap()
-					.addGroup(gl_panel.createParallelGroup(Alignment.TRAILING)
-						.addComponent(lblNewLabel_8)
-						.addComponent(lblNewLabel_7))
-					.addPreferredGap(ComponentPlacement.RELATED)
-					.addGroup(gl_panel.createParallelGroup(Alignment.TRAILING, false)
-						.addComponent(textPane_TotalIncome)
-						.addComponent(textPane_Profit, GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE))
-					.addGap(63)
-					.addComponent(button, GroupLayout.PREFERRED_SIZE, 138, GroupLayout.PREFERRED_SIZE)
-					.addGap(19))
+					.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
+						.addGroup(gl_panel.createSequentialGroup()
+							.addComponent(lblNewLabel_11)
+							.addContainerGap(234, Short.MAX_VALUE))
+						.addGroup(gl_panel.createSequentialGroup()
+							.addComponent(lblNewLabel_7)
+							.addContainerGap(167, Short.MAX_VALUE))
+						.addGroup(gl_panel.createSequentialGroup()
+							.addComponent(textPane_TotalIncome, GroupLayout.PREFERRED_SIZE, 139, GroupLayout.PREFERRED_SIZE)
+							.addContainerGap(141, Short.MAX_VALUE))
+						.addGroup(gl_panel.createSequentialGroup()
+							.addComponent(lblNewLabel_8)
+							.addContainerGap(247, Short.MAX_VALUE))
+						.addGroup(gl_panel.createSequentialGroup()
+							.addComponent(textPane_Profit)
+							.addGap(142))
+						.addGroup(gl_panel.createSequentialGroup()
+							.addComponent(button, GroupLayout.PREFERRED_SIZE, 138, GroupLayout.PREFERRED_SIZE)
+							.addContainerGap(142, Short.MAX_VALUE))))
 		);
 		gl_panel.setVerticalGroup(
 			gl_panel.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_panel.createSequentialGroup()
-					.addGap(22)
-					.addGroup(gl_panel.createParallelGroup(Alignment.TRAILING)
-						.addComponent(button)
-						.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
-							.addComponent(textPane_TotalIncome, GroupLayout.PREFERRED_SIZE, 21, GroupLayout.PREFERRED_SIZE)
-							.addComponent(lblNewLabel_7)))
-					.addPreferredGap(ComponentPlacement.UNRELATED)
-					.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)
-						.addComponent(lblNewLabel_8)
-						.addComponent(textPane_Profit, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addContainerGap(40, Short.MAX_VALUE))
+					.addContainerGap()
+					.addComponent(lblNewLabel_11)
+					.addGap(18)
+					.addComponent(lblNewLabel_7)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(textPane_TotalIncome, GroupLayout.PREFERRED_SIZE, 21, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(lblNewLabel_8)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(textPane_Profit, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addGap(18)
+					.addComponent(button)
+					.addContainerGap(470, Short.MAX_VALUE))
 		);
 		panel.setLayout(gl_panel);
 		
@@ -316,20 +375,38 @@ public class BookingUI {
 		JLabel lblFlightsTicetsBookd = new JLabel("Customer bookings and cost");
 		lblFlightsTicetsBookd.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		
-		JLabel lblNewLabel_9 = new JLabel("Total:");
+		JLabel lblNewLabel_9 = new JLabel("Total Flight Cost:");
 		
-		JTextPane textPane_TotalCustomerPrice = new JTextPane();
+		JTextPane textPane_TotalFlightPrice = new JTextPane();
+		
+		JLabel lblTotalFoodCost = new JLabel("Total Food Cost:");
+		
+		JTextPane textPane_TotalMenuPrice = new JTextPane();
+		
+		JLabel lblNewLabel_10 = new JLabel("Total sum :");
+		
+		JTextPane textPane_TotalSum = new JTextPane();
 		GroupLayout gl_panel_report = new GroupLayout(panel_report);
 		gl_panel_report.setHorizontalGroup(
 			gl_panel_report.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_panel_report.createSequentialGroup()
 					.addContainerGap()
-					.addGroup(gl_panel_report.createParallelGroup(Alignment.LEADING, false)
-						.addComponent(textArea_booking, GroupLayout.DEFAULT_SIZE, 478, Short.MAX_VALUE)
+					.addGroup(gl_panel_report.createParallelGroup(Alignment.LEADING)
 						.addComponent(lblFlightsTicetsBookd)
-						.addComponent(lblNewLabel_9)
-						.addComponent(textPane_TotalCustomerPrice))
-					.addContainerGap(13, Short.MAX_VALUE))
+						.addComponent(textArea_booking, GroupLayout.PREFERRED_SIZE, 301, GroupLayout.PREFERRED_SIZE)
+						.addGroup(gl_panel_report.createSequentialGroup()
+							.addGroup(gl_panel_report.createParallelGroup(Alignment.TRAILING, false)
+								.addComponent(textPane_TotalFlightPrice)
+								.addComponent(lblNewLabel_9, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+							.addGap(6)
+							.addGroup(gl_panel_report.createParallelGroup(Alignment.LEADING, false)
+								.addComponent(textPane_TotalMenuPrice, Alignment.TRAILING)
+								.addComponent(lblTotalFoodCost, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addGroup(gl_panel_report.createParallelGroup(Alignment.LEADING)
+								.addComponent(textPane_TotalSum, GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+								.addComponent(lblNewLabel_10))))
+					.addGap(190))
 		);
 		gl_panel_report.setVerticalGroup(
 			gl_panel_report.createParallelGroup(Alignment.LEADING)
@@ -339,9 +416,15 @@ public class BookingUI {
 					.addGap(27)
 					.addComponent(textArea_booking, GroupLayout.PREFERRED_SIZE, 390, GroupLayout.PREFERRED_SIZE)
 					.addPreferredGap(ComponentPlacement.RELATED)
-					.addComponent(lblNewLabel_9)
+					.addGroup(gl_panel_report.createParallelGroup(Alignment.BASELINE)
+						.addComponent(lblNewLabel_9)
+						.addComponent(lblTotalFoodCost)
+						.addComponent(lblNewLabel_10))
 					.addPreferredGap(ComponentPlacement.RELATED)
-					.addComponent(textPane_TotalCustomerPrice, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addGroup(gl_panel_report.createParallelGroup(Alignment.LEADING)
+						.addComponent(textPane_TotalFlightPrice, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(textPane_TotalMenuPrice, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(textPane_TotalSum, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 					.addContainerGap(29, Short.MAX_VALUE))
 		);
 		panel_report.setLayout(gl_panel_report);
@@ -366,6 +449,8 @@ public class BookingUI {
 				String food_meny = meny.foodMenuOrderItems(customerID,comboBox_food_meny.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());
 				
 				textArea_booking.append(food_meny+"\n");
+				textPane_TotalMenuPrice.setText(Integer.toString(meny.getTotalCompanyEarnedAmount()));
+				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCost()+meny.getTotalCompanyEarnedAmount()));
 			}
 		});
 		
@@ -453,8 +538,8 @@ public class BookingUI {
 				String sRetInfo=bookingDesk.bookFlightAndSeats(comboBox_flight.getSelectedIndex(),comboBox_passangerClass.getSelectedIndex(),
 						(Integer) spinner_ticketsQuantity.getValue());
 				textArea_booking.append(sRetInfo+"\n");
-			//	textPane_TotalCustomerPrice.setText(Integer.toString(booking.getTotalCustomerCost()));
-
+				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCost()));
+				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCost()+meny.getTotalCompanyEarnedAmount()));
 			}
 		});
 		GroupLayout gl_panel_flight = new GroupLayout(panel_flight);
@@ -498,9 +583,9 @@ public class BookingUI {
 		);
 		panel_flight.setLayout(gl_panel_flight);
 		frame.getContentPane().setLayout(groupLayout);
+		
 	}
 	protected void setupFoodMenu(int index) {
-		// TODO Auto-generated method stub
 		FlightMenu foodMenu;	
 		if(index==0) {
 			foodMenu = new FlightMenu(SeatClass.FIRST);
@@ -526,7 +611,6 @@ public class BookingUI {
 	}
 	public void loadData() {
 		
-
 		if(!flights.isEmpty()) {
 			for (Flight nextFlight : flights) {
 			comboBox_flight.addItem(nextFlight.getName());
@@ -536,11 +620,19 @@ public class BookingUI {
 			
 			System.out.println("list Empty");
 		}
-	//	String[] passangerClassList = SeatClass.values(); // { SeatClass.ECONOMY, SeatClass.FIRST};
-		SeatClass[] passangerClassList = SeatClass.values(); // { SeatClass.ECONOMY, SeatClass.FIRST};
-	
+		SeatClass[] passangerClassList = SeatClass.values(); // { SeatClass.ECONOMY, SeatClass.FIRST};	
 		comboBox_passangerClass.addItem(passangerClassList[0].toString());
 		comboBox_passangerClass.addItem(passangerClassList[1].toString());
 						
 	}
+//	public void myTicker() {
+//		SwingUtilities.invokeLater(new Runnable()
+//	    {
+//	        @Override
+//	        public void run()
+//	        {
+//	        	textArea_FlightTicker.setText(airCompany.getLogReport()); 
+//	        }            
+//	    });
+//	}
 }

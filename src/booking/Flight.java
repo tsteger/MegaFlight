@@ -24,6 +24,10 @@ public class Flight {
 		return name;
 	}
 
+	public AirPlane getAirplane() {
+		return airplane;
+	}
+
 	public int getNumberOfSeatsFirstClass() {
 		return numberOfSeatsFirstClass;
 	}
