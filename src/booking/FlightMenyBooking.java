@@ -64,7 +64,7 @@ public class FlightMenyBooking {
 
 		}
 		totalCustomerPrice += (menuPrice*amount);
-		totalCompanyRevenue+=totalCustomerPrice; // need fix
+		totalCompanyRevenue+= (menuPrice*amount); // need fix
 		return totalCustomerPrice;
 
 	}
