@@ -2,8 +2,7 @@ package booking;
 
 public class AirPlane {
 int NumberOfSeats;
-// private Boolean isInTheAirport = true;
-private Boolean isInTheAirport = false;
+private Boolean isInTheAirport = true;
 
 public AirPlane(int numberOfSeats) {	
 	NumberOfSeats = numberOfSeats;	
