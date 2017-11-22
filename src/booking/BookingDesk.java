@@ -3,33 +3,37 @@ package booking;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Booking {
+public class BookingDesk {
 	//---- Flights thread ---------------------------------------
 	FlightsInTheAirThread runable = new FlightsInTheAirThread();
 	Thread th;// = new Thread(runable);
 	
 	//-----------------------------------------------------------
-	public List<Flight> flights = new ArrayList<>();
+	private List<Flight> flights = new ArrayList<>();	
 	private SeatPrices pricelist = new SeatPrices();
 	
 	int totalFlightCost;
 	int totalCustomerCost;
 	boolean airplaneIsInTheAir;
 	
-	public Booking() {
-		// The Flights
-		flights.add(new Flight("ARN - GOT MegaFlight 1440", new AirPlane(10), 5));
-		flights.add(new Flight("ARN - GOT MegaFlight 1450", new AirPlane(10), 5));
-		flights.add(new Flight("ARN - GOT MegaFlight 1460", new AirPlane(10), 5));
-		
-		pricelist.setFirstClassTicketPrice(20000);
-		pricelist.setEconomyClassTicketPrice(5000);
-		
+	public BookingDesk() {		
 		totalFlightCost=0;
 		totalCustomerCost=0;
 		airplaneIsInTheAir=false;
 	}
+		
+	public List<Flight> getFlights() {
+		return flights;
+	}
 	
+	public void AddFlight (Flight flight) {
+		flights.add(flight) ;
+	}
+	
+	public void setPrices (int firstClassPrice, int economyClassPrice) {
+		pricelist.setFirstClassTicketPrice(firstClassPrice);
+		pricelist.setEconomyClassTicketPrice(economyClassPrice);
+	}
 	
 	public boolean checkIfFlightIsAvailable() {
 		// TODO Auto-generated method stub
