@@ -7,9 +7,9 @@ public class MockAirCompany {
 	private AirCompany airCompany =  new AirCompany();
 	
 	public MockAirCompany(){  	
-		airCompany.AddPlane(new AirPlane(10)); 
-		airCompany.AddPlane(new AirPlane(10)); 
-		airCompany.AddPlane(new AirPlane(10)); 
+		airCompany.AddPlane(new AirPlane("Boeing 747", 10)); 
+		airCompany.AddPlane(new AirPlane("Boeing 777", 10)); 
+		airCompany.AddPlane(new AirPlane("Boeing 800", 10)); 
 		
 		List<AirPlane> planes = airCompany.getAirPlanes();
 		

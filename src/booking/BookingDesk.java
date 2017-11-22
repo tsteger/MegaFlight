@@ -1,5 +1,6 @@
 package booking;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,7 +52,6 @@ public class BookingDesk {
 		Flight flight = flights.get(flightIndex);		
 		String  className = seatClassIndex==0 ? SeatClass.ECONOMY.toString() : SeatClass.FIRST.toString();
 
-		
 		Boolean isPlaneInAirport = isPlaneInAirportByFlight(flight) ;
 		if(!isPlaneInAirport) {
 			return "The plane is not in the airport. \nPlease try another flight.";	
@@ -74,7 +74,7 @@ public class BookingDesk {
 					       availableSeatsOfTheClass, className);
 		}
 		
-		return returnString;	
+		return returnString;
 		}
 	
 	private Boolean isPlaneInAirportByFlight(Flight flight) {
