@@ -17,6 +17,4 @@ public class SeatPrices {
 		this.economyClassTicketPrice = secoundClassTicketPrice;
 	}
 	
-	
-	
 }
