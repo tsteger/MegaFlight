@@ -169,11 +169,14 @@ public class BookingUI {
 		JLabel lblNewLabel_12 = new JLabel("Flight Ticker");
 		lblNewLabel_12.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		
-		JTextArea textArea = new JTextArea();
+		JTextArea textArea_FlightTicker = new JTextArea();
 		
 		JButton btnNewButton = new JButton("Update");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
+				textArea_FlightTicker.append(airCompany.getLogReport());
+				//textArea_FlightTicker.setText(airCompany.getLogReport());
 				
 			}
 		});
@@ -187,7 +190,7 @@ public class BookingUI {
 							.addComponent(lblNewLabel_12)
 							.addPreferredGap(ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
 							.addComponent(btnNewButton))
-						.addComponent(textArea, GroupLayout.PREFERRED_SIZE, 264, GroupLayout.PREFERRED_SIZE))
+						.addComponent(textArea_FlightTicker, GroupLayout.PREFERRED_SIZE, 264, GroupLayout.PREFERRED_SIZE))
 					.addContainerGap())
 		);
 		gl_panel_2.setVerticalGroup(
@@ -198,7 +201,7 @@ public class BookingUI {
 						.addComponent(lblNewLabel_12)
 						.addComponent(btnNewButton))
 					.addPreferredGap(ComponentPlacement.UNRELATED)
-					.addComponent(textArea, GroupLayout.PREFERRED_SIZE, 328, GroupLayout.PREFERRED_SIZE)
+					.addComponent(textArea_FlightTicker, GroupLayout.PREFERRED_SIZE, 328, GroupLayout.PREFERRED_SIZE)
 					.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 		);
 		panel_2.setLayout(gl_panel_2);
