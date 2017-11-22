@@ -266,13 +266,10 @@ public class BookingUI {
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
-
-				//textPane_TotalIncome.setText(Double.toString(totalFlightCost+totalFoodCost)+" SEK");
-				//textPane_Profit.setText(Double.toString((totalFlightCost+totalFoodCost)*0.3)+" SEK");
-
+				double totalMenuCost = meny.getTotalCompanyEarnedAmount();
 				double totalcost =bookingDesk.getTotalFlightCost();
-				textPane_TotalIncome.setText(Double.toString(totalcost)+" SEK");
-				textPane_Profit.setText(Double.toString(totalcost*0.3)+" SEK");
+				textPane_TotalIncome.setText(Double.toString(totalcost+totalMenuCost)+" SEK");
+				textPane_Profit.setText(Double.toString((totalcost+totalMenuCost)*0.3)+" SEK");
 
 				
 			}
@@ -316,9 +313,17 @@ public class BookingUI {
 		JLabel lblFlightsTicetsBookd = new JLabel("Customer bookings and cost");
 		lblFlightsTicetsBookd.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		
-		JLabel lblNewLabel_9 = new JLabel("Total:");
+		JLabel lblNewLabel_9 = new JLabel("Total Flight Cost:");
 		
-		JTextPane textPane_TotalCustomerPrice = new JTextPane();
+		JTextPane textPane_TotalFlightPrice = new JTextPane();
+		
+		JLabel lblTotalFoodCost = new JLabel("Total Food Cost:");
+		
+		JTextPane textPane_TotalMenuPrice = new JTextPane();
+		
+		JLabel lblNewLabel_10 = new JLabel("Total sum :");
+		
+		JTextPane textPane_TotalSum = new JTextPane();
 		GroupLayout gl_panel_report = new GroupLayout(panel_report);
 		gl_panel_report.setHorizontalGroup(
 			gl_panel_report.createParallelGroup(Alignment.LEADING)
@@ -327,8 +332,18 @@ public class BookingUI {
 					.addGroup(gl_panel_report.createParallelGroup(Alignment.LEADING, false)
 						.addComponent(textArea_booking, GroupLayout.DEFAULT_SIZE, 478, Short.MAX_VALUE)
 						.addComponent(lblFlightsTicetsBookd)
-						.addComponent(lblNewLabel_9)
-						.addComponent(textPane_TotalCustomerPrice))
+						.addGroup(gl_panel_report.createSequentialGroup()
+							.addComponent(lblNewLabel_9)
+							.addGap(56)
+							.addComponent(lblTotalFoodCost)
+							.addGap(47)
+							.addComponent(lblNewLabel_10))
+						.addGroup(gl_panel_report.createSequentialGroup()
+							.addComponent(textPane_TotalFlightPrice, GroupLayout.PREFERRED_SIZE, 130, GroupLayout.PREFERRED_SIZE)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(textPane_TotalMenuPrice, GroupLayout.PREFERRED_SIZE, 126, GroupLayout.PREFERRED_SIZE)
+							.addPreferredGap(ComponentPlacement.RELATED)
+							.addComponent(textPane_TotalSum)))
 					.addContainerGap(13, Short.MAX_VALUE))
 		);
 		gl_panel_report.setVerticalGroup(
@@ -339,9 +354,15 @@ public class BookingUI {
 					.addGap(27)
 					.addComponent(textArea_booking, GroupLayout.PREFERRED_SIZE, 390, GroupLayout.PREFERRED_SIZE)
 					.addPreferredGap(ComponentPlacement.RELATED)
-					.addComponent(lblNewLabel_9)
+					.addGroup(gl_panel_report.createParallelGroup(Alignment.BASELINE)
+						.addComponent(lblNewLabel_9)
+						.addComponent(lblTotalFoodCost)
+						.addComponent(lblNewLabel_10))
 					.addPreferredGap(ComponentPlacement.RELATED)
-					.addComponent(textPane_TotalCustomerPrice, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addGroup(gl_panel_report.createParallelGroup(Alignment.LEADING)
+						.addComponent(textPane_TotalFlightPrice, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(textPane_TotalMenuPrice, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(textPane_TotalSum, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 					.addContainerGap(29, Short.MAX_VALUE))
 		);
 		panel_report.setLayout(gl_panel_report);
@@ -366,6 +387,8 @@ public class BookingUI {
 				String food_meny = meny.foodMenuOrderItems(customerID,comboBox_food_meny.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());
 				
 				textArea_booking.append(food_meny+"\n");
+				textPane_TotalMenuPrice.setText(Integer.toString(meny.getTotalCompanyEarnedAmount()));
+				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCost()+meny.getTotalCompanyEarnedAmount()));
 			}
 		});
 		
@@ -453,8 +476,8 @@ public class BookingUI {
 				String sRetInfo=bookingDesk.bookFlightAndSeats(comboBox_flight.getSelectedIndex(),comboBox_passangerClass.getSelectedIndex(),
 						(Integer) spinner_ticketsQuantity.getValue());
 				textArea_booking.append(sRetInfo+"\n");
-			//	textPane_TotalCustomerPrice.setText(Integer.toString(booking.getTotalCustomerCost()));
-
+				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCost()));
+				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCost()+meny.getTotalCompanyEarnedAmount()));
 			}
 		});
 		GroupLayout gl_panel_flight = new GroupLayout(panel_flight);
