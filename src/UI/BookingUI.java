@@ -171,6 +171,10 @@ public class BookingUI {
 				customerID++;
 				newCustomer  = new Customer(customerID,textField_FirstName.toString(),textField_LastName.toString());
 				textField_Customer_Id.setText(Integer.toString(newCustomer.getId()));
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 				textArea_booking.setText("New Customer:"+textField_FirstName.getText()+" "+textField_LastName.getText()+"\n\n");
 				bookingDesk.resetTotalCustomerCost();
 
@@ -264,6 +268,7 @@ public class BookingUI {
 		JButton button = new JButton("Company profit");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+
 
 				//textPane_TotalIncome.setText(Double.toString(totalFlightCost+totalFoodCost)+" SEK");
 				//textPane_Profit.setText(Double.toString((totalFlightCost+totalFoodCost)*0.3)+" SEK");
