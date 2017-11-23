@@ -54,7 +54,10 @@ public class BookingUI {
     private JTextPane textPane_TotalMenuPrice;
     private JTextPane textPane_TotalFlightPrice;
     private JButton btnButton_BookFlight;
-    private JTextArea textArea_FlightSimulator ;
+    private JCheckBox chckbxNewCheckBox_OnOff;
+    private JCheckBox chckbxNewCheckBox_AutoLogger;
+    public static boolean autologgerOnOff=true;
+    public static  JTextArea textArea_FlightSimulator ;
     private JTextArea textArea_Booking_Food_And_Flight;
     private AirCompany airCompany = new MockAirCompany().Get();
     private BookingDesk bookingDesk = airCompany.getBookingDesk(); 
@@ -160,22 +163,33 @@ public class BookingUI {
 		JButton btnNewButton = new JButton("Update");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				autologgerOnOff=false;
+				chckbxNewCheckBox_AutoLogger.setSelected(false);
 				//textArea_FlightTicker.append(airCompany.getLogReport());
 				textArea_FlightSimulator.setText(airCompany.getLogReport());
 				
 			}
 		});
 		
-		JCheckBox chckbxNewCheckBox = new JCheckBox("On/Off");
-		chckbxNewCheckBox.addActionListener(new ActionListener() {
+		chckbxNewCheckBox_OnOff = new JCheckBox("On/Off");
+		chckbxNewCheckBox_OnOff.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				MockAirCompany.flightSimulatorOnOff(chckbxNewCheckBox.isSelected());
+				MockAirCompany.flightSimulatorOnOff(chckbxNewCheckBox_OnOff.isSelected());
 			}
 		});
 		
 		JScrollPane scrollPane_Simulator = new JScrollPane();
+		
+		chckbxNewCheckBox_AutoLogger = new JCheckBox("Autologger");
+		chckbxNewCheckBox_AutoLogger.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(autologgerOnOff)
+					autologgerOnOff=false;
+				else
+					autologgerOnOff=true;
+			}
+		});
 		GroupLayout gl_panel_2 = new GroupLayout(panel_2);
 		gl_panel_2.setHorizontalGroup(
 			gl_panel_2.createParallelGroup(Alignment.LEADING)
@@ -187,7 +201,10 @@ public class BookingUI {
 							.addComponent(lblNewLabel_12)
 							.addPreferredGap(ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
 							.addComponent(btnNewButton))
-						.addComponent(chckbxNewCheckBox))
+						.addGroup(gl_panel_2.createSequentialGroup()
+							.addComponent(chckbxNewCheckBox_OnOff)
+							.addPreferredGap(ComponentPlacement.UNRELATED)
+							.addComponent(chckbxNewCheckBox_AutoLogger)))
 					.addContainerGap())
 		);
 		gl_panel_2.setVerticalGroup(
@@ -198,7 +215,9 @@ public class BookingUI {
 						.addComponent(lblNewLabel_12)
 						.addComponent(btnNewButton))
 					.addPreferredGap(ComponentPlacement.RELATED)
-					.addComponent(chckbxNewCheckBox)
+					.addGroup(gl_panel_2.createParallelGroup(Alignment.BASELINE)
+						.addComponent(chckbxNewCheckBox_OnOff)
+						.addComponent(chckbxNewCheckBox_AutoLogger))
 					.addGap(18)
 					.addComponent(scrollPane_Simulator, GroupLayout.DEFAULT_SIZE, 346, Short.MAX_VALUE)
 					.addGap(12))
