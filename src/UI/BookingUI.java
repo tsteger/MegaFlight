@@ -36,6 +36,7 @@ import javax.swing.JTextPane;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import javax.swing.JTextField;
+import javax.swing.JCheckBox;
 
 public class BookingUI {
 
@@ -53,8 +54,8 @@ public class BookingUI {
     private JTextPane textPane_TotalMenuPrice;
     private JTextPane textPane_TotalFlightPrice;
     private JButton btnButton_BookFlight;
-    private JTextArea textArea_FlightTicker;
-    JTextArea textArea_Booking_Food_And_Flight;
+    private JTextArea textArea_FlightSimulator ;
+    private JTextArea textArea_Booking_Food_And_Flight;
     private AirCompany airCompany = new MockAirCompany().Get();
     private BookingDesk bookingDesk = airCompany.getBookingDesk(); 
     private List<Flight> flights = new ArrayList<>(bookingDesk.getFlights());
@@ -153,32 +154,40 @@ public class BookingUI {
 					.addGap(65))
 		);
 		
-		JLabel lblNewLabel_12 = new JLabel("Flight Ticker");
+		JLabel lblNewLabel_12 = new JLabel("Flightsimulator");
 		lblNewLabel_12.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		
-		textArea_FlightTicker = new JTextArea();
-		textArea_FlightTicker.setEditable(false);
 		
 		JButton btnNewButton = new JButton("Update");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 				//textArea_FlightTicker.append(airCompany.getLogReport());
-				textArea_FlightTicker.setText(airCompany.getLogReport());
+				textArea_FlightSimulator.setText(airCompany.getLogReport());
 				
 			}
 		});
+		
+		JCheckBox chckbxNewCheckBox = new JCheckBox("On/Off");
+		chckbxNewCheckBox.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				MockAirCompany.flightSimulatorOnOff(chckbxNewCheckBox.isSelected());
+			}
+		});
+		
+		JScrollPane scrollPane_Simulator = new JScrollPane();
 		GroupLayout gl_panel_2 = new GroupLayout(panel_2);
 		gl_panel_2.setHorizontalGroup(
 			gl_panel_2.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_panel_2.createSequentialGroup()
 					.addContainerGap()
 					.addGroup(gl_panel_2.createParallelGroup(Alignment.LEADING)
-						.addComponent(textArea_FlightTicker, GroupLayout.PREFERRED_SIZE, 264, GroupLayout.PREFERRED_SIZE)
+						.addComponent(scrollPane_Simulator, GroupLayout.PREFERRED_SIZE, 264, GroupLayout.PREFERRED_SIZE)
 						.addGroup(gl_panel_2.createSequentialGroup()
 							.addComponent(lblNewLabel_12)
-							.addPreferredGap(ComponentPlacement.RELATED, 104, Short.MAX_VALUE)
-							.addComponent(btnNewButton)))
+							.addPreferredGap(ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
+							.addComponent(btnNewButton))
+						.addComponent(chckbxNewCheckBox))
 					.addContainerGap())
 		);
 		gl_panel_2.setVerticalGroup(
@@ -188,10 +197,15 @@ public class BookingUI {
 					.addGroup(gl_panel_2.createParallelGroup(Alignment.BASELINE)
 						.addComponent(lblNewLabel_12)
 						.addComponent(btnNewButton))
-					.addPreferredGap(ComponentPlacement.UNRELATED)
-					.addComponent(textArea_FlightTicker, GroupLayout.DEFAULT_SIZE, 391, Short.MAX_VALUE)
-					.addContainerGap())
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(chckbxNewCheckBox)
+					.addGap(18)
+					.addComponent(scrollPane_Simulator, GroupLayout.DEFAULT_SIZE, 346, Short.MAX_VALUE)
+					.addGap(12))
 		);
+		
+		textArea_FlightSimulator = new JTextArea();
+		scrollPane_Simulator.setViewportView(textArea_FlightSimulator);
 		panel_2.setLayout(gl_panel_2);
 		
 		JButton btnNewCustomer = new JButton("New Customer");
@@ -635,14 +649,4 @@ public class BookingUI {
 		comboBox_passangerClass.addItem(passangerClassList[1].toString());
 						
 	}
-//	public void myTicker() {
-//		SwingUtilities.invokeLater(new Runnable()
-//	    {
-//	        @Override
-//	        public void run()
-//	        {
-//	        	textArea_FlightTicker.setText(airCompany.getLogReport()); 
-//	        }            
-//	    });
-//	}
 }

@@ -4,15 +4,16 @@ import java.util.Iterator;
 import java.util.List;
 
 public class MockAirCompany {
-
-	private AirCompany airCompany =  new AirCompany();
 	
+	public static boolean flightSimulaterOnOff = false;
+	private AirCompany airCompany =  new AirCompany();
+	private static List<AirPlane> planes;
 	public MockAirCompany(){  	
 		airCompany.AddPlane(new AirPlane("Boeing 747", 10)); 
 		airCompany.AddPlane(new AirPlane("Boeing 777", 10)); 
 		airCompany.AddPlane(new AirPlane("Boeing 800", 10)); 
 		
-		List<AirPlane> planes = airCompany.getAirPlanes();
+		planes = airCompany.getAirPlanes();
 		
 		BookingDesk bookingDesk = airCompany.getBookingDesk();
 
@@ -25,19 +26,28 @@ public class MockAirCompany {
 		bookingDesk.setPrices(20000, 5000); 
 		
 		//Simulator
-		PlanesDispatcherSimulator(planes);
+		//flightSimulatorOnOff();
 	}
-	
+	public static void flightSimulatorOnOff(boolean checked) {		
+		if(checked)	{
+			PlanesDispatcherSimulator(planes);
+			flightSimulaterOnOff=true;
+		}
+		else {
+			flightSimulaterOnOff=false;
+		}
+		
+	}
 	public AirCompany Get(){ 
 		return airCompany;
      }
 	
-	public void PlanesDispatcherSimulator(List<AirPlane> planes) {			
-		for (int i = 0; i<planes.size(); i++) {
-		sendOff(planes.get(i), i);
+	public static void PlanesDispatcherSimulator(List<AirPlane> planes) {			
+		for (int i = 0; i<planes.size(); i++) {									
+				sendOff(planes.get(i), planes.size()-i);
 		}
 	}
-	
+
 	public static void sendOff(AirPlane plane, int delay){			
 		if(!plane.getIsInTheAirport()) {	
 			return;	
