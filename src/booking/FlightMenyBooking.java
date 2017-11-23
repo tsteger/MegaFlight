@@ -26,8 +26,8 @@ public class FlightMenyBooking {
 		
 		FlightMenu thisMenu = getCorrectMenu(passangerClass);
 		
-		return "Customer ID: " + customerid + "\nOrdered: " + amount + " " + foodkey + "\nCost: "
-			+ thisMenu.getMenu().get(foodkey).intValue()*amount	+ " kr.\n" + "Total Cost: " + getTotalPrice(foodkey, passangerClass, amount) + "kr.\n";
+		return "\nOrdered: " + amount + " " + foodkey + "\nCost: "
+			+ thisMenu.getMenu().get(foodkey).intValue()*amount	+ " kr.\n" + "Total Cost: " + getTotalPrice(foodkey, passangerClass, amount) + "kr.";
 	
 	}
 	
@@ -35,8 +35,8 @@ public class FlightMenyBooking {
 		
 		FlightMenu thisMenu = getCorrectMenu(passangerClass);
 		
-		return "Customer ID: " + customerid + "\nRemoved: " + amount + " " + foodkey + "\nCost: "
-		+  thisMenu.getMenu().get(foodkey).intValue()	+ " kr.\n" +  "Total Cost: " + getTotalPrice(foodkey, passangerClass, amount) + " kr.\n";
+		return "\nRemoved: " + amount + " " + foodkey + "\nRemoved Cost: "
+		+  thisMenu.getMenu().get(foodkey).intValue()	+ " kr.\n" +  "Total Cost: " + getTotalMinusPrice(foodkey, passangerClass, amount) + " kr.";
 	
 	}
 
@@ -130,7 +130,7 @@ public class FlightMenyBooking {
 			}		
 					}
 		totalCustomerPrice -= (menuPrice*amount);
-		totalCompanyRevenue-= (menuPrice*amount); // need fix
+		totalCompanyRevenue-= (menuPrice*amount); 
 		return totalCustomerPrice;
 	}
 	
