@@ -27,7 +27,7 @@ public class FlightMenyBooking {
 		FlightMenu thisMenu = getCorrectMenu(passangerClass);
 		
 		return "Customer ID: " + customerid + "\nOrdered: " + amount + " " + foodkey + "\nCost: "
-			+ thisMenu.getMenu().get(foodkey).intValue()	+ " kr.\n" + "Total Cost: " + getTotalPrice(foodkey, passangerClass, amount) + "kr.\n";
+			+ thisMenu.getMenu().get(foodkey).intValue()*amount	+ " kr.\n" + "Total Cost: " + getTotalPrice(foodkey, passangerClass, amount) + "kr.\n";
 	
 	}
 	
@@ -94,5 +94,44 @@ public class FlightMenyBooking {
 		totalCompanyRevenue+= (menuPrice*amount); // need fix
 		return totalCustomerPrice;
 
+		
+		
+		
 	}
+	
+	
+	private int getTotalMinusPrice(String foodkey, int passangerClass, int amount) {
+		
+		int menuPrice = 0;
+		
+		if (passangerClass == 1) {
+			Iterator it1 = fmenu.getMenu().entrySet().iterator();
+			while (it1.hasNext()) {
+				Map.Entry pair = (Map.Entry) it1.next();
+				if (pair.getKey().equals(foodkey)) {
+					menuPrice += (Integer) pair.getValue();
+				}
+				
+			}
+			
+		}
+		
+		else {
+			if (passangerClass == 0) {
+				Iterator<Map.Entry<String, Integer>> it1 = smenu.getMenu().entrySet().iterator();
+				while (it1.hasNext()) {
+					Map.Entry<String, Integer> pair = (Map.Entry) it1.next();
+					if (pair.getKey().equals(foodkey)) {
+						menuPrice += (Integer) pair.getValue();
+		
+						
+					}
+				}	
+			}		
+					}
+		totalCustomerPrice -= (menuPrice*amount);
+		totalCompanyRevenue-= (menuPrice*amount); // need fix
+		return totalCustomerPrice;
+	}
+	
 }
