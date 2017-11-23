@@ -79,7 +79,7 @@ public class BookingDesk {
 	return flight.getAirplane().getIsInTheAirport();	
 	}
 		
-	public String bookFoodMeny() {
+	public String bookFoodMenu() {
 		// TODO Auto-generated method stub
 		
 		return null;

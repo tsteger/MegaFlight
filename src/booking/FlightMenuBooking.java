@@ -3,7 +3,7 @@ package booking;
 import java.util.Iterator;
 import java.util.Map;
 
-public class FlightMenyBooking {
+public class FlightMenuBooking {
 
 	FlightMenu fmenu = new FlightMenu(SeatClass.FIRST);
 	FlightMenu smenu = new FlightMenu(SeatClass.ECONOMY);
