@@ -36,7 +36,7 @@ public class FlightMenyBooking {
 		FlightMenu thisMenu = getCorrectMenu(passangerClass);
 		
 		return "\nRemoved: " + amount + " " + foodkey + "\nRemoved Cost: "
-		+  thisMenu.getMenu().get(foodkey).intValue()	+ " kr.\n" +  "Total Cost: " + getTotalMinusPrice(foodkey, passangerClass, amount) + " kr.";
+		+  thisMenu.getMenu().get(foodkey).intValue()*amount	+ " kr.\n" +  "Total Cost: " + getTotalMinusPrice(foodkey, passangerClass, amount) + " kr.";
 	
 	}
 
