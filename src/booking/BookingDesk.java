@@ -61,9 +61,9 @@ public class BookingDesk {
 		int total=numberOfSeats*price;
 		totalFlightCost+=total;
 		totalCustomerCost+=total;
-		
+		// Removed line: +"\nTotal: " + totalCustomerCost
 		returnString = String.format(
-				"\nBOOKED: "+ "\nFlight: "+ flight.getName()+"\nSeat(s): " + numberOfSeats +", %s" +"\nCost: "+ total +"\nTotal: " + totalCustomerCost,
+				"\nBOOKED: "+ "\nFlight: "+ flight.getName()+"\nSeat(s): " + numberOfSeats +", %s" +"\nCost: "+ total+" SEK" ,
 			                      	className);	
 		} else {
 			int availableSeatsOfTheClass = seatClassIndex==0 ? flight.getNumberOfSeatsEconomyClassAvailable() : flight.getNumberOfSeatsFirstClassAvailable();

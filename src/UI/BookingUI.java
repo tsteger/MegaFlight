@@ -455,6 +455,7 @@ public class BookingUI {
 		comboBox_food_meny.setEnabled(false);
 		
 		spinner_foodQuantity = new JSpinner();
+		spinner_foodQuantity.setModel(new SpinnerNumberModel(new Integer(0), new Integer(0), null, new Integer(1)));
 		spinner_foodQuantity.setEnabled(false);
 		
 		btnAdd_Food = new JButton("Add");

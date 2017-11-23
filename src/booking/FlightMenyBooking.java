@@ -25,18 +25,18 @@ public class FlightMenyBooking {
 	public String foodMenuOrderItems(int customerid, String foodkey, int amount, int passangerClass) {
 		
 		FlightMenu thisMenu = getCorrectMenu(passangerClass);
-		
+		getTotalPrice(foodkey, passangerClass, amount); // was a line in return like:  + "Total Cost: " + getTotalPrice(foodkey, passangerClass, amount) + "kr."
 		return "\nOrdered: " + amount + " " + foodkey + "\nCost: "
-			+ thisMenu.getMenu().get(foodkey).intValue()*amount	+ " kr.\n" + "Total Cost: " + getTotalPrice(foodkey, passangerClass, amount) + "kr.";
+			+ thisMenu.getMenu().get(foodkey).intValue()*amount	+ " SEK.";
 	
 	}
 	
 	public String foodMenuUnOrderItems(int customerid, String foodkey, int amount, int passangerClass) {
-		
+		 
 		FlightMenu thisMenu = getCorrectMenu(passangerClass);
-		
+		getTotalMinusPrice(foodkey, passangerClass, amount);// was a line in return like: +  "Total Cost: " + getTotalMinusPrice(foodkey, passangerClass, amount) + " kr."
 		return "\nRemoved: " + amount + " " + foodkey + "\nRemoved Cost: "
-		+  thisMenu.getMenu().get(foodkey).intValue()*amount	+ " kr.\n" +  "Total Cost: " + getTotalMinusPrice(foodkey, passangerClass, amount) + " kr.";
+		+  thisMenu.getMenu().get(foodkey).intValue()*amount	+ " SEK." ;
 	
 	}
 
