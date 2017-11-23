@@ -1,5 +1,6 @@
 package booking;
 
+import java.util.Iterator;
 import java.util.List;
 
 public class MockAirCompany {
@@ -24,24 +25,25 @@ public class MockAirCompany {
 		bookingDesk.setPrices(20000, 5000); 
 		
 		//Simulator
-		PlaneDispatcherSimulator(planes);
+		PlanesDispatcherSimulator(planes);
 	}
 	
 	public AirCompany Get(){ 
 		return airCompany;
      }
 	
-	public void PlaneDispatcherSimulator(List<AirPlane> planes) {	
-		sendOff(planes.get(0));
-		sendOff(planes.get(0));
+	public void PlanesDispatcherSimulator(List<AirPlane> planes) {			
+		for (int i = 0; i<planes.size(); i++) {
+		sendOff(planes.get(i), i);
+		}
 	}
 	
-	public static void sendOff(AirPlane plane){			
+	public static void sendOff(AirPlane plane, int delay){			
 		if(!plane.getIsInTheAirport()) {	
 			return;	
 		}
 		
-		FlySimulator flySimulator = new FlySimulator(plane);
+		AirPlaneFlyingSimulator flySimulator = new AirPlaneFlyingSimulator(plane, delay);
 		Thread thr = new Thread(flySimulator);
 		thr.start();
 	}

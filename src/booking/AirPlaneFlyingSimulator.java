@@ -3,23 +3,26 @@ package booking;
 import java.time.LocalDateTime;
 import java.util.TimerTask;
 
-public class FlySimulator extends TimerTask {
+public class AirPlaneFlyingSimulator extends TimerTask {
 	private AirPlane plane;
+	private int delay;
 		
-	public FlySimulator(AirPlane plane) {
+	public AirPlaneFlyingSimulator(AirPlane plane, int delay) {
 		this.plane = plane;
+		this.delay = delay;
 	}
 
 	@Override
     public void run() { 
 		synchronized(plane) {
+		toWait(delay * 20); 	
 		plane.setIsInTheAirport(false);			
 		plane.addLog(String.format("\nTake-Off: %s", LocalDateTime.now().toString()));
 				
 		plane.addLog("\nFlying:");
 		for(int i=1; i<=6;i++) { // 1 minute
 			plane.addLog(" ... ");
-			toFly(10);        
+			toWait(10);        
 		}
 		
 		plane.addLog(String.format("\nLanding: %s", LocalDateTime.now().toString()));
@@ -28,7 +31,7 @@ public class FlySimulator extends TimerTask {
 		}
     }
 
-    private void toFly(int time) {
+    private void toWait(int time) {
         try {
         	Thread.sleep(time * 1000);
         } catch (InterruptedException e) {
