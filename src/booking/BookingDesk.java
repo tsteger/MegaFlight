@@ -9,6 +9,12 @@ public class BookingDesk {
 	private List<Flight> flights = new ArrayList<>();	
 	private SeatPrices pricelist = new SeatPrices();
 	
+	private FlightMenuBooking menu = new FlightMenuBooking();
+	
+	public FlightMenuBooking getMenu() {
+		return menu;
+	}
+
 	private int totalIncomeTickets;  
 	private int totalCustomerCostTickets;
 	

@@ -63,8 +63,9 @@ public class BookingUI {
     private BookingDesk bookingDesk = airCompany.getBookingDesk(); 
     private List<Flight> flights = new ArrayList<>(bookingDesk.getFlights());
     
-    private FlightMenuBooking menu = new FlightMenuBooking();
-
+  //  private FlightMenuBooking menu = new FlightMenuBooking();
+    private FlightMenuBooking menu = bookingDesk.getMenu();
+    
     private Customer newCustomer;
    
 	private JTextField textField_Customer_Id;
@@ -74,13 +75,10 @@ public class BookingUI {
 	//private int totalFoadCostForAllCustomers;
     
 
-	public BookingUI() {
-		
+	public BookingUI() {		
 		initialize();
 		setupFoodMenu(0); // init setup of food menu .. maybe not here ... later
-	    loadData();
-	   
-	    
+	    loadData();	    
 	}
 
 	
@@ -340,16 +338,11 @@ public class BookingUI {
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			
-				//double totalcost =bookingDesk.getTotalFlightCost();
-				double totalIncomeTickets =bookingDesk.getTotalIncomeTickets();
+				double totalIncome = airCompany.getTotalIncome();				
+				double totalProfit = airCompany.getTotalProfit();
 				
-//				double totalMenuCost = menu.getTotalCompanyEarnedAmount();
-				double totalIncomeFood = menu.getTotalIncomeFood();
-				
-				textPane_TotalIncome.setText(Double.toString(totalIncomeTickets+totalIncomeFood)+" SEK");
-				textPane_Profit.setText(Double.toString((totalIncomeTickets+totalIncomeFood)*0.3)+" SEK");
-
-				
+				textPane_TotalIncome.setText(Double.toString(totalIncome)+" SEK");
+				textPane_Profit.setText(Double.toString(totalProfit)+" SEK");				
 			}
 		});
 		

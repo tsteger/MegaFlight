@@ -6,6 +6,19 @@ import java.util.List;
 public class AirCompany {
 	private List<AirPlane> airPlanes = new ArrayList<AirPlane>(); 	
 	private BookingDesk bookingDesk = new BookingDesk();
+	
+	double totalIncome = 0.0;
+	
+public double getTotalIncome(){
+		double totalIncomeTickets = bookingDesk.getTotalIncomeTickets();				
+		double totalIncomeFood = bookingDesk.getMenu().getTotalIncomeFood();
+		
+		return totalIncomeTickets+totalIncomeFood;
+	}
+	
+public double getTotalProfit(){	
+	return getTotalIncome() * 0.3 ;
+}
 		
 public BookingDesk getBookingDesk() {
 	return bookingDesk;
