@@ -5,18 +5,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookingDesk {
-	//---- Flights thread ---------------------------------------
 	
-	//-----------------------------------------------------------
 	private List<Flight> flights = new ArrayList<>();	
 	private SeatPrices pricelist = new SeatPrices();
 	
-	int totalFlightCost;
-	int totalCustomerCost;
+	private int totalIncomeTickets;  
+	private int totalCustomerCostTickets;
 	
 	public BookingDesk() {		
-		totalFlightCost=0;
-		totalCustomerCost=0;
+		totalIncomeTickets=0;
+		totalCustomerCostTickets=0;
 	}
 		
 	public List<Flight> getFlights() {
@@ -31,18 +29,19 @@ public class BookingDesk {
 		pricelist.setFirstClassTicketPrice(firstClassPrice);
 		pricelist.setEconomyClassTicketPrice(economyClassPrice);
 	}
-		
-	public int getTotalFlightCost() {
-		return totalFlightCost;
+	
+	public int getTotalIncomeTickets() {
+		return totalIncomeTickets;
 	}
-	public void resetTotalCustomerCost() {
-		totalCustomerCost=0;		
-	}
-
-	public int getTotalCustomerCost() {
-		return totalCustomerCost;
+	
+	public void resetTotalCustomerCostTickets() {
+		totalCustomerCostTickets=0;		
 	}
 
+	public int getTotalCustomerCostTickets() {
+		return totalCustomerCostTickets;
+	}
+	
 	public String bookFlightAndSeats(int flightIndex, int seatClassIndex, int numberOfSeats) {
 
 		String returnString = "";
@@ -59,9 +58,8 @@ public class BookingDesk {
 		if(isPossibleToBook) {		
 		int price = seatClassIndex==0 ? pricelist.getEconomyClassTicketPrice() : pricelist.getFirstClassTicketPrice();
 		int total=numberOfSeats*price;
-		totalFlightCost+=total;
-		totalCustomerCost+=total;
-		// Removed line: +"\nTotal: " + totalCustomerCost
+		totalIncomeTickets+=total;
+		totalCustomerCostTickets+=total;		
 		returnString = String.format(
 				"\nBOOKED: "+ "\nFlight: "+ flight.getName()+"\nSeat(s): " + numberOfSeats +", %s" +"\nCost: "+ total+" SEK" ,
 			                      	className);	
