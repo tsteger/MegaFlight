@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_fmsHYNEDEeeYto9s6-HOGQ" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_fmsHYdEDEeeYto9s6-HOGQ" source="codegen">
         <details xmi:id="_fmsHYtEDEeeYto9s6-HOGQ" key="codegenDirectory" value="/MegaFlight/src"/>
-        <details xmi:id="_gZrqkNEDEeeYto9s6-HOGQ" key="AssociatedSourceCode" value="/MegaFlight/src/UI/BookingUI.java;2773615308/1;/MegaFlight/src/UI/MegaFlightMain.java;2882960351/1;/MegaFlight/src/booking/AirCompany.java;697264192/1;/MegaFlight/src/booking/AirPlane.java;2833691470/1;/MegaFlight/src/booking/AirPlaneFlyingSimulator.java;1586391472/1;/MegaFlight/src/booking/BookingDesk.java;615558347/1;/MegaFlight/src/booking/Customer.java;1387144229/1;/MegaFlight/src/booking/Flight.java;3799996786/1;/MegaFlight/src/booking/FlightMenu.java;1468706168/1;/MegaFlight/src/booking/FlightMenuBooking.java;3736067189/1;/MegaFlight/src/booking/MockAirCompany.java;3421212055/1;/MegaFlight/src/booking/SeatClass.java;2635046083/1;/MegaFlight/src/booking/SeatPrices.java;330476376/1;/MegaFlight/src/booking/SeatsBooking.java;2794138922/1;"/>
+        <details xmi:id="_gZrqkNEDEeeYto9s6-HOGQ" key="AssociatedSourceCode" value="/MegaFlight/src/UI/BookingUI.java;3108476441/1;/MegaFlight/src/UI/MegaFlightMain.java;2882960351/1;/MegaFlight/src/booking/AirCompany.java;1537281538/1;/MegaFlight/src/booking/AirPlane.java;2833691470/1;/MegaFlight/src/booking/AirPlaneFlyingSimulator.java;1586391472/1;/MegaFlight/src/booking/BookingDesk.java;615558347/1;/MegaFlight/src/booking/Customer.java;1387144229/1;/MegaFlight/src/booking/Flight.java;3799996786/1;/MegaFlight/src/booking/FlightMenu.java;1468706168/1;/MegaFlight/src/booking/FlightMenuBooking.java;3736067189/1;/MegaFlight/src/booking/MockAirCompany.java;3421212055/1;/MegaFlight/src/booking/SeatClass.java;2635046083/1;/MegaFlight/src/booking/SeatPrices.java;330476376/1;/MegaFlight/src/booking/SeatsBooking.java;2794138922/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_f2k9gNEDEeeYto9s6-HOGQ">
@@ -99,18 +99,19 @@
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9Vs09EDEeeYto9s6-HOGQ" value="0.0"/>
         </ownedAttribute>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9s5M9EDEeeYto9s6-HOGQ" name="getTotalIncome" specification="_f4HOkNEDEeeYto9s6-HOGQ">
-          <ownedParameter xmi:id="_f9s5NNEDEeeYto9s6-HOGQ" direction="return">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          <ownedParameter xmi:id="_q_q1ANEHEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
           <language>java</language>
-          <body>double totalIncomeTickets = bookingDesk.getTotalIncomeTickets();				&#xD;
-		double totalIncomeFood = bookingDesk.getMenu().getTotalIncomeFood();&#xD;
+          <body>int totalIncomeTickets = bookingDesk.getTotalIncomeTickets();				&#xD;
+		int totalIncomeFood = bookingDesk.getMenu().getTotalIncomeFood();&#xD;
 		&#xD;
 		return totalIncomeTickets+totalIncomeFood;&#xD;
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9s5NdEDEeeYto9s6-HOGQ" name="getTotalProfit" specification="_f4H1oNEDEeeYto9s6-HOGQ">
           <ownedParameter xmi:id="_f9s5NtEDEeeYto9s6-HOGQ" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
           </ownedParameter>
           <language>java</language>
@@ -125,6 +126,7 @@
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9tgQtEDEeeYto9s6-HOGQ" name="getLogReport" specification="_f4IcsNEDEeeYto9s6-HOGQ">
           <ownedParameter xmi:id="_f9tgQ9EDEeeYto9s6-HOGQ" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
           <language>java</language>
@@ -140,7 +142,7 @@
         </ownedBehavior>
         <ownedOperation xmi:id="_f4HOkNEDEeeYto9s6-HOGQ" name="getTotalIncome" method="_f9s5M9EDEeeYto9s6-HOGQ">
           <ownedParameter xmi:id="_f4HOkdEDEeeYto9s6-HOGQ" direction="return">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
         </ownedOperation>
         <ownedOperation xmi:id="_f4H1oNEDEeeYto9s6-HOGQ" name="getTotalProfit" method="_f9s5NdEDEeeYto9s6-HOGQ">
@@ -344,14 +346,16 @@
         <ownedAttribute xmi:id="_f9alUdEDEeeYto9s6-HOGQ" name="menu" type="_f4khkNEDEeeYto9s6-HOGQ" isReadOnly="true" association="_f-KMMdEDEeeYto9s6-HOGQ">
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9alUtEDEeeYto9s6-HOGQ" value="new FlightMenuBooking()"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_f9alU9EDEeeYto9s6-HOGQ" name="totalIncomeTickets" isReadOnly="true">
+        <ownedAttribute xmi:id="_f9alU9EDEeeYto9s6-HOGQ" name="totalIncomeTickets" visibility="public" isReadOnly="true">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_f9alVNEDEeeYto9s6-HOGQ" name="totalCustomerCostTickets" isReadOnly="true">
+        <ownedAttribute xmi:id="_f9alVNEDEeeYto9s6-HOGQ" name="totalCustomerCostTickets" visibility="public" isReadOnly="true">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedAttribute>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9uuYNEDEeeYto9s6-HOGQ" name="BookingDesk" specification="_f4V4ENEDEeeYto9s6-HOGQ">
-          <ownedParameter xmi:id="_f9uuYdEDEeeYto9s6-HOGQ" type="_f4Up8NEDEeeYto9s6-HOGQ" direction="return"/>
+          <ownedParameter xmi:id="_f9uuYdEDEeeYto9s6-HOGQ" type="_f4Up8NEDEeeYto9s6-HOGQ" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>totalIncomeTickets=0;&#xD;
 		totalCustomerCostTickets=0;&#xD;
@@ -391,6 +395,7 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
           <ownedParameter xmi:id="_f9vVdNEDEeeYto9s6-HOGQ" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
           <language>java</language>
@@ -426,6 +431,7 @@
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9vVddEDEeeYto9s6-HOGQ" name="isPlaneInAirportByFlight" specification="_f8xFENEDEeeYto9s6-HOGQ">
           <ownedParameter xmi:id="_f9vVdtEDEeeYto9s6-HOGQ" name="flight" type="_f4dM0NEDEeeYto9s6-HOGQ"/>
           <ownedParameter xmi:id="_f9vVd9EDEeeYto9s6-HOGQ" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
           </ownedParameter>
           <language>java</language>
@@ -434,6 +440,7 @@
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9vVeNEDEeeYto9s6-HOGQ" name="bookFoodMenu" specification="_f4XtQdEDEeeYto9s6-HOGQ">
           <ownedParameter xmi:id="_f9vVedEDEeeYto9s6-HOGQ" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedParameter>
           <language>java</language>
@@ -1222,7 +1229,9 @@
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9UesdEDEeeYto9s6-HOGQ" value="0"/>
         </ownedAttribute>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9p14NEDEeeYto9s6-HOGQ" name="BookingUI" specification="_f32I0NEDEeeYto9s6-HOGQ">
-          <ownedParameter xmi:id="_f9p14dEDEeeYto9s6-HOGQ" type="_f3tl8NEDEeeYto9s6-HOGQ" direction="return"/>
+          <ownedParameter xmi:id="_f9p14dEDEeeYto9s6-HOGQ" type="_f3tl8NEDEeeYto9s6-HOGQ" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>initialize();&#xD;
 		setupFoodMenu(0); // init setup of food menu .. maybe not here ... later&#xD;
@@ -1612,24 +1621,14 @@
 		btnAdd_Food.addActionListener(new ActionListener() {&#xD;
 			public void actionPerformed(ActionEvent e) {&#xD;
 				&#xD;
-&#xD;
 				String food_menu = menu.foodMenuOrderItems(customerID,comboBox_food_menu.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());&#xD;
-				&#xD;
-				&#xD;
+								&#xD;
 				textArea_Booking_Food_And_Flight.append(food_menu+&quot;\n&quot;);&#xD;
 &#xD;
-				double totalMenuCost = menu.getTotalIncomeFood();&#xD;
-				double totalcost =bookingDesk.getTotalIncomeTickets();&#xD;
-				textPane_TotalIncome.setText(Double.toString(totalcost+totalMenuCost)+&quot; SEK&quot;);&#xD;
-				textPane_Profit.setText(Double.toString((totalcost+totalMenuCost)*0.3)+&quot; SEK&quot;);&#xD;
-&#xD;
-				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()));&#xD;
-				textPane_TotalMenuPrice.setText(Integer.toString(menu.GetTotalCustomerCostFood()));&#xD;
-				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()+menu.GetTotalCustomerCostFood()));&#xD;
-&#xD;
+				UpdateAccounts();&#xD;
 			}&#xD;
 		});&#xD;
-		&#xD;
+				&#xD;
 		btnRemove_Food = new JButton(&quot;Remove&quot;);&#xD;
 		btnRemove_Food.setEnabled(false);&#xD;
 		btnRemove_Food.addActionListener(new ActionListener() {&#xD;
@@ -1639,17 +1638,10 @@
 				&#xD;
 				textArea_Booking_Food_And_Flight.append(food_menu+&quot;\n&quot;);&#xD;
 			&#xD;
-				double totalMenuCost = menu.getTotalIncomeFood();&#xD;
-				double totalcost =bookingDesk.getTotalIncomeTickets();&#xD;
-				textPane_TotalIncome.setText(Double.toString(totalcost+totalMenuCost)+&quot; SEK&quot;);&#xD;
-				textPane_Profit.setText(Double.toString((totalcost+totalMenuCost)*0.3)+&quot; SEK&quot;);&#xD;
-&#xD;
-				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()));&#xD;
-				textPane_TotalMenuPrice.setText(Integer.toString(menu.GetTotalCustomerCostFood()));&#xD;
-				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()+menu.GetTotalCustomerCostFood()));&#xD;
-&#xD;
+				UpdateAccounts();&#xD;
 			}&#xD;
 		});&#xD;
+		&#xD;
 		GroupLayout gl_panel_food = new GroupLayout(panel_food);&#xD;
 		gl_panel_food.setHorizontalGroup(&#xD;
 			gl_panel_food.createParallelGroup(Alignment.LEADING)&#xD;
@@ -1724,15 +1716,7 @@
 			&#xD;
 				textArea_Booking_Food_And_Flight.append(sRetInfo+&quot;\n&quot;);&#xD;
 				&#xD;
-				double totalMenuCost = menu.getTotalIncomeFood();&#xD;
-				double totalcost =bookingDesk.getTotalIncomeTickets();&#xD;
-				textPane_TotalIncome.setText(Double.toString(totalcost+totalMenuCost)+&quot; SEK&quot;);&#xD;
-				textPane_Profit.setText(Double.toString((totalcost+totalMenuCost)*0.3)+&quot; SEK&quot;);&#xD;
-&#xD;
-				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets())); &#xD;
-				textPane_TotalMenuPrice.setText(Integer.toString(menu.GetTotalCustomerCostFood()));&#xD;
-				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()+menu.GetTotalCustomerCostFood()));&#xD;
-&#xD;
+				UpdateAccounts();&#xD;
 			}&#xD;
 		});&#xD;
 		GroupLayout gl_panel_flight = new GroupLayout(panel_flight);&#xD;
@@ -1825,6 +1809,20 @@
 						&#xD;
 	</body>
         </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_bJD2wNEJEeeYto9s6-HOGQ" name="UpdateAccounts" specification="_bJBagNEJEeeYto9s6-HOGQ">
+          <language>java</language>
+          <body>int totalIncome = airCompany.getTotalIncome();&#xD;
+		double totalProfit = airCompany.getTotalProfit();&#xD;
+		textPane_TotalIncome.setText(Double.toString(totalIncome)+&quot; SEK&quot;);&#xD;
+		textPane_Profit.setText(Double.toString(totalProfit)+&quot; SEK&quot;);&#xD;
+		&#xD;
+		int totalCustomerCostTickets = bookingDesk.getTotalCustomerCostTickets();&#xD;
+		int totalCustomerCostFood = menu.GetTotalCustomerCostFood();				&#xD;
+		textPane_TotalFlightPrice.setText(Integer.toString(totalCustomerCostTickets));&#xD;
+		textPane_TotalMenuPrice.setText(Integer.toString(totalCustomerCostFood));&#xD;
+		textPane_TotalSum.setText(Integer.toString(totalCustomerCostTickets + totalCustomerCostFood));			&#xD;
+	</body>
+        </ownedBehavior>
         <ownedOperation xmi:id="_f32I0NEDEeeYto9s6-HOGQ" name="BookingUI" method="_f9p14NEDEeeYto9s6-HOGQ">
           <eAnnotations xmi:id="_f33W8NEDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_f33W8dEDEeeYto9s6-HOGQ" key="create"/>
@@ -1842,6 +1840,7 @@
           </ownedParameter>
         </ownedOperation>
         <ownedOperation xmi:id="_f34lEtEDEeeYto9s6-HOGQ" name="loadData" method="_f9sSI9EDEeeYto9s6-HOGQ"/>
+        <ownedOperation xmi:id="_bJBagNEJEeeYto9s6-HOGQ" name="UpdateAccounts" visibility="private" method="_bJD2wNEJEeeYto9s6-HOGQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_f4EyUNEDEeeYto9s6-HOGQ" name="MegaFlightMain">
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9s5MNEDEeeYto9s6-HOGQ" name="main" specification="_f4FZYNEDEeeYto9s6-HOGQ">

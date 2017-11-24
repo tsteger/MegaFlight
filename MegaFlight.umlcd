@@ -59,6 +59,8 @@
     </sourceRole>
     <targetRole xmi:id="_hP-ZZtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="logReport" navigable="true">
       <modelElement href="MegaFlight.uml#_f9XiAtEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mR2F4NEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mdCpQNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hP-ZZ9EDEeeYto9s6-HOGQ" label="+"/>
       <cardinality xmi:id="_hP-ZaNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -80,6 +82,8 @@
     <targetRole xmi:id="_hQ_tEtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="plane" navigable="true">
       <modelElement href="MegaFlight.uml#_f9YwINEDEeeYto9s6-HOGQ"/>
       <visualProperties xmi:id="_hxP6cNEDEeeYto9s6-HOGQ" position="-48.0,-50.0"/>
+      <stereotypes xmi:id="_mR_P0NEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mcdacNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hRBiQ9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hRBiQtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -122,6 +126,8 @@
     <targetRole xmi:id="_hRomRtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="pricelist" navigable="true">
       <modelElement href="MegaFlight.uml#_f9Z-Q9EDEeeYto9s6-HOGQ"/>
       <visualProperties xmi:id="_hxSWsdEDEeeYto9s6-HOGQ" position="-101.19999999999982,2.5"/>
+      <stereotypes xmi:id="_mSQ8oNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mb-5UNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hRomR9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hRomSNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -235,6 +241,8 @@
     <targetRole xmi:id="_hXFG8tEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="airCompany" navigable="true">
       <modelElement href="MegaFlight.uml#_f9ihIdEDEeeYto9s6-HOGQ"/>
       <visualProperties xmi:id="_hxX2QdEDEeeYto9s6-HOGQ" position="5.0,-49.0"/>
+      <stereotypes xmi:id="_mSkeoNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mY5JENEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hXGVE9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hXGVEtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -256,6 +264,8 @@
     <targetRole xmi:id="_hXFG9tEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="planes" navigable="true">
       <modelElement href="MegaFlight.uml#_f9ihJNEDEeeYto9s6-HOGQ"/>
       <visualProperties xmi:id="_hxZEYNEDEeeYto9s6-HOGQ" position="1.0,5.0"/>
+      <stereotypes xmi:id="_mSyhENEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mYlAANEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hXIKQdEDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hXIKQNEDEeeYto9s6-HOGQ" label="1..*" max="-1" min="1"/>
     </targetRole>
@@ -279,6 +289,8 @@
     <targetRole xmi:id="_hcpjctEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="airCompany" navigable="true">
       <modelElement href="MegaFlight.uml#_f9Q0UtEDEeeYto9s6-HOGQ"/>
       <visualProperties xmi:id="_hxZrcdEDEeeYto9s6-HOGQ" position="-92.0,-50.0"/>
+      <stereotypes xmi:id="_mMV60NEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mU2WkNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdJ5w9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdJ5wtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -301,6 +313,8 @@
     <targetRole xmi:id="_hcpjdtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="bookingDesk" navigable="true">
       <modelElement href="MegaFlight.uml#_f9RbYdEDEeeYto9s6-HOGQ"/>
       <visualProperties xmi:id="_hxa5kdEDEeeYto9s6-HOGQ" position="-85.5,-85.08333333333337"/>
+      <stereotypes xmi:id="_mMrSANEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mUkpwNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdJ5yNEDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdJ5x9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -322,6 +336,8 @@
     <targetRole xmi:id="_hcqKgNEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="flights" navigable="true">
       <modelElement href="MegaFlight.uml#_f9RbZNEDEeeYto9s6-HOGQ"/>
       <visualProperties xmi:id="_hxcHsNEDEeeYto9s6-HOGQ" position="-50.0,-50.0"/>
+      <stereotypes xmi:id="_mNDFcNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mUGvsNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdKg1NEDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdKg09EDEeeYto9s6-HOGQ" label="1..*" max="-1" min="1"/>
     </targetRole>
@@ -343,6 +359,8 @@
     <targetRole xmi:id="_hcqKhNEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="menu" navigable="true">
       <modelElement href="MegaFlight.uml#_f9SCc9EDEeeYto9s6-HOGQ"/>
       <visualProperties xmi:id="_hxdV0NEDEeeYto9s6-HOGQ" position="-51.0,3.0"/>
+      <stereotypes xmi:id="_mNX1kNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mTwKYNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdKg2dEDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdKg2NEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -364,6 +382,8 @@
     <targetRole xmi:id="_hcqKiNEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="newCustomer" navigable="true">
       <modelElement href="MegaFlight.uml#_f9SpgtEDEeeYto9s6-HOGQ"/>
       <visualProperties xmi:id="_hxd84dEDEeeYto9s6-HOGQ" position="5.0,-49.0"/>
+      <stereotypes xmi:id="_mNtz0NEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mTbaQNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdKg3tEDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdKg3dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -382,6 +402,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdOyRtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="frame" navigable="true">
       <modelElement href="MegaFlight.uml#_f9IRcNEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mItYANEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mXk6cNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdOyR9EDEeeYto9s6-HOGQ" label="+"/>
       <cardinality xmi:id="_hdOySNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -399,6 +421,12 @@
     </sourceRole>
     <targetRole xmi:id="_hdPZVtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="comboBox_flight" navigable="true">
       <modelElement href="MegaFlight.uml#_f9JfkNEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mIv0QNEFEeeYto9s6-HOGQ" name="Generics"/>
+      <stereotypes xmi:id="_mI3wENEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mJKD8NEFEeeYto9s6-HOGQ" name="Generics"/>
+      <stereotypes xmi:id="_mJR_wNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mXW4ANEFEeeYto9s6-HOGQ" name="Generics"/>
+      <stereotypes xmi:id="_mXc-oNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdPZV9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdPZWNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -416,6 +444,12 @@
     </sourceRole>
     <targetRole xmi:id="_hdQAZtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="comboBox_passangerClass" navigable="true">
       <modelElement href="MegaFlight.uml#_f9KGodEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mJbwwNEFEeeYto9s6-HOGQ" name="Generics"/>
+      <stereotypes xmi:id="_mJjskNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mJroYNEFEeeYto9s6-HOGQ" name="Generics"/>
+      <stereotypes xmi:id="_mJzkMNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mXDWANEFEeeYto9s6-HOGQ" name="Generics"/>
+      <stereotypes xmi:id="_mXPjQNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdQAZ9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdQAaNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -433,6 +467,12 @@
     </sourceRole>
     <targetRole xmi:id="_hdQndtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="comboBox_food_menu" navigable="true">
       <modelElement href="MegaFlight.uml#_f9KtstEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mJ8HENEFEeeYto9s6-HOGQ" name="Generics"/>
+      <stereotypes xmi:id="_mKEC4NEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mKNM0NEFEeeYto9s6-HOGQ" name="Generics"/>
+      <stereotypes xmi:id="_mKVvsNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mW0sgNEFEeeYto9s6-HOGQ" name="Generics"/>
+      <stereotypes xmi:id="_mW8BQNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdQnd9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdQneNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -450,6 +490,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdROhtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="spinner_ticketsQuantity" navigable="true">
       <modelElement href="MegaFlight.uml#_f9LUwtEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mKdrgNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mWt-0NEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdROh9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdROiNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -467,6 +509,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdR1ltEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="spinner_foodQuantity" navigable="true">
       <modelElement href="MegaFlight.uml#_f9L70dEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mKmOYNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mWmDANEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdR1l9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdR1mNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -484,6 +528,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdR1n9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="btnAdd_Food" navigable="true">
       <modelElement href="MegaFlight.uml#_f9Mi4NEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mKuxQNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mWeuQNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdR1oNEDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdR1odEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -501,6 +547,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdTDttEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="btnRemove_Food" navigable="true">
       <modelElement href="MegaFlight.uml#_f9Mi4tEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mK3UINEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mWWLYNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdTDt9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdTDuNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -518,6 +566,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdTqxtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textPane_TotalIncome" navigable="true">
       <modelElement href="MegaFlight.uml#_f9NJ8dEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mK_3ANEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mWO2oNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdTqx9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdTqyNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -535,6 +585,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdUR1tEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textPane_Profit" navigable="true">
       <modelElement href="MegaFlight.uml#_f9NJ89EDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mLIZ4NEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mWII8NEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdUR19EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdUR2NEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -552,6 +604,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdU45tEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textPane_TotalSum" navigable="true">
       <modelElement href="MegaFlight.uml#_f9NxAdEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mLQ8wNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mWANINEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdU459EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdU46NEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -569,6 +623,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdVf9tEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textPane_TotalMenuPrice" navigable="true">
       <modelElement href="MegaFlight.uml#_f9OYENEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mLZfoNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mV44YNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdVf99EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdVf-NEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -586,6 +642,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdWHBtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textPane_TotalFlightPrice" navigable="true">
       <modelElement href="MegaFlight.uml#_f9OYEtEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mLg0YNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mVw8kNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdWHB9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdWHCNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -603,6 +661,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdWuFtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="btnButton_BookFlight" navigable="true">
       <modelElement href="MegaFlight.uml#_f9O_INEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mLpXQNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mVpn0NEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdWuF9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdWuGNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -620,6 +680,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdXVJtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="chckbxNewCheckBox_OnOff" navigable="true">
       <modelElement href="MegaFlight.uml#_f9O_ItEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mLyhMNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mVhE8NEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdXVJ9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdXVKNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -637,6 +699,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdYjRtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="chckbxNewCheckBox_AutoLogger" navigable="true">
       <modelElement href="MegaFlight.uml#_f9PmMdEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mL7EENEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mVX7ANEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdYjR9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdYjSNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -654,6 +718,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdZKVtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textArea_FlightSimulator" navigable="true">
       <modelElement href="MegaFlight.uml#_f9QNQtEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mMDm8NEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mVQmQNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdZKV9EDEeeYto9s6-HOGQ" label="+"/>
       <cardinality xmi:id="_hdZKWNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -671,6 +737,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdZxZtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textArea_Booking_Food_And_Flight" navigable="true">
       <modelElement href="MegaFlight.uml#_f9Q0UNEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mMNX8NEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mVJRgNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdZxZ9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdZxaNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -688,6 +756,8 @@
     </sourceRole>
     <targetRole xmi:id="_hda_htEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textField_Customer_Id" navigable="true">
       <modelElement href="MegaFlight.uml#_f9TQkdEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mRgusNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mTUFgNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hda_h9EDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hda_iNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -705,6 +775,8 @@
     </sourceRole>
     <targetRole xmi:id="_hda_j9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textField_FirstName" navigable="true">
       <modelElement href="MegaFlight.uml#_f9TQk9EDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mRm1UNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mTMwwNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hda_kNEDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hda_kdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -722,6 +794,8 @@
     </sourceRole>
     <targetRole xmi:id="_hdcNpdEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textField_LastName" navigable="true">
       <modelElement href="MegaFlight.uml#_f9T3odEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mRuKENEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_mTH4QNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hdcNptEDEeeYto9s6-HOGQ" label="-"/>
       <cardinality xmi:id="_hdcNp9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -766,8 +840,8 @@
       <cardinality xmi:id="_hO6CYtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
       <outParameters xmi:id="_hO6CY9EDEeeYto9s6-HOGQ">
         <modelElement href="MegaFlight.uml#_f4HOkdEDEeeYto9s6-HOGQ"/>
-        <type xmi:id="_hO6CZNEDEeeYto9s6-HOGQ" name="double">
-          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        <type xmi:id="_q_sDINEHEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </type>
       </outParameters>
     </operations>
@@ -1282,6 +1356,8 @@
     <visibility xmi:id="_hUpeAtEDEeeYto9s6-HOGQ" label="+"/>
     <attributes xmi:id="_hUpeA9EDEeeYto9s6-HOGQ" defaultValue="new FlightMenu(SeatClass.FIRST)" name="fmenu">
       <modelElement href="MegaFlight.uml#_f9gE4tEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mSjQgNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_ma4tINEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hUpeBNEDEeeYto9s6-HOGQ" label="~"/>
       <cardinality xmi:id="_hUpeBdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
       <type xmi:id="_hUpeBtEDEeeYto9s6-HOGQ" name="FlightMenu">
@@ -1290,6 +1366,8 @@
     </attributes>
     <attributes xmi:id="_hUpeB9EDEeeYto9s6-HOGQ" defaultValue="new FlightMenu(SeatClass.ECONOMY)" name="emenu">
       <modelElement href="MegaFlight.uml#_f9gr8tEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_mSj3kNEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_ma4GENEFEeeYto9s6-HOGQ" name="LegacyStyledElement"/>
       <visibility xmi:id="_hUpeCNEDEeeYto9s6-HOGQ" label="~"/>
       <cardinality xmi:id="_hUpeCdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
       <type xmi:id="_hUpeCtEDEeeYto9s6-HOGQ" name="FlightMenu">
@@ -2039,6 +2117,11 @@
       <modelElement href="MegaFlight.uml#_f34lEtEDEeeYto9s6-HOGQ"/>
       <visibility xmi:id="_hdcOStEDEeeYto9s6-HOGQ" label="+"/>
       <cardinality xmi:id="_hdcOS9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_bJFr8NEJEeeYto9s6-HOGQ" name="UpdateAccounts">
+      <modelElement href="MegaFlight.uml#_bJBagNEJEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_bJFr8dEJEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_bJFr8tEJEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
     </operations>
   </nodes>
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_heTJQNEDEeeYto9s6-HOGQ" name="MegaFlightMain">

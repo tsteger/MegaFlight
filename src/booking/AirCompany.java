@@ -9,9 +9,9 @@ public class AirCompany {
 	
 	double totalIncome = 0.0;
 	
-public double getTotalIncome(){
-		double totalIncomeTickets = bookingDesk.getTotalIncomeTickets();				
-		double totalIncomeFood = bookingDesk.getMenu().getTotalIncomeFood();
+public int getTotalIncome(){
+		int totalIncomeTickets = bookingDesk.getTotalIncomeTickets();				
+		int totalIncomeFood = bookingDesk.getMenu().getTotalIncomeFood();
 		
 		return totalIncomeTickets+totalIncomeFood;
 	}
