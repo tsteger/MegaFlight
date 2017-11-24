@@ -242,7 +242,7 @@ public class BookingUI {
 
 				
 				textArea_Booking_Food_And_Flight.setText("Customer: "+textField_FirstName.getText()+" "+textField_LastName.getText()+"\n\n");
-				bookingDesk.resetTotalCustomerCost();
+				bookingDesk.resetTotalCustomerCostTickets();
 				textPane_TotalSum.setText("0");
 				textPane_TotalMenuPrice.setText("0");
 				textPane_TotalFlightPrice.setText("0");
@@ -337,11 +337,15 @@ public class BookingUI {
 		JButton button = new JButton("Company profit");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
-				double totalMenuCost = menu.getTotalCompanyEarnedAmount();
-				double totalcost =bookingDesk.getTotalFlightCost();
-				textPane_TotalIncome.setText(Double.toString(totalcost+totalMenuCost)+" SEK");
-				textPane_Profit.setText(Double.toString((totalcost+totalMenuCost)*0.3)+" SEK");
+			
+				//double totalcost =bookingDesk.getTotalFlightCost();
+				double totalIncomeTickets =bookingDesk.getTotalIncomeTickets();
+				
+//				double totalMenuCost = menu.getTotalCompanyEarnedAmount();
+				double totalIncomeFood = menu.getTotalIncomeFood();
+				
+				textPane_TotalIncome.setText(Double.toString(totalIncomeTickets+totalIncomeFood)+" SEK");
+				textPane_Profit.setText(Double.toString((totalIncomeTickets+totalIncomeFood)*0.3)+" SEK");
 
 				
 			}
@@ -487,9 +491,9 @@ public class BookingUI {
 				
 				
 				textArea_Booking_Food_And_Flight.append(food_menu+"\n");
-				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCost()));
-				textPane_TotalMenuPrice.setText(Integer.toString(menu.GettotalCustomerPrice()));
-				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCost()+menu.GettotalCustomerPrice()));
+				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()));
+				textPane_TotalMenuPrice.setText(Integer.toString(menu.GetTotalCustomerCostFood()));
+				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()+menu.GetTotalCustomerCostFood()));
 			}
 		});
 		
@@ -501,9 +505,9 @@ public class BookingUI {
 				String food_menu = menu.foodMenuUnOrderItems(customerID,comboBox_food_menu.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());
 				
 				textArea_Booking_Food_And_Flight.append(food_menu+"\n");
-				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCost()));
-				textPane_TotalMenuPrice.setText(Integer.toString(menu.GettotalCustomerPrice()));
-				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCost()+menu.GettotalCustomerPrice()));
+				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()));
+				textPane_TotalMenuPrice.setText(Integer.toString(menu.GetTotalCustomerCostFood()));
+				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()+menu.GetTotalCustomerCostFood()));
 			}
 		});
 		GroupLayout gl_panel_food = new GroupLayout(panel_food);
@@ -561,8 +565,6 @@ public class BookingUI {
 			public void actionPerformed(ActionEvent e) {
 				int index = comboBox_passangerClass.getSelectedIndex();
 				setupFoodMenu(index);
-		
-
 			}
 		});
 		
@@ -581,9 +583,9 @@ public class BookingUI {
 						(Integer) spinner_ticketsQuantity.getValue());
 			
 				textArea_Booking_Food_And_Flight.append(sRetInfo+"\n");
-				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCost())); 
-				textPane_TotalMenuPrice.setText(Integer.toString(menu.GettotalCustomerPrice()));
-				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCost()+menu.GettotalCustomerPrice()));
+				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets())); 
+				textPane_TotalMenuPrice.setText(Integer.toString(menu.GetTotalCustomerCostFood()));
+				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()+menu.GetTotalCustomerCostFood()));
 			}
 		});
 		GroupLayout gl_panel_flight = new GroupLayout(panel_flight);
