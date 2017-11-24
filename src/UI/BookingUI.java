@@ -182,6 +182,7 @@ public class BookingUI {
 		JScrollPane scrollPane_Simulator = new JScrollPane();
 		
 		chckbxNewCheckBox_AutoLogger = new JCheckBox("Autologger");
+		chckbxNewCheckBox_AutoLogger.setSelected(true);
 		chckbxNewCheckBox_AutoLogger.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if(autologgerOnOff)
@@ -239,7 +240,6 @@ public class BookingUI {
 				customerID++;
 				newCustomer  = new Customer(customerID,textField_FirstName.toString(),textField_LastName.toString());
 				textField_Customer_Id.setText(Integer.toString(newCustomer.getId()));
-
 				
 				textArea_Booking_Food_And_Flight.setText("Customer: "+textField_FirstName.getText()+" "+textField_LastName.getText()+"\n\n");
 				bookingDesk.resetTotalCustomerCost();
@@ -254,6 +254,8 @@ public class BookingUI {
 				spinner_foodQuantity.setEnabled(true);
 				btnAdd_Food.setEnabled(true);
 				btnRemove_Food.setEnabled(true);
+				textField_FirstName.setText("");
+				textField_LastName.setText("");
 				menu.newCustomer();
 			}
 		});

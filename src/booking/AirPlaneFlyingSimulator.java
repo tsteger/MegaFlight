@@ -19,10 +19,12 @@ public class AirPlaneFlyingSimulator extends TimerTask {
 		synchronized(plane) {
 			
 			while(MockAirCompany.flightSimulaterOnOff) {
+				
 				while(counter<=20) {			
 					if(!MockAirCompany.flightSimulaterOnOff) {
-						plane.addLog(String.format("\nTake-Off Aborted: %s", LocalDateTime.now().toString()));
+						plane.addLog(String.format("\nDelayed: %s", LocalDateTime.now().toString()));
 						BookingUI.textArea_FlightSimulator.setText(plane.getLogReport());
+						plane.setIsInTheAirport(true); 
 						return;
 					}
 					toWait(delay);
@@ -35,18 +37,25 @@ public class AirPlaneFlyingSimulator extends TimerTask {
 				plane.addLog("\nFlying:");
 				for(int i=1; i<=6;i++) { // 1 minute
 					plane.addLog(" ... ");
-					if(BookingUI.autologgerOnOff)
+					if(BookingUI.autologgerOnOff) {
 						BookingUI.textArea_FlightSimulator.setText(plane.getLogReport());
+					}
+					if(!MockAirCompany.flightSimulaterOnOff) {
+						plane.addLog(String.format("\nEmergency landing: %s", LocalDateTime.now().plusMinutes(1).toString()));
+						BookingUI.textArea_FlightSimulator.setText(plane.getLogReport());
+						plane.setIsInTheAirport(true); 
+						return;
+					}
 					toWait(10);        
 				}
 
-				plane.addLog(String.format("\nLanding: %s", LocalDateTime.now().toString()));
-				plane.addLog(String.format("\nRefueled: %s", LocalDateTime.now().plusMinutes(3).toString()));
+				plane.addLog(String.format("\nLanding: %s", LocalDateTime.now().plusMinutes(3).toString()));
+				plane.addLog(String.format("\nRefueled: %s", LocalDateTime.now().plusMinutes(6).toString()));
 				if(BookingUI.autologgerOnOff)
 					BookingUI.textArea_FlightSimulator.setText(plane.getLogReport());
-				plane.setIsInTheAirport(true);
+				plane.setIsInTheAirport(true); 
 				toWait(20);
-				plane.addLog(String.format("\nReturnd to gate: %s", LocalDateTime.now().plusMinutes(3).toString()));
+				plane.addLog(String.format("\nReturnd to gate: %s", LocalDateTime.now().plusMinutes(10).toString()));
 				if(BookingUI.autologgerOnOff)
 					BookingUI.textArea_FlightSimulator.setText(plane.getLogReport());
 			}
