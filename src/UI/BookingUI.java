@@ -465,10 +465,10 @@ public class BookingUI {
 				
 				textArea_Booking_Food_And_Flight.append(food_menu+"\n");
 
-				//double totalMenuCost = menu.getTotalCompanyEarnedAmount();
-				//double totalcost =bookingDesk.getTotalFlightCost();
-				//textPane_TotalIncome.setText(Double.toString(totalcost+totalMenuCost)+" SEK");
-				//textPane_Profit.setText(Double.toString((totalcost+totalMenuCost)*0.3)+" SEK");
+				double totalMenuCost = menu.getTotalIncomeFood();
+				double totalcost =bookingDesk.getTotalIncomeTickets();
+				textPane_TotalIncome.setText(Double.toString(totalcost+totalMenuCost)+" SEK");
+				textPane_Profit.setText(Double.toString((totalcost+totalMenuCost)*0.3)+" SEK");
 
 				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()));
 				textPane_TotalMenuPrice.setText(Integer.toString(menu.GetTotalCustomerCostFood()));
@@ -486,10 +486,10 @@ public class BookingUI {
 				
 				textArea_Booking_Food_And_Flight.append(food_menu+"\n");
 			
-//				double totalMenuCost = menu.getTotalCompanyEarnedAmount();
-//				double totalcost =bookingDesk.getTotalFlightCost();
-//				textPane_TotalIncome.setText(Double.toString(totalcost+totalMenuCost)+" SEK");
-//				textPane_Profit.setText(Double.toString((totalcost+totalMenuCost)*0.3)+" SEK");
+				double totalMenuCost = menu.getTotalIncomeFood();
+				double totalcost =bookingDesk.getTotalIncomeTickets();
+				textPane_TotalIncome.setText(Double.toString(totalcost+totalMenuCost)+" SEK");
+				textPane_Profit.setText(Double.toString((totalcost+totalMenuCost)*0.3)+" SEK");
 
 				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()));
 				textPane_TotalMenuPrice.setText(Integer.toString(menu.GetTotalCustomerCostFood()));
@@ -570,11 +570,11 @@ public class BookingUI {
 						(Integer) spinner_ticketsQuantity.getValue());
 			
 				textArea_Booking_Food_And_Flight.append(sRetInfo+"\n");
-			
-//				double totalMenuCost = menu.getTotalCompanyEarnedAmount();
-//				double totalcost =bookingDesk.getTotalFlightCost();
-//				textPane_TotalIncome.setText(Double.toString(totalcost+totalMenuCost)+" SEK");
-//				textPane_Profit.setText(Double.toString((totalcost+totalMenuCost)*0.3)+" SEK");
+				
+				double totalMenuCost = menu.getTotalIncomeFood();
+				double totalcost =bookingDesk.getTotalIncomeTickets();
+				textPane_TotalIncome.setText(Double.toString(totalcost+totalMenuCost)+" SEK");
+				textPane_Profit.setText(Double.toString((totalcost+totalMenuCost)*0.3)+" SEK");
 
 				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets())); 
 				textPane_TotalMenuPrice.setText(Integer.toString(menu.GetTotalCustomerCostFood()));
