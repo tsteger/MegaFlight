@@ -1,0 +1,2218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_ffxAANEDEeeYto9s6-HOGQ">
+  <modelElement href="MegaFlight.uml#_feGMENEDEeeYto9s6-HOGQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hO3mINEDEeeYto9s6-HOGQ" sourceAnchor="124.0,0.0" targetAnchor="0.0,107.0" target="_hQJYgNEDEeeYto9s6-HOGQ" source="_hO5bWdEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-HI5NEDEeeYto9s6-HOGQ"/>
+    <bendpoints xmi:id="_s7tAsNEDEeeYto9s6-HOGQ" sourceY="-308" targetX="-302"/>
+    <stereotypes xmi:id="_hO4NMNEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-Hv8NEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hO4NMdEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxM3INEDEeeYto9s6-HOGQ" position="150.0,-9.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hO4NMtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-HI5dEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxMQENEDEeeYto9s6-HOGQ" position="4.999999999999972,-357.0"/>
+      <visibility xmi:id="_hO4NM9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hO4NNNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hO4NNdEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="airPlanes" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9VFwNEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxNeMNEDEeeYto9s6-HOGQ" position="-67.0,3.0"/>
+      <visibility xmi:id="_hO4NNtEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hO4NN9EDEeeYto9s6-HOGQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hO5bUNEDEeeYto9s6-HOGQ" sourceAnchor="111.0,137.0" targetAnchor="261.0,213.0" target="_hRuF0NEDEeeYto9s6-HOGQ" source="_hO5bWdEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-Hv8dEDEeeYto9s6-HOGQ"/>
+    <bendpoints xmi:id="_s7tnwNEDEeeYto9s6-HOGQ" sourceY="25" targetX="-1965" targetY="283"/>
+    <bendpoints xmi:id="_s7tnwdEDEeeYto9s6-HOGQ" sourceX="1965" sourceY="25" targetY="283"/>
+    <stereotypes xmi:id="_hO5bUdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-IXANEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hO5bUtEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxOFQdEDEeeYto9s6-HOGQ" position="69.81818181818153,-19.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hO5bU9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-Hv8tEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxOFQNEDEeeYto9s6-HOGQ" position="178.13636363636363,-22.0"/>
+      <visibility xmi:id="_hO5bVNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hO5bVdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hO5bVtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="bookingDesk" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9Vs0NEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxOsUNEDEeeYto9s6-HOGQ" position="2.5,34.71428571428578"/>
+      <visibility xmi:id="_hO5bV9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hO5bWNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hP-ZYNEDEeeYto9s6-HOGQ" source="_hQJYgNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-IXAdEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hP-ZYdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-I-ENEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hP-ZYtEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hP-ZY9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-IXAtEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hP-ZZNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hP-ZZdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hP-ZZtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="logReport" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9XiAtEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hP-ZZ9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hP-ZaNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hQxDkNEDEeeYto9s6-HOGQ" sourceAnchor="241.0,137.0" targetAnchor="179.0,0.0" target="_hQJYgNEDEeeYto9s6-HOGQ" source="_hRCwYNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-I-EdEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hRAUINEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-I-E9EDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hQ_tENEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxPTYNEDEeeYto9s6-HOGQ" position="-19.0,-9.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hQ_tEdEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-I-EtEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxOsUdEDEeeYto9s6-HOGQ" position="5.0,5.0"/>
+      <visibility xmi:id="_hRBiQdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRBiQNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hQ_tEtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="plane" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9YwINEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxP6cNEDEeeYto9s6-HOGQ" position="-48.0,-50.0"/>
+      <visibility xmi:id="_hRBiQ9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hRBiQtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hRhRgNEDEeeYto9s6-HOGQ" sourceAnchor="0.0,26.0" targetAnchor="482.0,97.0" target="_hSzD4NEDEeeYto9s6-HOGQ" source="_hRuF0NEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-JlINEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hRhRgdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-JlItEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hRhRgtEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxRIkNEDEeeYto9s6-HOGQ" position="-34.77777777777783,-19.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hRhRg9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-JlIdEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxQhgNEDEeeYto9s6-HOGQ" position="-29.695652173913004,2.0"/>
+      <visibility xmi:id="_hRhRhNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRhRhdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hRhRhtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="flights" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9Z-QNEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxRIkdEDEeeYto9s6-HOGQ" position="41.28571428571422,-47.0"/>
+      <visibility xmi:id="_hRhRh9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRhRiNEDEeeYto9s6-HOGQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hRomQNEDEeeYto9s6-HOGQ" sourceAnchor="523.0,25.0" targetAnchor="0.0,36.0" target="_hX9QsNEDEeeYto9s6-HOGQ" source="_hRuF0NEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-JlI9EDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hRomQdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-KMMNEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hRomQtEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxSWsNEDEeeYto9s6-HOGQ" position="-18.0,-18.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hRomQ9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-JlJNEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxRvoNEDEeeYto9s6-HOGQ" position="14.789473684210407,-46.5"/>
+      <visibility xmi:id="_hRomRNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRomRdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hRomRtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="pricelist" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9Z-Q9EDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxSWsdEDEeeYto9s6-HOGQ" position="-101.19999999999982,2.5"/>
+      <visibility xmi:id="_hRomR9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hRomSNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hRtewNEDEeeYto9s6-HOGQ" sourceAnchor="295.0,0.0" targetAnchor="15.0,232.0" target="_hUpeANEDEeeYto9s6-HOGQ" source="_hRuF0NEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-KMMdEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hRtewdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-KzQNEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hRtewtEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxTk0NEDEeeYto9s6-HOGQ" position="2.0,-8.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hRtew9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-KMMtEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxS9wNEDEeeYto9s6-HOGQ" position="-17.0,-84.29999999999995"/>
+      <visibility xmi:id="_hRtexNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRtexdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hRtextEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="menu" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9alUdEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxTk0dEDEeeYto9s6-HOGQ" position="2.0,39.299999999999955"/>
+      <visibility xmi:id="_hRtex9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRteyNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hSbQcNEDEeeYto9s6-HOGQ" sourceAnchor="0.0,97.0" targetAnchor="357.0,107.0" target="_hQJYgNEDEeeYto9s6-HOGQ" source="_hSzD4NEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-KzQdEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hSwno9EDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-LaUNEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hSwnoNEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxUy8NEDEeeYto9s6-HOGQ" position="6.0,-9.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hSwnodEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-KzQtEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxUL4NEDEeeYto9s6-HOGQ" position="-20.0,3.0"/>
+      <visibility xmi:id="_hSx1wdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hSx1wNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hSwnotEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="airplane" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9e2wdEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxUy8dEDEeeYto9s6-HOGQ" position="5.0,-49.0"/>
+      <visibility xmi:id="_hSyc0NEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hSx1wtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hTgOgNEDEeeYto9s6-HOGQ" sourceAnchor="304.0,0.0" targetAnchor="142.0,137.0" target="_hUOnQtEDEeeYto9s6-HOGQ" source="_hUpeANEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-LaUdEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hUNZI9EDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-LaU9EDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hUNZINEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxVaAdEDEeeYto9s6-HOGQ" position="-19.0,-4.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hUNZIdEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-LaUtEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxVaANEDEeeYto9s6-HOGQ" position="-21.0,-50.0"/>
+      <visibility xmi:id="_hUOAMdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hUOAMNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hUNZItEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="fmenu" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9gE4tEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxWBENEDEeeYto9s6-HOGQ" position="1.0,5.0"/>
+      <stereotypes xmi:id="_hUOANNEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9gr8dEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hUOAM9EDEeeYto9s6-HOGQ" label="~"/>
+      <cardinality xmi:id="_hUOAMtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hULj8NEDEeeYto9s6-HOGQ" sourceAnchor="607.0,116.0" targetAnchor="283.0,68.0" target="_hUOnQtEDEeeYto9s6-HOGQ" source="_hUpeANEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-MBYNEDEeeYto9s6-HOGQ"/>
+    <bendpoints xmi:id="_s7uO0NEDEeeYto9s6-HOGQ" sourceX="61" targetX="223" targetY="377"/>
+    <bendpoints xmi:id="_s7uO0dEDEeeYto9s6-HOGQ" sourceX="61" sourceY="-377" targetX="223"/>
+    <stereotypes xmi:id="_hUNZJ9EDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-MBYtEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hUNZJNEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxWoIdEDEeeYto9s6-HOGQ" position="-19.0,102.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hUNZJdEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-MBYdEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxWoINEDEeeYto9s6-HOGQ" position="5.0,-49.0"/>
+      <visibility xmi:id="_hUOANtEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hUOANdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hUNZJtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="emenu" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9gr8tEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxXPMNEDEeeYto9s6-HOGQ" position="5.0,-49.0"/>
+      <stereotypes xmi:id="_hUOnQdEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9gr9NEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hUOnQNEDEeeYto9s6-HOGQ" label="~"/>
+      <cardinality xmi:id="_hUOAN9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hVekcNEDEeeYto9s6-HOGQ" sourceAnchor="0.0,78.0" targetAnchor="222.0,69.0" target="_hO5bWdEDEeeYto9s6-HOGQ" source="_hXMbsNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-MBY9EDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hXFG89EDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-MocNEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hXFG8NEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxX2QNEDEeeYto9s6-HOGQ" position="23.0,-9.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hXFG8dEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-MBZNEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxXPMdEDEeeYto9s6-HOGQ" position="-20.0,3.0"/>
+      <visibility xmi:id="_hXGVEdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hXGVENEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hXFG8tEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="airCompany" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9ihIdEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxX2QdEDEeeYto9s6-HOGQ" position="5.0,-49.0"/>
+      <visibility xmi:id="_hXGVE9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hXGVEtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hWkJkNEDEeeYto9s6-HOGQ" sourceAnchor="142.0,0.0" targetAnchor="179.0,213.0" target="_hQJYgNEDEeeYto9s6-HOGQ" source="_hXMbsNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-MocdEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hXFG99EDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-NPgNEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hXFG9NEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxYdUdEDEeeYto9s6-HOGQ" position="-19.0,-3.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hXFG9dEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-MoctEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxYdUNEDEeeYto9s6-HOGQ" position="-21.0,-50.0"/>
+      <visibility xmi:id="_hXHjMdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hXHjMNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hXFG9tEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="planes" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9ihJNEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxZEYNEDEeeYto9s6-HOGQ" position="1.0,5.0"/>
+      <visibility xmi:id="_hXIKQdEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hXIKQNEDEeeYto9s6-HOGQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_haVPQNEDEeeYto9s6-HOGQ" sourceAnchor="152.0,0.0" targetAnchor="111.0,0.0" target="_hO5bWdEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-EFkdEDEeeYto9s6-HOGQ"/>
+    <bendpoints xmi:id="_s7u14NEDEeeYto9s6-HOGQ" sourceY="-86" targetX="1131" targetY="-1244"/>
+    <bendpoints xmi:id="_s7u14dEDEeeYto9s6-HOGQ" sourceX="-1131" sourceY="-86" targetY="-1244"/>
+    <stereotypes xmi:id="_hcpjc9EDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-EFk9EDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hcpjcNEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxZrcNEDEeeYto9s6-HOGQ" position="482.0,-9.000000000000014"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hcpjcdEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-EFktEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxZEYdEDEeeYto9s6-HOGQ" position="-21.0,-50.0"/>
+      <visibility xmi:id="_hdJ5wdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdJ5wNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hcpjctEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="airCompany" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9Q0UtEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxZrcdEDEeeYto9s6-HOGQ" position="-92.0,-50.0"/>
+      <visibility xmi:id="_hdJ5w9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdJ5wtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ha-IcNEDEeeYto9s6-HOGQ" sourceAnchor="303.0,308.0" targetAnchor="261.0,0.0" target="_hRuF0NEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-EFlNEDEeeYto9s6-HOGQ"/>
+    <bendpoints xmi:id="_s7u14tEDEeeYto9s6-HOGQ" sourceX="683" targetY="-516"/>
+    <stereotypes xmi:id="_hcpjd9EDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-EsoNEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hcpjdNEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxa5kNEDEeeYto9s6-HOGQ" position="-37.5,41.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hcpjddEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-EFldEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxaSgNEDEeeYto9s6-HOGQ" position="42.65625,2.0"/>
+      <visibility xmi:id="_hdJ5xtEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdJ5xdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hcpjdtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="bookingDesk" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9RbYdEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxa5kdEDEeeYto9s6-HOGQ" position="-85.5,-85.08333333333337"/>
+      <visibility xmi:id="_hdJ5yNEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdJ5x9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hbWi8NEDEeeYto9s6-HOGQ" sourceAnchor="152.0,555.0" targetAnchor="241.0,0.0" target="_hSzD4NEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-EsodEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hcqKgdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-FTsNEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hcpjeNEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxbgodEDEeeYto9s6-HOGQ" position="-19.0,-8.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hcpjedEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-EsotEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxbgoNEDEeeYto9s6-HOGQ" position="5.0,5.0"/>
+      <visibility xmi:id="_hdKg0tEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdKg0dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hcqKgNEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="flights" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9RbZNEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxcHsNEDEeeYto9s6-HOGQ" position="-50.0,-50.0"/>
+      <visibility xmi:id="_hdKg1NEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdKg09EDEeeYto9s6-HOGQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hcADMNEDEeeYto9s6-HOGQ" sourceAnchor="303.0,278.0" targetAnchor="0.0,116.0" target="_hUpeANEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-FTsdEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hcqKhdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-FTs9EDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hcqKgtEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxcuwdEDEeeYto9s6-HOGQ" position="220.0,-9.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hcqKg9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-FTstEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxcuwNEDEeeYto9s6-HOGQ" position="5.0,-49.0"/>
+      <visibility xmi:id="_hdKg19EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdKg1tEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hcqKhNEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="menu" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9SCc9EDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxdV0NEDEeeYto9s6-HOGQ" position="-51.0,3.0"/>
+      <visibility xmi:id="_hdKg2dEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdKg2NEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hcSXENEDEeeYto9s6-HOGQ" sourceAnchor="0.0,278.0" targetAnchor="422.0,59.0" target="_hSHucNEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-F6wNEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hcqKidEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-F6wtEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hcqKhtEDEeeYto9s6-HOGQ" text="">
+      <visualProperties xmi:id="_hxd84NEDEeeYto9s6-HOGQ" position="23.0,-9.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_hcqKh9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-F6wdEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxdV0dEDEeeYto9s6-HOGQ" position="-20.0,3.0"/>
+      <visibility xmi:id="_hdKg3NEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdKg29EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hcqKiNEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="newCustomer" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9SpgtEDEeeYto9s6-HOGQ"/>
+      <visualProperties xmi:id="_hxd84dEDEeeYto9s6-HOGQ" position="5.0,-49.0"/>
+      <visibility xmi:id="_hdKg3tEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdKg3dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_hc73UNEDEeeYto9s6-HOGQ" targetItem="_hdcOQNEDEeeYto9s6-HOGQ" sourceItem="_hcrYoNEDEeeYto9s6-HOGQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdOyQNEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f97isNEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdOyQdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f98JwNEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdOyQtEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdOyQ9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f97isdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdOyRNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdOyRdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdOyRtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="frame" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9IRcNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdOyR9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdOySNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdPZUNEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f98JwdEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdPZUdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f98w0NEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdPZUtEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdPZU9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f98JwtEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdPZVNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdPZVdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdPZVtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="comboBox_flight" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9JfkNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdPZV9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdPZWNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdQAYNEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f98w0dEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdQAYdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f99X4NEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdQAYtEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdQAY9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f98w0tEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdQAZNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdQAZdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdQAZtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="comboBox_passangerClass" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9KGodEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdQAZ9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdQAaNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdQncNEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f99X4dEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdQncdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f99X49EDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdQnctEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdQnc9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f99X4tEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdQndNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdQnddEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdQndtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="comboBox_food_menu" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9KtstEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdQnd9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdQneNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdROgNEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f99X5NEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdROgdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f99-8NEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdROgtEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdROg9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f99X5dEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdROhNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdROhdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdROhtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="spinner_ticketsQuantity" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9LUwtEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdROh9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdROiNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdR1kNEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f99-8dEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdR1kdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f9-mANEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdR1ktEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdR1k9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f99-8tEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdR1lNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdR1ldEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdR1ltEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="spinner_foodQuantity" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9L70dEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdR1l9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdR1mNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdR1mdEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f9-mAdEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdR1mtEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f9_NENEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdR1m9EDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdR1nNEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f9-mAtEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdR1ndEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdR1ntEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdR1n9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="btnAdd_Food" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9Mi4NEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdR1oNEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdR1odEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdTDsNEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f9_NEdEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdTDsdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f9_NE9EDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdTDstEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdTDs9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f9_NEtEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdTDtNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdTDtdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdTDttEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="btnRemove_Food" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9Mi4tEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdTDt9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdTDuNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdTqwNEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f9_NFNEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdTqwdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f9_0INEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdTqwtEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdTqw9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f9_NFdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdTqxNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdTqxdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdTqxtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textPane_TotalIncome" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9NJ8dEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdTqx9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdTqyNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdUR0NEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f9_0IdEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdUR0dEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-AbMNEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdUR0tEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdUR09EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f9_0ItEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdUR1NEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdUR1dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdUR1tEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textPane_Profit" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9NJ89EDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdUR19EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdUR2NEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdU44NEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-AbMdEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdU44dEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-AbM9EDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdU44tEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdU449EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-AbMtEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdU45NEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdU45dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdU45tEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textPane_TotalSum" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9NxAdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdU459EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdU46NEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdVf8NEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-BCQNEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdVf8dEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-BCQtEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdVf8tEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdVf89EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-BCQdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdVf9NEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdVf9dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdVf9tEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textPane_TotalMenuPrice" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9OYENEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdVf99EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdVf-NEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdWHANEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-BCQ9EDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdWHAdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-BpUNEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdWHAtEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdWHA9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-BCRNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdWHBNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdWHBdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdWHBtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textPane_TotalFlightPrice" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9OYEtEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdWHB9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdWHCNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdWuENEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-BpUdEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdWuEdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-CQYNEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdWuEtEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdWuE9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-BpUtEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdWuFNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdWuFdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdWuFtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="btnButton_BookFlight" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9O_INEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdWuF9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdWuGNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdXVINEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-CQYdEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdXVIdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-CQY9EDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdXVItEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdXVI9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-CQYtEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdXVJNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdXVJdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdXVJtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="chckbxNewCheckBox_OnOff" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9O_ItEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdXVJ9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdXVKNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdYjQNEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-C3cNEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdYjQdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-C3ctEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdYjQtEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdYjQ9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-C3cdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdYjRNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdYjRdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdYjRtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="chckbxNewCheckBox_AutoLogger" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9PmMdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdYjR9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdYjSNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdZKUNEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-C3c9EDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdZKUdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-DegNEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdZKUtEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdZKU9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-C3dNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdZKVNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdZKVdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdZKVtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textArea_FlightSimulator" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9QNQtEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdZKV9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdZKWNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdZxYNEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-DegdEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdZxYdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-EFkNEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdZxYtEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdZxY9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-DegtEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdZxZNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdZxZdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdZxZtEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textArea_Booking_Food_And_Flight" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9Q0UNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdZxZ9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdZxaNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hda_gNEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-F6w9EDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hda_gdEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-Gh0NEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hda_gtEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hda_g9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-F6xNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hda_hNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hda_hdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hda_htEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textField_Customer_Id" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9TQkdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hda_h9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hda_iNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hda_idEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-Gh0dEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hda_itEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-HI4NEDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hda_i9EDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hda_jNEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-Gh0tEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hda_jdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hda_jtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hda_j9EDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textField_FirstName" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9TQk9EDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hda_kNEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hda_kdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_hdbmkNEDEeeYto9s6-HOGQ" source="_hdcNqNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f-HI4dEDEeeYto9s6-HOGQ"/>
+    <stereotypes xmi:id="_hdcNoNEDEeeYto9s6-HOGQ" name="Reference">
+      <modelElement href="MegaFlight.uml#_f-HI49EDEeeYto9s6-HOGQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_hdcNodEDEeeYto9s6-HOGQ" text=""/>
+    <sourceRole xmi:id="_hdcNotEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="">
+      <modelElement href="MegaFlight.uml#_f-HI4tEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdcNo9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdcNpNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_hdcNpdEDEeeYto9s6-HOGQ" aggregationKind="NONE" name="textField_LastName" navigable="true">
+      <modelElement href="MegaFlight.uml#_f9T3odEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdcNptEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcNp9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_hcrYoNEDEeeYto9s6-HOGQ" sourceConnectionVisual="_hc73UNEDEeeYto9s6-HOGQ" text="Initialize the contents of the frame." item="_hdcOQNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f90N8NEDEeeYto9s6-HOGQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hO5bWdEDEeeYto9s6-HOGQ" name="AirCompany" associationsIn="_hVekcNEDEeeYto9s6-HOGQ _haVPQNEDEeeYto9s6-HOGQ" associationsOut="_hO3mINEDEeeYto9s6-HOGQ _hO5bUNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f4GngNEDEeeYto9s6-HOGQ"/>
+    <visualProperties xmi:id="_hO5bWtEDEeeYto9s6-HOGQ" position="12.0,1356.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hO5bW9EDEeeYto9s6-HOGQ" label="+"/>
+    <attributes xmi:id="_hO5bXNEDEeeYto9s6-HOGQ" defaultValue="new ArrayList&lt;AirPlane>()" name="airPlanes">
+      <modelElement href="MegaFlight.uml#_f9VFwNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hO5bXdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hO5bXtEDEeeYto9s6-HOGQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_hO5bX9EDEeeYto9s6-HOGQ" name="AirPlane">
+        <modelElement href="MegaFlight.uml#_f4KR4NEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hO5bYNEDEeeYto9s6-HOGQ" defaultValue="new BookingDesk()" name="bookingDesk">
+      <modelElement href="MegaFlight.uml#_f9Vs0NEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hO5bYdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hO5bYtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hO5bY9EDEeeYto9s6-HOGQ" name="BookingDesk">
+        <modelElement href="MegaFlight.uml#_f4Up8NEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hO5bZNEDEeeYto9s6-HOGQ" defaultValue="0.0" name="totalIncome">
+      <modelElement href="MegaFlight.uml#_f9Vs0tEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hO5bZdEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9Vs1NEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hO5bZtEDEeeYto9s6-HOGQ" label="~"/>
+      <cardinality xmi:id="_hO5bZ9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hO5baNEDEeeYto9s6-HOGQ" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hO6CYNEDEeeYto9s6-HOGQ" name="getTotalIncome">
+      <modelElement href="MegaFlight.uml#_f4HOkNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hO6CYdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hO6CYtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hO6CY9EDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f4HOkdEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hO6CZNEDEeeYto9s6-HOGQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hO6CZdEDEeeYto9s6-HOGQ" name="getTotalProfit">
+      <modelElement href="MegaFlight.uml#_f4H1oNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hO6CZtEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hO6CZ9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hO6CaNEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f4H1odEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hO6CadEDEeeYto9s6-HOGQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hO6CatEDEeeYto9s6-HOGQ" name="getLogReport">
+      <modelElement href="MegaFlight.uml#_f4IcsNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hO6Ca9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hO6CbNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hO6CbdEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f4IcsdEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hO6CbtEDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hO6Cb9EDEeeYto9s6-HOGQ" name="AddPlane">
+      <modelElement href="MegaFlight.uml#_f8rlgNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hO6CcNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hO6CcdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hO6CctEDEeeYto9s6-HOGQ" name="airPlane">
+        <modelElement href="MegaFlight.uml#_f8rlgdEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hO6Cc9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hO6CdNEDEeeYto9s6-HOGQ" name="AirPlane">
+          <modelElement href="MegaFlight.uml#_f4KR4NEDEeeYto9s6-HOGQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hQJYgNEDEeeYto9s6-HOGQ" name="AirPlane" associationsIn="_hO3mINEDEeeYto9s6-HOGQ _hQxDkNEDEeeYto9s6-HOGQ _hSbQcNEDEeeYto9s6-HOGQ _hWkJkNEDEeeYto9s6-HOGQ" associationsOut="_hP-ZYNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f4KR4NEDEeeYto9s6-HOGQ"/>
+    <visualProperties xmi:id="_hQJ_kNEDEeeYto9s6-HOGQ" position="438.0,941.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hQJ_kdEDEeeYto9s6-HOGQ" label="+"/>
+    <attributes xmi:id="_hQJ_ktEDEeeYto9s6-HOGQ" name="id">
+      <modelElement href="MegaFlight.uml#_f9WT4NEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hQJ_k9EDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9WT4dEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hQJ_lNEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hQJ_ldEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hQJ_ltEDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hQJ_l9EDEeeYto9s6-HOGQ" defaultValue="0" name="numberOfPlanes" staticAttribute="true">
+      <modelElement href="MegaFlight.uml#_f9WT4tEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hQJ_mNEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9W68dEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hQJ_mdEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hQJ_mtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hQJ_m9EDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hQJ_nNEDEeeYto9s6-HOGQ" name="name">
+      <modelElement href="MegaFlight.uml#_f9W68tEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hQJ_ndEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9W689EDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hQJ_ntEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hQJ_n9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hQJ_oNEDEeeYto9s6-HOGQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hQJ_odEDEeeYto9s6-HOGQ" name="numberOfSeats">
+      <modelElement href="MegaFlight.uml#_f9W69NEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hQJ_otEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hQJ_o9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hQJ_pNEDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hQJ_pdEDEeeYto9s6-HOGQ" defaultValue="true" name="isInTheAirport">
+      <modelElement href="MegaFlight.uml#_f9XiANEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hQJ_ptEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hQJ_p9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hQJ_qNEDEeeYto9s6-HOGQ" name="Boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hQJ_qdEDEeeYto9s6-HOGQ" defaultValue="new StringBuilder()" name="logReport">
+      <modelElement href="MegaFlight.uml#_f9XiAtEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hQJ_qtEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9XiA9EDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hQJ_q9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hQJ_rNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hQJ_rdEDEeeYto9s6-HOGQ" name="StringBuilder">
+        <modelElement href="MegaFlight.uml#_f9A8sdEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hQJ_rtEDEeeYto9s6-HOGQ" name="AirPlane">
+      <modelElement href="MegaFlight.uml#_f4LgANEDEeeYto9s6-HOGQ"/>
+      <keywords xmi:id="_hQJ_r9EDEeeYto9s6-HOGQ" keyword="create"/>
+      <visibility xmi:id="_hQJ_sNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hQJ_sdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hQJ_stEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f4MHFNEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hQJ_s9EDEeeYto9s6-HOGQ" name="AirPlane">
+          <modelElement href="MegaFlight.uml#_f4KR4NEDEeeYto9s6-HOGQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hQJ_tNEDEeeYto9s6-HOGQ" name="name">
+        <modelElement href="MegaFlight.uml#_f4MHENEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hQJ_tdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hQJ_ttEDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hQJ_t9EDEeeYto9s6-HOGQ" name="numberOfSeats">
+        <modelElement href="MegaFlight.uml#_f4MHEdEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hQJ_uNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hQJ_udEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hQJ_utEDEeeYto9s6-HOGQ" name="toString">
+      <modelElement href="MegaFlight.uml#_f4MHFdEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hQJ_u9EDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f4MuIdEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_hQJ_vNEDEeeYto9s6-HOGQ" name="Annotations">
+        <modelElement href="MegaFlight.uml#_f4N8QNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hQJ_vdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hQJ_vtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hQJ_v9EDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f4MuINEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hQJ_wNEDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hQJ_wdEDEeeYto9s6-HOGQ" name="addLog">
+      <modelElement href="MegaFlight.uml#_f4OjUdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hQJ_wtEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hQJ_w9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hQJ_xNEDEeeYto9s6-HOGQ" name="logPiece">
+        <modelElement href="MegaFlight.uml#_f4OjUtEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hQJ_xdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hQJ_xtEDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hRCwYNEDEeeYto9s6-HOGQ" name="AirPlaneFlyingSimulator" associationsOut="_hQxDkNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f4QYgNEDEeeYto9s6-HOGQ"/>
+    <visualProperties xmi:id="_hRCwYdEDEeeYto9s6-HOGQ" position="376.0,602.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hRCwYtEDEeeYto9s6-HOGQ" label="+"/>
+    <attributes xmi:id="_hRCwY9EDEeeYto9s6-HOGQ" name="plane">
+      <modelElement href="MegaFlight.uml#_f9YwINEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hRCwZNEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9YwIdEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hRCwZdEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hRCwZtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hRCwZ9EDEeeYto9s6-HOGQ" name="AirPlane">
+        <modelElement href="MegaFlight.uml#_f4KR4NEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hRCwaNEDEeeYto9s6-HOGQ" name="delay">
+      <modelElement href="MegaFlight.uml#_f9YwItEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hRCwadEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9ZXMNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hRCwatEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hRCwa9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hRCwbNEDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hRCwbdEDEeeYto9s6-HOGQ" name="counter">
+      <modelElement href="MegaFlight.uml#_f9ZXMdEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hRCwbtEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9ZXMtEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hRCwb9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hRCwcNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hRCwcdEDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hRCwctEDEeeYto9s6-HOGQ" name="run">
+      <modelElement href="MegaFlight.uml#_f4RmoNEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hRCwc9EDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f4SNsNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_hRCwdNEDEeeYto9s6-HOGQ" name="Annotations">
+        <modelElement href="MegaFlight.uml#_f4SNsdEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hRCwddEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRCwdtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hRCwd9EDEeeYto9s6-HOGQ" name="toWait">
+      <modelElement href="MegaFlight.uml#_f4S0wdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hRCweNEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hRCwedEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hRCwetEDEeeYto9s6-HOGQ" name="time">
+        <modelElement href="MegaFlight.uml#_f4S0wtEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hRCwe9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hRCwfNEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hRCwfdEDEeeYto9s6-HOGQ" name="AirPlaneFlyingSimulator">
+      <modelElement href="MegaFlight.uml#_f8vP4NEDEeeYto9s6-HOGQ"/>
+      <keywords xmi:id="_hRCwftEDEeeYto9s6-HOGQ" keyword="create"/>
+      <visibility xmi:id="_hRCwf9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRCwgNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hRCwgdEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f8vP5dEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hRCwgtEDEeeYto9s6-HOGQ" name="AirPlaneFlyingSimulator">
+          <modelElement href="MegaFlight.uml#_f4QYgNEDEeeYto9s6-HOGQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hRCwg9EDEeeYto9s6-HOGQ" name="plane">
+        <modelElement href="MegaFlight.uml#_f8vP4dEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hRCwhNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hRCwhdEDEeeYto9s6-HOGQ" name="AirPlane">
+          <modelElement href="MegaFlight.uml#_f4KR4NEDEeeYto9s6-HOGQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hRCwhtEDEeeYto9s6-HOGQ" name="delay">
+        <modelElement href="MegaFlight.uml#_f8vP4tEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hRCwh9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hRCwiNEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hSHucNEDEeeYto9s6-HOGQ" name="Customer" associationsIn="_hcSXENEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f4aJgNEDEeeYto9s6-HOGQ"/>
+    <visualProperties xmi:id="_hSHucdEDEeeYto9s6-HOGQ" position="432.0,417.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hSHuctEDEeeYto9s6-HOGQ" label="+"/>
+    <attributes xmi:id="_hSHuc9EDEeeYto9s6-HOGQ" name="id">
+      <modelElement href="MegaFlight.uml#_f9bMYNEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hSHudNEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9bMYdEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hSHuddEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hSHudtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hSHud9EDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hSHueNEDEeeYto9s6-HOGQ" name="firstName">
+      <modelElement href="MegaFlight.uml#_f9cagNEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hSHuedEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9cagdEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hSHuetEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hSHue9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hSHufNEDEeeYto9s6-HOGQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hSHufdEDEeeYto9s6-HOGQ" name="lastName">
+      <modelElement href="MegaFlight.uml#_f9dooNEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hSHuftEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9doodEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hSHuf9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hSHugNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hSHugdEDEeeYto9s6-HOGQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hSHugtEDEeeYto9s6-HOGQ" name="Customer">
+      <modelElement href="MegaFlight.uml#_f4bXoNEDEeeYto9s6-HOGQ"/>
+      <keywords xmi:id="_hSHug9EDEeeYto9s6-HOGQ" keyword="create"/>
+      <visibility xmi:id="_hSHuhNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hSHuhdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hSHuhtEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f4b-s9EDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hSHuh9EDEeeYto9s6-HOGQ" name="Customer">
+          <modelElement href="MegaFlight.uml#_f4aJgNEDEeeYto9s6-HOGQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hSHuiNEDEeeYto9s6-HOGQ" name="id">
+        <modelElement href="MegaFlight.uml#_f4bXodEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hSHuidEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hSHuitEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hSHui9EDEeeYto9s6-HOGQ" name="firstName">
+        <modelElement href="MegaFlight.uml#_f4bXotEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hSHujNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hSHujdEDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hSHujtEDEeeYto9s6-HOGQ" name="lastName">
+        <modelElement href="MegaFlight.uml#_f4b-sNEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hSHuj9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hSHukNEDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hSzD4NEDEeeYto9s6-HOGQ" name="Flight" associationsIn="_hRhRgNEDEeeYto9s6-HOGQ _hbWi8NEDEeeYto9s6-HOGQ" associationsOut="_hSbQcNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f4dM0NEDEeeYto9s6-HOGQ"/>
+    <visualProperties xmi:id="_hSzD4dEDEeeYto9s6-HOGQ" position="1013.0,951.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hSzD4tEDEeeYto9s6-HOGQ" label="+"/>
+    <attributes xmi:id="_hSzD49EDEeeYto9s6-HOGQ" name="name">
+      <modelElement href="MegaFlight.uml#_f9e2wNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hSzD5NEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hSzD5dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hSzD5tEDEeeYto9s6-HOGQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hSzD59EDEeeYto9s6-HOGQ" name="airplane">
+      <modelElement href="MegaFlight.uml#_f9e2wdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hSzD6NEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hSzD6dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hSzD6tEDEeeYto9s6-HOGQ" name="AirPlane">
+        <modelElement href="MegaFlight.uml#_f4KR4NEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hSzD69EDEeeYto9s6-HOGQ" name="numberOfSeatsFirstClass">
+      <modelElement href="MegaFlight.uml#_f9e2wtEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hSzD7NEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hSzD7dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hSzD7tEDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hSzD79EDEeeYto9s6-HOGQ" name="numberOfSeatsEconomyClass">
+      <modelElement href="MegaFlight.uml#_f9e2w9EDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hSzD8NEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hSzD8dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hSzD8tEDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hSzD89EDEeeYto9s6-HOGQ" name="numberOfSeatsFirstClassAvailable">
+      <modelElement href="MegaFlight.uml#_f9e2xNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hSzD9NEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hSzD9dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hSzD9tEDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hSzD99EDEeeYto9s6-HOGQ" name="numberOfSeatsEconomyClassAvailable">
+      <modelElement href="MegaFlight.uml#_f9fd0NEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hSzD-NEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hSzD-dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hSzD-tEDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hSzD-9EDEeeYto9s6-HOGQ" name="bookFirstClassSeats">
+      <modelElement href="MegaFlight.uml#_f4fCANEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hSzD_NEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hSzD_dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hSzD_tEDEeeYto9s6-HOGQ" name="numberOfSeats">
+        <modelElement href="MegaFlight.uml#_f4fCAdEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hSzD_9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hSzEANEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hSzEAdEDEeeYto9s6-HOGQ" name="bookEconomyClassSeats">
+      <modelElement href="MegaFlight.uml#_f4fpENEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hSzEAtEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hSzEA9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hSzEBNEDEeeYto9s6-HOGQ" name="numberOfSeats">
+        <modelElement href="MegaFlight.uml#_f4fpEdEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hSzEBdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hSzEBtEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hSzEB9EDEeeYto9s6-HOGQ" name="Flight">
+      <modelElement href="MegaFlight.uml#_f8y6QNEDEeeYto9s6-HOGQ"/>
+      <keywords xmi:id="_hSzECNEDEeeYto9s6-HOGQ" keyword="create"/>
+      <visibility xmi:id="_hSzECdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hSzECtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hSzEC9EDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f8y6RtEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hSzEDNEDEeeYto9s6-HOGQ" name="Flight">
+          <modelElement href="MegaFlight.uml#_f4dM0NEDEeeYto9s6-HOGQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hSzEDdEDEeeYto9s6-HOGQ" name="name">
+        <modelElement href="MegaFlight.uml#_f8y6QdEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hSzEDtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hSzED9EDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hSzEENEDEeeYto9s6-HOGQ" name="airplane">
+        <modelElement href="MegaFlight.uml#_f8y6QtEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hSzEEdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hSzEEtEDEeeYto9s6-HOGQ" name="AirPlane">
+          <modelElement href="MegaFlight.uml#_f4KR4NEDEeeYto9s6-HOGQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hSzEE9EDEeeYto9s6-HOGQ" name="numberOfSeatsFirstClass">
+        <modelElement href="MegaFlight.uml#_f8y6Q9EDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hSzEFNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hSzEFdEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hUOnQtEDEeeYto9s6-HOGQ" name="FlightMenu" associationsIn="_hTgOgNEDEeeYto9s6-HOGQ _hULj8NEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f4g3MNEDEeeYto9s6-HOGQ"/>
+    <visualProperties xmi:id="_hUOnQ9EDEeeYto9s6-HOGQ" position="2269.0,31.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hUOnRNEDEeeYto9s6-HOGQ" label="+"/>
+    <attributes xmi:id="_hUOnRdEDEeeYto9s6-HOGQ" defaultValue="new HashMap&lt;String, Integer>()" name="menu">
+      <modelElement href="MegaFlight.uml#_f9fd0dEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hUOnRtEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9gE4NEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hUOnR9EDEeeYto9s6-HOGQ" label="~"/>
+      <cardinality xmi:id="_hUOnSNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hUOnSdEDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hUOnStEDEeeYto9s6-HOGQ" name="getMenu">
+      <modelElement href="MegaFlight.uml#_f4heQNEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hUOnS9EDEeeYto9s6-HOGQ" name="Generics">
+        <modelElement href="MegaFlight.uml#_f4isYNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hUOnTNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hUOnTdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hUOnTtEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f9DY8dEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hUOnT9EDEeeYto9s6-HOGQ" name="Map">
+          <modelElement href="MegaFlight.uml#_f80IYdEDEeeYto9s6-HOGQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hUOnUNEDEeeYto9s6-HOGQ" name="FlightMenu">
+      <modelElement href="MegaFlight.uml#_f80vcdEDEeeYto9s6-HOGQ"/>
+      <keywords xmi:id="_hUOnUdEDEeeYto9s6-HOGQ" keyword="create"/>
+      <visibility xmi:id="_hUOnUtEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hUOnU9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hUOnVNEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f81WgtEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hUOnVdEDEeeYto9s6-HOGQ" name="FlightMenu">
+          <modelElement href="MegaFlight.uml#_f4g3MNEDEeeYto9s6-HOGQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hUOnVtEDEeeYto9s6-HOGQ" name="foo">
+        <modelElement href="MegaFlight.uml#_f80vctEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUOnV9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUOnWNEDEeeYto9s6-HOGQ" name="SeatClass">
+          <modelElement href="MegaFlight.uml#_f4trgNEDEeeYto9s6-HOGQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hUOnWdEDEeeYto9s6-HOGQ" name="init">
+      <modelElement href="MegaFlight.uml#_f81Wg9EDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hUOnWtEDEeeYto9s6-HOGQ" name="Generics">
+        <modelElement href="MegaFlight.uml#_f819kNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hUOnW9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hUOnXNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hUOnXdEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f9DY8NEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hUOnXtEDEeeYto9s6-HOGQ" name="Map">
+          <modelElement href="MegaFlight.uml#_f80IYdEDEeeYto9s6-HOGQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hUOnX9EDEeeYto9s6-HOGQ" name="foo">
+        <modelElement href="MegaFlight.uml#_f81WhNEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUOnYNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUOnYdEDEeeYto9s6-HOGQ" name="SeatClass">
+          <modelElement href="MegaFlight.uml#_f4trgNEDEeeYto9s6-HOGQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hUOnYtEDEeeYto9s6-HOGQ" name="setMenu">
+      <modelElement href="MegaFlight.uml#_f9EAANEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hUOnY9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hUOnZNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hUOnZdEDEeeYto9s6-HOGQ" name="menu">
+        <modelElement href="MegaFlight.uml#_f9EAAdEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUOnZtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUOnZ9EDEeeYto9s6-HOGQ" name="Map">
+          <modelElement href="MegaFlight.uml#_f80IYdEDEeeYto9s6-HOGQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hUpeANEDEeeYto9s6-HOGQ" name="FlightMenuBooking" associationsIn="_hRtewNEDEeeYto9s6-HOGQ _hcADMNEDEeeYto9s6-HOGQ" associationsOut="_hTgOgNEDEeeYto9s6-HOGQ _hULj8NEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f4khkNEDEeeYto9s6-HOGQ"/>
+    <visualProperties xmi:id="_hUpeAdEDEeeYto9s6-HOGQ" position="2107.0,360.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hUpeAtEDEeeYto9s6-HOGQ" label="+"/>
+    <attributes xmi:id="_hUpeA9EDEeeYto9s6-HOGQ" defaultValue="new FlightMenu(SeatClass.FIRST)" name="fmenu">
+      <modelElement href="MegaFlight.uml#_f9gE4tEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hUpeBNEDEeeYto9s6-HOGQ" label="~"/>
+      <cardinality xmi:id="_hUpeBdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hUpeBtEDEeeYto9s6-HOGQ" name="FlightMenu">
+        <modelElement href="MegaFlight.uml#_f4g3MNEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hUpeB9EDEeeYto9s6-HOGQ" defaultValue="new FlightMenu(SeatClass.ECONOMY)" name="emenu">
+      <modelElement href="MegaFlight.uml#_f9gr8tEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hUpeCNEDEeeYto9s6-HOGQ" label="~"/>
+      <cardinality xmi:id="_hUpeCdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hUpeCtEDEeeYto9s6-HOGQ" name="FlightMenu">
+        <modelElement href="MegaFlight.uml#_f4g3MNEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hUpeC9EDEeeYto9s6-HOGQ" defaultValue="0" name="totalIncomeFood">
+      <modelElement href="MegaFlight.uml#_f9hTANEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hUpeDNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hUpeDdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hUpeDtEDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hUpeD9EDEeeYto9s6-HOGQ" defaultValue="0" name="totalCustomerCostFood">
+      <modelElement href="MegaFlight.uml#_f9hTAtEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hUpeENEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9hTBNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hUpeEdEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hUpeEtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hUpeE9EDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hUpeFNEDEeeYto9s6-HOGQ" name="GetTotalCustomerCostFood">
+      <modelElement href="MegaFlight.uml#_f4lIoNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hUpeFdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hUpeFtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hUpeF9EDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f4lIodEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hUpeGNEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hUpeGdEDEeeYto9s6-HOGQ" name="resetTotalCustomerCostFood">
+      <modelElement href="MegaFlight.uml#_f4lIotEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hUpeGtEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hUpeG9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hUpeHNEDEeeYto9s6-HOGQ" name="foodMenuOrderItems">
+      <modelElement href="MegaFlight.uml#_f4lvsNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hUpeHdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hUpeHtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hUpeH9EDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f4mWwNEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hUpeINEDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hUpeIdEDEeeYto9s6-HOGQ" name="customerid">
+        <modelElement href="MegaFlight.uml#_f4lvsdEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUpeItEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUpeI9EDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hUpeJNEDEeeYto9s6-HOGQ" name="foodkey">
+        <modelElement href="MegaFlight.uml#_f4lvstEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUpeJdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUpeJtEDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hUpeJ9EDEeeYto9s6-HOGQ" name="amount">
+        <modelElement href="MegaFlight.uml#_f4lvs9EDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUpeKNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUpeKdEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hUpeKtEDEeeYto9s6-HOGQ" name="passangerClass">
+        <modelElement href="MegaFlight.uml#_f4lvtNEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUpeK9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUpeLNEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hUpeLdEDEeeYto9s6-HOGQ" name="foodMenuUnOrderItems">
+      <modelElement href="MegaFlight.uml#_f4mWwdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hUpeLtEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hUpeL9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hUpeMNEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f4m91NEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hUpeMdEDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hUpeMtEDEeeYto9s6-HOGQ" name="customerid">
+        <modelElement href="MegaFlight.uml#_f4m90NEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUpeM9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUpeNNEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hUpeNdEDEeeYto9s6-HOGQ" name="foodkey">
+        <modelElement href="MegaFlight.uml#_f4m90dEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUpeNtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUpeN9EDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hUpeONEDEeeYto9s6-HOGQ" name="amount">
+        <modelElement href="MegaFlight.uml#_f4m90tEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUpeOdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUpeOtEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hUpeO9EDEeeYto9s6-HOGQ" name="passangerClass">
+        <modelElement href="MegaFlight.uml#_f4m909EDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUpePNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUpePdEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hUpePtEDEeeYto9s6-HOGQ" name="newCustomer">
+      <modelElement href="MegaFlight.uml#_f4m91dEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hUpeP9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hUpeQNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hUpeQdEDEeeYto9s6-HOGQ" name="getCorrectMenu">
+      <modelElement href="MegaFlight.uml#_f4nk4NEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hUpeQtEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hUpeQ9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hUpeRNEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f83LsNEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hUpeRdEDEeeYto9s6-HOGQ" name="FlightMenu">
+          <modelElement href="MegaFlight.uml#_f4g3MNEDEeeYto9s6-HOGQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hUpeRtEDEeeYto9s6-HOGQ" name="passangerClass">
+        <modelElement href="MegaFlight.uml#_f4nk4dEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUpeR9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUpeSNEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hUpeSdEDEeeYto9s6-HOGQ" name="getTotalPrice">
+      <modelElement href="MegaFlight.uml#_f4oL8NEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hUpeStEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hUpeS9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hUpeTNEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f4oL9NEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hUpeTdEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hUpeTtEDEeeYto9s6-HOGQ" name="foodkey">
+        <modelElement href="MegaFlight.uml#_f4oL8dEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUpeT9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUpeUNEDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hUpeUdEDEeeYto9s6-HOGQ" name="passangerClass">
+        <modelElement href="MegaFlight.uml#_f4oL8tEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUpeUtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUpeU9EDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hUpeVNEDEeeYto9s6-HOGQ" name="amount">
+        <modelElement href="MegaFlight.uml#_f4oL89EDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUpeVdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUpeVtEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hUpeV9EDEeeYto9s6-HOGQ" name="getTotalMinusPrice">
+      <modelElement href="MegaFlight.uml#_f4ozANEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hUpeWNEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hUpeWdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hUpeWtEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f4ozBNEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hUpeW9EDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hUpeXNEDEeeYto9s6-HOGQ" name="foodkey">
+        <modelElement href="MegaFlight.uml#_f4ozAdEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUpeXdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUpeXtEDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hUpeX9EDEeeYto9s6-HOGQ" name="passangerClass">
+        <modelElement href="MegaFlight.uml#_f4ozAtEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUpeYNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUpeYdEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hUpeYtEDEeeYto9s6-HOGQ" name="amount">
+        <modelElement href="MegaFlight.uml#_f4ozA9EDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hUpeY9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hUpeZNEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hXMbsNEDEeeYto9s6-HOGQ" name="MockAirCompany" associationsOut="_hVekcNEDEeeYto9s6-HOGQ _hWkJkNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f4qBINEDEeeYto9s6-HOGQ"/>
+    <visualProperties xmi:id="_hXMbsdEDEeeYto9s6-HOGQ" position="475.0,1347.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hXMbstEDEeeYto9s6-HOGQ" label="+"/>
+    <attributes xmi:id="_hXMbs9EDEeeYto9s6-HOGQ" defaultValue="false" name="flightSimulaterOnOff" staticAttribute="true">
+      <modelElement href="MegaFlight.uml#_f9h6ENEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hXMbtNEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9ihINEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hXMbtdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hXMbttEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hXMbt9EDEeeYto9s6-HOGQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hXMbuNEDEeeYto9s6-HOGQ" defaultValue="new AirCompany()" name="airCompany">
+      <modelElement href="MegaFlight.uml#_f9ihIdEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hXMbudEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9ihI9EDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hXMbutEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hXMbu9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hXMbvNEDEeeYto9s6-HOGQ" name="AirCompany">
+        <modelElement href="MegaFlight.uml#_f4GngNEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hXMbvdEDEeeYto9s6-HOGQ" name="planes" staticAttribute="true">
+      <modelElement href="MegaFlight.uml#_f9ihJNEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hXMbvtEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9jIMNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hXMbv9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hXMbwNEDEeeYto9s6-HOGQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_hXMbwdEDEeeYto9s6-HOGQ" name="AirPlane">
+        <modelElement href="MegaFlight.uml#_f4KR4NEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hXMbwtEDEeeYto9s6-HOGQ" name="MockAirCompany">
+      <modelElement href="MegaFlight.uml#_f4rPQNEDEeeYto9s6-HOGQ"/>
+      <keywords xmi:id="_hXMbw9EDEeeYto9s6-HOGQ" keyword="create"/>
+      <visibility xmi:id="_hXMbxNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hXMbxdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hXMbxtEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f4rPQ9EDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hXMbx9EDEeeYto9s6-HOGQ" name="MockAirCompany">
+          <modelElement href="MegaFlight.uml#_f4qBINEDEeeYto9s6-HOGQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hXMbyNEDEeeYto9s6-HOGQ" name="flightSimulatorOnOff" staticOperation="true">
+      <modelElement href="MegaFlight.uml#_f4r2UNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hXMbydEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hXMbytEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hXMby9EDEeeYto9s6-HOGQ" name="checked">
+        <modelElement href="MegaFlight.uml#_f4r2UdEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hXMbzNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hXMbzdEDEeeYto9s6-HOGQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hXMbztEDEeeYto9s6-HOGQ" name="Get">
+      <modelElement href="MegaFlight.uml#_f4r2UtEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hXMbz9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hXMb0NEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hXMb0dEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f83ywNEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hXMb0tEDEeeYto9s6-HOGQ" name="AirCompany">
+          <modelElement href="MegaFlight.uml#_f4GngNEDEeeYto9s6-HOGQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hXMb09EDEeeYto9s6-HOGQ" name="sendOff" staticOperation="true">
+      <modelElement href="MegaFlight.uml#_f83ywdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hXMb1NEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hXMb1dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hXMb1tEDEeeYto9s6-HOGQ" name="plane">
+        <modelElement href="MegaFlight.uml#_f84Z0NEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hXMb19EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hXMb2NEDEeeYto9s6-HOGQ" name="AirPlane">
+          <modelElement href="MegaFlight.uml#_f4KR4NEDEeeYto9s6-HOGQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hXMb2dEDEeeYto9s6-HOGQ" name="delay">
+        <modelElement href="MegaFlight.uml#_f84Z0dEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hXMb2tEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hXMb29EDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hXMb3NEDEeeYto9s6-HOGQ" name="PlanesDispatcherSimulator" staticOperation="true">
+      <modelElement href="MegaFlight.uml#_f9FOINEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hXMb3dEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hXMb3tEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hXMb39EDEeeYto9s6-HOGQ" name="planes">
+        <modelElement href="MegaFlight.uml#_f9FOIdEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hXMb4NEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hXMb4dEDEeeYto9s6-HOGQ" name="List">
+          <modelElement href="MegaFlight.uml#_f8Z4sdEDEeeYto9s6-HOGQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hX9QsNEDEeeYto9s6-HOGQ" name="SeatPrices" associationsIn="_hRomQNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f4u5oNEDEeeYto9s6-HOGQ"/>
+    <visualProperties xmi:id="_hX9QsdEDEeeYto9s6-HOGQ" position="2629.0,1011.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hX9QstEDEeeYto9s6-HOGQ" label="+"/>
+    <attributes xmi:id="_hX9Qs9EDEeeYto9s6-HOGQ" name="firstClassTicketPrice">
+      <modelElement href="MegaFlight.uml#_f9jIMdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hX9QtNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hX9QtdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hX9QttEDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hX9Qt9EDEeeYto9s6-HOGQ" name="economyClassTicketPrice">
+      <modelElement href="MegaFlight.uml#_f9jvQNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hX9QuNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hX9QudEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hX9QutEDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hZVJsNEDEeeYto9s6-HOGQ" name="SeatsBooking">
+    <modelElement href="MegaFlight.uml#_f4vgsNEDEeeYto9s6-HOGQ"/>
+    <visualProperties xmi:id="_hZVJsdEDEeeYto9s6-HOGQ" position="10.0,1648.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hZVJstEDEeeYto9s6-HOGQ" label="+"/>
+    <operations xmi:id="_hZVJs9EDEeeYto9s6-HOGQ" name="book" staticOperation="true">
+      <modelElement href="MegaFlight.uml#_f85A4NEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hZVJtNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hZVJtdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hZVJttEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f85n8tEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hZVJt9EDEeeYto9s6-HOGQ" name="Boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hZVJuNEDEeeYto9s6-HOGQ" name="flight">
+        <modelElement href="MegaFlight.uml#_f85A4dEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hZVJudEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hZVJutEDEeeYto9s6-HOGQ" name="Flight">
+          <modelElement href="MegaFlight.uml#_f4dM0NEDEeeYto9s6-HOGQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hZVJu9EDEeeYto9s6-HOGQ" name="flightClassIndex">
+        <modelElement href="MegaFlight.uml#_f85n8NEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hZVJvNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hZVJvdEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hZVJvtEDEeeYto9s6-HOGQ" name="numberOfSeats">
+        <modelElement href="MegaFlight.uml#_f85n8dEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hZVJv9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hZVJwNEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hZVJwdEDEeeYto9s6-HOGQ" name="bookSeatsOfTheClass" staticOperation="true">
+      <modelElement href="MegaFlight.uml#_f85n89EDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hZVJwtEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hZVJw9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hZVJxNEDEeeYto9s6-HOGQ" name="flight">
+        <modelElement href="MegaFlight.uml#_f85n9NEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hZVJxdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hZVJxtEDEeeYto9s6-HOGQ" name="Flight">
+          <modelElement href="MegaFlight.uml#_f4dM0NEDEeeYto9s6-HOGQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hZVJx9EDEeeYto9s6-HOGQ" name="flightClassIndex">
+        <modelElement href="MegaFlight.uml#_f85n9dEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hZVJyNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hZVJydEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hZVJytEDEeeYto9s6-HOGQ" name="numberOfSeats">
+        <modelElement href="MegaFlight.uml#_f85n9tEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hZVJy9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hZVJzNEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hdcNqNEDEeeYto9s6-HOGQ" name="BookingUI" associationsOut="_haVPQNEDEeeYto9s6-HOGQ _ha-IcNEDEeeYto9s6-HOGQ _hbWi8NEDEeeYto9s6-HOGQ _hcADMNEDEeeYto9s6-HOGQ _hcSXENEDEeeYto9s6-HOGQ _hdOyQNEDEeeYto9s6-HOGQ _hdPZUNEDEeeYto9s6-HOGQ _hdQAYNEDEeeYto9s6-HOGQ _hdQncNEDEeeYto9s6-HOGQ _hdROgNEDEeeYto9s6-HOGQ _hdR1kNEDEeeYto9s6-HOGQ _hdR1mdEDEeeYto9s6-HOGQ _hdTDsNEDEeeYto9s6-HOGQ _hdTqwNEDEeeYto9s6-HOGQ _hdUR0NEDEeeYto9s6-HOGQ _hdU44NEDEeeYto9s6-HOGQ _hdVf8NEDEeeYto9s6-HOGQ _hdWHANEDEeeYto9s6-HOGQ _hdWuENEDEeeYto9s6-HOGQ _hdXVINEDEeeYto9s6-HOGQ _hdYjQNEDEeeYto9s6-HOGQ _hdZKUNEDEeeYto9s6-HOGQ _hdZxYNEDEeeYto9s6-HOGQ _hda_gNEDEeeYto9s6-HOGQ _hda_idEDEeeYto9s6-HOGQ _hdbmkNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f3tl8NEDEeeYto9s6-HOGQ"/>
+    <visualProperties xmi:id="_hdcNqdEDEeeYto9s6-HOGQ" position="1102.0,198.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hdcNqtEDEeeYto9s6-HOGQ" label="+"/>
+    <attributes xmi:id="_hdcNq9EDEeeYto9s6-HOGQ" name="frame">
+      <modelElement href="MegaFlight.uml#_f9IRcNEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcNrNEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9I4gNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcNrdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdcNrtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcNr9EDEeeYto9s6-HOGQ" name="JFrame">
+        <modelElement href="MegaFlight.uml#_f8UZINEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcNsNEDEeeYto9s6-HOGQ" name="comboBox_flight">
+      <modelElement href="MegaFlight.uml#_f9JfkNEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcNsdEDEeeYto9s6-HOGQ" name="Generics">
+        <modelElement href="MegaFlight.uml#_f9JfkdEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_hdcNstEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9KGoNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcNs9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcNtNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcNtdEDEeeYto9s6-HOGQ" name="JComboBox">
+        <modelElement href="MegaFlight.uml#_f8djENEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcNttEDEeeYto9s6-HOGQ" name="comboBox_passangerClass">
+      <modelElement href="MegaFlight.uml#_f9KGodEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcNt9EDEeeYto9s6-HOGQ" name="Generics">
+        <modelElement href="MegaFlight.uml#_f9KtsNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_hdcNuNEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9KtsdEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcNudEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcNutEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcNu9EDEeeYto9s6-HOGQ" name="JComboBox">
+        <modelElement href="MegaFlight.uml#_f8djENEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcNvNEDEeeYto9s6-HOGQ" name="comboBox_food_menu">
+      <modelElement href="MegaFlight.uml#_f9KtstEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcNvdEDEeeYto9s6-HOGQ" name="Generics">
+        <modelElement href="MegaFlight.uml#_f9LUwNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_hdcNvtEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9LUwdEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcNv9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcNwNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcNwdEDEeeYto9s6-HOGQ" name="JComboBox">
+        <modelElement href="MegaFlight.uml#_f8djENEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcNwtEDEeeYto9s6-HOGQ" name="spinner_ticketsQuantity">
+      <modelElement href="MegaFlight.uml#_f9LUwtEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcNw9EDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9L70NEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcNxNEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcNxdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcNxtEDEeeYto9s6-HOGQ" name="JSpinner">
+        <modelElement href="MegaFlight.uml#_f8eKIdEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcNx9EDEeeYto9s6-HOGQ" name="spinner_foodQuantity">
+      <modelElement href="MegaFlight.uml#_f9L70dEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcNyNEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9L70tEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcNydEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcNytEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcNy9EDEeeYto9s6-HOGQ" name="JSpinner">
+        <modelElement href="MegaFlight.uml#_f8eKIdEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcNzNEDEeeYto9s6-HOGQ" name="btnAdd_Food">
+      <modelElement href="MegaFlight.uml#_f9Mi4NEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcNzdEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9Mi4dEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcNztEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcNz9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcN0NEDEeeYto9s6-HOGQ" name="JButton">
+        <modelElement href="MegaFlight.uml#_f8f_UdEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcN0dEDEeeYto9s6-HOGQ" name="btnRemove_Food">
+      <modelElement href="MegaFlight.uml#_f9Mi4tEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcN0tEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9NJ8NEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcN09EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcN1NEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcN1dEDEeeYto9s6-HOGQ" name="JButton">
+        <modelElement href="MegaFlight.uml#_f8f_UdEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcN1tEDEeeYto9s6-HOGQ" name="textPane_TotalIncome">
+      <modelElement href="MegaFlight.uml#_f9NJ8dEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcN19EDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9NJ8tEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcN2NEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcN2dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcN2tEDEeeYto9s6-HOGQ" name="JTextPane">
+        <modelElement href="MegaFlight.uml#_f8h0gdEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcN29EDEeeYto9s6-HOGQ" name="textPane_Profit">
+      <modelElement href="MegaFlight.uml#_f9NJ89EDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcN3NEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9NxANEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcN3dEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcN3tEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcN39EDEeeYto9s6-HOGQ" name="JTextPane">
+        <modelElement href="MegaFlight.uml#_f8h0gdEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcN4NEDEeeYto9s6-HOGQ" name="textPane_TotalSum">
+      <modelElement href="MegaFlight.uml#_f9NxAdEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcN4dEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9NxAtEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcN4tEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcN49EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcN5NEDEeeYto9s6-HOGQ" name="JTextPane">
+        <modelElement href="MegaFlight.uml#_f8h0gdEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcN5dEDEeeYto9s6-HOGQ" name="textPane_TotalMenuPrice">
+      <modelElement href="MegaFlight.uml#_f9OYENEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcN5tEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9OYEdEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcN59EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcN6NEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcN6dEDEeeYto9s6-HOGQ" name="JTextPane">
+        <modelElement href="MegaFlight.uml#_f8h0gdEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcN6tEDEeeYto9s6-HOGQ" name="textPane_TotalFlightPrice">
+      <modelElement href="MegaFlight.uml#_f9OYEtEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcN69EDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9OYE9EDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcN7NEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcN7dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcN7tEDEeeYto9s6-HOGQ" name="JTextPane">
+        <modelElement href="MegaFlight.uml#_f8h0gdEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcN79EDEeeYto9s6-HOGQ" name="btnButton_BookFlight">
+      <modelElement href="MegaFlight.uml#_f9O_INEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcN8NEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9O_IdEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcN8dEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcN8tEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcN89EDEeeYto9s6-HOGQ" name="JButton">
+        <modelElement href="MegaFlight.uml#_f8f_UdEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcN9NEDEeeYto9s6-HOGQ" name="chckbxNewCheckBox_OnOff">
+      <modelElement href="MegaFlight.uml#_f9O_ItEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcN9dEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9PmMNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcN9tEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcN99EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcN-NEDEeeYto9s6-HOGQ" name="JCheckBox">
+        <modelElement href="MegaFlight.uml#_f8k30dEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcN-dEDEeeYto9s6-HOGQ" name="chckbxNewCheckBox_AutoLogger">
+      <modelElement href="MegaFlight.uml#_f9PmMdEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcN-tEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9PmMtEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcN-9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcN_NEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcN_dEDEeeYto9s6-HOGQ" name="JCheckBox">
+        <modelElement href="MegaFlight.uml#_f8k30dEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcN_tEDEeeYto9s6-HOGQ" defaultValue="true" name="autologgerOnOff" staticAttribute="true">
+      <modelElement href="MegaFlight.uml#_f9PmM9EDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcN_9EDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9QNQdEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcOANEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdcOAdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcOAtEDEeeYto9s6-HOGQ" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcOA9EDEeeYto9s6-HOGQ" name="textArea_FlightSimulator" staticAttribute="true">
+      <modelElement href="MegaFlight.uml#_f9QNQtEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcOBNEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9QNQ9EDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcOBdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdcOBtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcOB9EDEeeYto9s6-HOGQ" name="JTextArea">
+        <modelElement href="MegaFlight.uml#_f8fYQdEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcOCNEDEeeYto9s6-HOGQ" name="textArea_Booking_Food_And_Flight">
+      <modelElement href="MegaFlight.uml#_f9Q0UNEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcOCdEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9Q0UdEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcOCtEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcOC9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcODNEDEeeYto9s6-HOGQ" name="JTextArea">
+        <modelElement href="MegaFlight.uml#_f8fYQdEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcODdEDEeeYto9s6-HOGQ" defaultValue="new MockAirCompany().Get()" name="airCompany">
+      <modelElement href="MegaFlight.uml#_f9Q0UtEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcODtEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9RbYNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcOD9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcOENEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcOEdEDEeeYto9s6-HOGQ" name="AirCompany">
+        <modelElement href="MegaFlight.uml#_f4GngNEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcOEtEDEeeYto9s6-HOGQ" defaultValue="airCompany.getBookingDesk()" name="bookingDesk">
+      <modelElement href="MegaFlight.uml#_f9RbYdEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcOE9EDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9RbY9EDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcOFNEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcOFdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcOFtEDEeeYto9s6-HOGQ" name="BookingDesk">
+        <modelElement href="MegaFlight.uml#_f4Up8NEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcOF9EDEeeYto9s6-HOGQ" defaultValue="new ArrayList&lt;>(bookingDesk.getFlights())" name="flights">
+      <modelElement href="MegaFlight.uml#_f9RbZNEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcOGNEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9SCctEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcOGdEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcOGtEDEeeYto9s6-HOGQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_hdcOG9EDEeeYto9s6-HOGQ" name="Flight">
+        <modelElement href="MegaFlight.uml#_f4dM0NEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcOHNEDEeeYto9s6-HOGQ" defaultValue="bookingDesk.getMenu()" name="menu">
+      <modelElement href="MegaFlight.uml#_f9SCc9EDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcOHdEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9SpgdEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcOHtEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcOH9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcOINEDEeeYto9s6-HOGQ" name="FlightMenuBooking">
+        <modelElement href="MegaFlight.uml#_f4khkNEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcOIdEDEeeYto9s6-HOGQ" name="newCustomer">
+      <modelElement href="MegaFlight.uml#_f9SpgtEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcOItEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9TQkNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcOI9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcOJNEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcOJdEDEeeYto9s6-HOGQ" name="Customer">
+        <modelElement href="MegaFlight.uml#_f4aJgNEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcOJtEDEeeYto9s6-HOGQ" name="textField_Customer_Id">
+      <modelElement href="MegaFlight.uml#_f9TQkdEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcOJ9EDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9TQktEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcOKNEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcOKdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcOKtEDEeeYto9s6-HOGQ" name="JTextField">
+        <modelElement href="MegaFlight.uml#_f8kQwNEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcOK9EDEeeYto9s6-HOGQ" name="textField_FirstName">
+      <modelElement href="MegaFlight.uml#_f9TQk9EDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcOLNEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9T3oNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcOLdEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcOLtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcOL9EDEeeYto9s6-HOGQ" name="JTextField">
+        <modelElement href="MegaFlight.uml#_f8kQwNEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcOMNEDEeeYto9s6-HOGQ" name="textField_LastName">
+      <modelElement href="MegaFlight.uml#_f9T3odEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcOMdEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9T3otEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcOMtEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcOM9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcONNEDEeeYto9s6-HOGQ" name="JTextField">
+        <modelElement href="MegaFlight.uml#_f8kQwNEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hdcONdEDEeeYto9s6-HOGQ" defaultValue="0" name="customerID">
+      <modelElement href="MegaFlight.uml#_f9UesNEDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hdcONtEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9UestEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hdcON9EDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcOONEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hdcOOdEDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hdcOOtEDEeeYto9s6-HOGQ" name="BookingUI">
+      <modelElement href="MegaFlight.uml#_f32I0NEDEeeYto9s6-HOGQ"/>
+      <keywords xmi:id="_hdcOO9EDEeeYto9s6-HOGQ" keyword="create"/>
+      <visibility xmi:id="_hdcOPNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdcOPdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hdcOPtEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f33W8tEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hdcOP9EDEeeYto9s6-HOGQ" name="BookingUI">
+          <modelElement href="MegaFlight.uml#_f3tl8NEDEeeYto9s6-HOGQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hdcOQNEDEeeYto9s6-HOGQ" comments="_hcrYoNEDEeeYto9s6-HOGQ" targetConnectionVisual="_hc73UNEDEeeYto9s6-HOGQ" name="initialize">
+      <modelElement href="MegaFlight.uml#_f33-ANEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdcOQdEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hdcOQtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hdcOQ9EDEeeYto9s6-HOGQ" name="setupFoodMenu">
+      <modelElement href="MegaFlight.uml#_f34lENEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdcORNEDEeeYto9s6-HOGQ" label="#"/>
+      <cardinality xmi:id="_hdcORdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hdcORtEDEeeYto9s6-HOGQ" name="index">
+        <modelElement href="MegaFlight.uml#_f34lEdEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hdcOR9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hdcOSNEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hdcOSdEDEeeYto9s6-HOGQ" name="loadData">
+      <modelElement href="MegaFlight.uml#_f34lEtEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hdcOStEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hdcOS9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_heTJQNEDEeeYto9s6-HOGQ" name="MegaFlightMain">
+    <modelElement href="MegaFlight.uml#_f4EyUNEDEeeYto9s6-HOGQ"/>
+    <visualProperties xmi:id="_heTJQdEDEeeYto9s6-HOGQ" position="561.0,1645.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_heTJQtEDEeeYto9s6-HOGQ" label="+"/>
+    <operations xmi:id="_heTJQ9EDEeeYto9s6-HOGQ" name="main" staticOperation="true">
+      <modelElement href="MegaFlight.uml#_f4FZYNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_heTJRNEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_heTJRdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_heTJRtEDEeeYto9s6-HOGQ" name="args">
+        <modelElement href="MegaFlight.uml#_f4GAcNEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_heTJR9EDEeeYto9s6-HOGQ" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_heTJSNEDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_hRuF0NEDEeeYto9s6-HOGQ" name="BookingDesk" associationsIn="_hO5bUNEDEeeYto9s6-HOGQ _ha-IcNEDEeeYto9s6-HOGQ" associationsOut="_hRhRgNEDEeeYto9s6-HOGQ _hRomQNEDEeeYto9s6-HOGQ _hRtewNEDEeeYto9s6-HOGQ">
+    <modelElement href="MegaFlight.uml#_f4Up8NEDEeeYto9s6-HOGQ"/>
+    <visualProperties xmi:id="_hRuF0dEDEeeYto9s6-HOGQ" position="1827.0,1022.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_hRuF0tEDEeeYto9s6-HOGQ" label="+"/>
+    <attributes xmi:id="_hRuF09EDEeeYto9s6-HOGQ" defaultValue="new ArrayList&lt;>()" name="flights">
+      <modelElement href="MegaFlight.uml#_f9Z-QNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hRuF1NEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRuF1dEDEeeYto9s6-HOGQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_hRuF1tEDEeeYto9s6-HOGQ" name="Flight">
+        <modelElement href="MegaFlight.uml#_f4dM0NEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hRuF19EDEeeYto9s6-HOGQ" defaultValue="new SeatPrices()" name="pricelist">
+      <modelElement href="MegaFlight.uml#_f9Z-Q9EDEeeYto9s6-HOGQ"/>
+      <stereotypes xmi:id="_hRuF2NEDEeeYto9s6-HOGQ" name="LegacyStyledElement">
+        <modelElement href="MegaFlight.uml#_f9alUNEDEeeYto9s6-HOGQ"/>
+      </stereotypes>
+      <visibility xmi:id="_hRuF2dEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hRuF2tEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hRuF29EDEeeYto9s6-HOGQ" name="SeatPrices">
+        <modelElement href="MegaFlight.uml#_f4u5oNEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hRuF3NEDEeeYto9s6-HOGQ" defaultValue="new FlightMenuBooking()" name="menu">
+      <modelElement href="MegaFlight.uml#_f9alUdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hRuF3dEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRuF3tEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hRuF39EDEeeYto9s6-HOGQ" name="FlightMenuBooking">
+        <modelElement href="MegaFlight.uml#_f4khkNEDEeeYto9s6-HOGQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hRuF4NEDEeeYto9s6-HOGQ" name="totalIncomeTickets">
+      <modelElement href="MegaFlight.uml#_f9alU9EDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hRuF4dEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRuF4tEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hRuF49EDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_hRuF5NEDEeeYto9s6-HOGQ" name="totalCustomerCostTickets">
+      <modelElement href="MegaFlight.uml#_f9alVNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hRuF5dEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRuF5tEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <type xmi:id="_hRuF59EDEeeYto9s6-HOGQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_hRuF6NEDEeeYto9s6-HOGQ" name="BookingDesk">
+      <modelElement href="MegaFlight.uml#_f4V4ENEDEeeYto9s6-HOGQ"/>
+      <keywords xmi:id="_hRuF6dEDEeeYto9s6-HOGQ" keyword="create"/>
+      <visibility xmi:id="_hRuF6tEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRuF69EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hRuF7NEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f4V4E9EDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hRuF7dEDEeeYto9s6-HOGQ" name="BookingDesk">
+          <modelElement href="MegaFlight.uml#_f4Up8NEDEeeYto9s6-HOGQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hRuF7tEDEeeYto9s6-HOGQ" name="setPrices">
+      <modelElement href="MegaFlight.uml#_f4WfINEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hRuF79EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRuF8NEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hRuF8dEDEeeYto9s6-HOGQ" name="firstClassPrice">
+        <modelElement href="MegaFlight.uml#_f4WfIdEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hRuF8tEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hRuF89EDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hRuF9NEDEeeYto9s6-HOGQ" name="economyClassPrice">
+        <modelElement href="MegaFlight.uml#_f4WfItEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hRuF9dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hRuF9tEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hRuF99EDEeeYto9s6-HOGQ" name="resetTotalCustomerCostTickets">
+      <modelElement href="MegaFlight.uml#_f4XGMNEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hRuF-NEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRuF-dEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_hRuF-tEDEeeYto9s6-HOGQ" name="bookFlightAndSeats">
+      <modelElement href="MegaFlight.uml#_f4XGMdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hRuF-9EDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRuF_NEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hRuF_dEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f4XtQNEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hRuF_tEDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hRuF_9EDEeeYto9s6-HOGQ" name="flightIndex">
+        <modelElement href="MegaFlight.uml#_f4XGMtEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hRuGANEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hRuGAdEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hRuGAtEDEeeYto9s6-HOGQ" name="seatClassIndex">
+        <modelElement href="MegaFlight.uml#_f4XGM9EDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hRuGA9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hRuGBNEDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_hRuGBdEDEeeYto9s6-HOGQ" name="numberOfSeats">
+        <modelElement href="MegaFlight.uml#_f4XGNNEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hRuGBtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hRuGB9EDEeeYto9s6-HOGQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hRuGCNEDEeeYto9s6-HOGQ" name="bookFoodMenu">
+      <modelElement href="MegaFlight.uml#_f4XtQdEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hRuGCdEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRuGCtEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hRuGC9EDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f4XtQtEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hRuGDNEDEeeYto9s6-HOGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_hRuGDdEDEeeYto9s6-HOGQ" name="AddFlight">
+      <modelElement href="MegaFlight.uml#_f8weANEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hRuGDtEDEeeYto9s6-HOGQ" label="+"/>
+      <cardinality xmi:id="_hRuGD9EDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_hRuGENEDEeeYto9s6-HOGQ" name="flight">
+        <modelElement href="MegaFlight.uml#_f8weAdEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hRuGEdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hRuGEtEDEeeYto9s6-HOGQ" name="Flight">
+          <modelElement href="MegaFlight.uml#_f4dM0NEDEeeYto9s6-HOGQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_hRuGE9EDEeeYto9s6-HOGQ" name="isPlaneInAirportByFlight">
+      <modelElement href="MegaFlight.uml#_f8xFENEDEeeYto9s6-HOGQ"/>
+      <visibility xmi:id="_hRuGFNEDEeeYto9s6-HOGQ" label="-"/>
+      <cardinality xmi:id="_hRuGFdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_hRuGFtEDEeeYto9s6-HOGQ">
+        <modelElement href="MegaFlight.uml#_f8xsINEDEeeYto9s6-HOGQ"/>
+        <type xmi:id="_hRuGF9EDEeeYto9s6-HOGQ" name="Boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_hRuGGNEDEeeYto9s6-HOGQ" name="flight">
+        <modelElement href="MegaFlight.uml#_f8xFEdEDEeeYto9s6-HOGQ"/>
+        <cardinality xmi:id="_hRuGGdEDEeeYto9s6-HOGQ" label="1" max="1" min="1"/>
+        <type xmi:id="_hRuGGtEDEeeYto9s6-HOGQ" name="Flight">
+          <modelElement href="MegaFlight.uml#_f4dM0NEDEeeYto9s6-HOGQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

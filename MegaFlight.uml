@@ -1,0 +1,2206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_feGMENEDEeeYto9s6-HOGQ" name="MegaFlight">
+    <eAnnotations xmi:id="_fmsHYNEDEeeYto9s6-HOGQ" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_fmsHYdEDEeeYto9s6-HOGQ" source="codegen">
+        <details xmi:id="_fmsHYtEDEeeYto9s6-HOGQ" key="codegenDirectory" value="/MegaFlight/src"/>
+        <details xmi:id="_gZrqkNEDEeeYto9s6-HOGQ" key="AssociatedSourceCode" value="/MegaFlight/src/UI/BookingUI.java;2773615308/1;/MegaFlight/src/UI/MegaFlightMain.java;2882960351/1;/MegaFlight/src/booking/AirCompany.java;697264192/1;/MegaFlight/src/booking/AirPlane.java;2833691470/1;/MegaFlight/src/booking/AirPlaneFlyingSimulator.java;1586391472/1;/MegaFlight/src/booking/BookingDesk.java;615558347/1;/MegaFlight/src/booking/Customer.java;1387144229/1;/MegaFlight/src/booking/Flight.java;3799996786/1;/MegaFlight/src/booking/FlightMenu.java;1468706168/1;/MegaFlight/src/booking/FlightMenuBooking.java;3736067189/1;/MegaFlight/src/booking/MockAirCompany.java;3421212055/1;/MegaFlight/src/booking/SeatClass.java;2635046083/1;/MegaFlight/src/booking/SeatPrices.java;330476376/1;/MegaFlight/src/booking/SeatsBooking.java;2794138922/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_f2k9gNEDEeeYto9s6-HOGQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_f2k9gdEDEeeYto9s6-HOGQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_f2k9gtEDEeeYto9s6-HOGQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_f2k9g9EDEeeYto9s6-HOGQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_f2k9hNEDEeeYto9s6-HOGQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_f2k9hdEDEeeYto9s6-HOGQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_f2k9htEDEeeYto9s6-HOGQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_f2k9h9EDEeeYto9s6-HOGQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_f2lkkNEDEeeYto9s6-HOGQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_f2on4NEDEeeYto9s6-HOGQ" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_f2pO8NEDEeeYto9s6-HOGQ" name="swing">
+        <packagedElement xmi:type="uml:Package" xmi:id="_f2pO8dEDEeeYto9s6-HOGQ" name="GroupLayout">
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_f8WOUdEDEeeYto9s6-HOGQ" name="Alignment"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_f2qdENEDEeeYto9s6-HOGQ" name="LayoutStyle">
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_f8cU8dEDEeeYto9s6-HOGQ" name="ComponentPlacement"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_f2rEIdEDEeeYto9s6-HOGQ" name="border">
+          <packagedElement xmi:type="uml:Class" xmi:id="_f8ibkdEDEeeYto9s6-HOGQ" name="LineBorder"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8UZINEDEeeYto9s6-HOGQ" name="JFrame"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8VnQNEDEeeYto9s6-HOGQ" name="GroupLayout"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8XccNEDEeeYto9s6-HOGQ" name="JLabel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8bG0dEDEeeYto9s6-HOGQ" name="JPanel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8bt4dEDEeeYto9s6-HOGQ" name="JScrollPane"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8djENEDEeeYto9s6-HOGQ" name="JComboBox"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8eKIdEDEeeYto9s6-HOGQ" name="JSpinner"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8exMdEDEeeYto9s6-HOGQ" name="SpinnerNumberModel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8fYQdEDEeeYto9s6-HOGQ" name="JTextArea"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8f_UdEDEeeYto9s6-HOGQ" name="JButton"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8h0gdEDEeeYto9s6-HOGQ" name="JTextPane"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8kQwNEDEeeYto9s6-HOGQ" name="JTextField"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8k30dEDEeeYto9s6-HOGQ" name="JCheckBox"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_f2p2ANEDEeeYto9s6-HOGQ" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_f2p2AdEDEeeYto9s6-HOGQ" name="awt">
+        <packagedElement xmi:type="uml:Package" xmi:id="_f2rEINEDEeeYto9s6-HOGQ" name="event">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_f8gmYdEDEeeYto9s6-HOGQ" name="ActionListener"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_f8hNcdEDEeeYto9s6-HOGQ" name="ActionEvent"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8YDgNEDEeeYto9s6-HOGQ" name="Font"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8jpsNEDEeeYto9s6-HOGQ" name="Color"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8q-cNEDEeeYto9s6-HOGQ" name="EventQueue"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_f2p2AtEDEeeYto9s6-HOGQ" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8YqkdEDEeeYto9s6-HOGQ" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_f8ZRodEDEeeYto9s6-HOGQ" name="Iterator"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_f8Z4sdEDEeeYto9s6-HOGQ" name="List"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8uBwdEDEeeYto9s6-HOGQ" name="TimerTask"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8zhUNEDEeeYto9s6-HOGQ" name="HashMap"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_f80IYdEDEeeYto9s6-HOGQ" name="Map"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_f3FT0NEDEeeYto9s6-HOGQ" name="time">
+        <packagedElement xmi:type="uml:Class" xmi:id="_f8szoNEDEeeYto9s6-HOGQ" name="LocalDateTime"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_f9A8sNEDEeeYto9s6-HOGQ" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_f9A8sdEDEeeYto9s6-HOGQ" name="StringBuilder"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_f2qdEdEDEeeYto9s6-HOGQ" name="booking">
+      <packagedElement xmi:type="uml:Class" xmi:id="_f4GngNEDEeeYto9s6-HOGQ" name="AirCompany">
+        <ownedAttribute xmi:id="_f9VFwNEDEeeYto9s6-HOGQ" name="airPlanes" type="_f4KR4NEDEeeYto9s6-HOGQ" isOrdered="true" isReadOnly="true" association="_f-HI5NEDEeeYto9s6-HOGQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9VFwdEDEeeYto9s6-HOGQ" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9VFwtEDEeeYto9s6-HOGQ" value="new ArrayList&lt;AirPlane>()"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9Vs0NEDEeeYto9s6-HOGQ" name="bookingDesk" type="_f4Up8NEDEeeYto9s6-HOGQ" isReadOnly="true" association="_f-Hv8dEDEeeYto9s6-HOGQ">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9Vs0dEDEeeYto9s6-HOGQ" value="new BookingDesk()"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9Vs0tEDEeeYto9s6-HOGQ" name="totalIncome" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9Vs09EDEeeYto9s6-HOGQ" value="0.0"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9s5M9EDEeeYto9s6-HOGQ" name="getTotalIncome" specification="_f4HOkNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9s5NNEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>double totalIncomeTickets = bookingDesk.getTotalIncomeTickets();				&#xD;
+		double totalIncomeFood = bookingDesk.getMenu().getTotalIncomeFood();&#xD;
+		&#xD;
+		return totalIncomeTickets+totalIncomeFood;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9s5NdEDEeeYto9s6-HOGQ" name="getTotalProfit" specification="_f4H1oNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9s5NtEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return getTotalIncome() * 0.3 ;&#xD;
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9tgQNEDEeeYto9s6-HOGQ" name="AddPlane" specification="_f8rlgNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9tgQdEDEeeYto9s6-HOGQ" name="airPlane" type="_f4KR4NEDEeeYto9s6-HOGQ"/>
+          <language>java</language>
+          <body>airPlanes.add(airPlane) ;&#xD;
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9tgQtEDEeeYto9s6-HOGQ" name="getLogReport" specification="_f4IcsNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9tgQ9EDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>StringBuilder logReport = new StringBuilder();&#xD;
+	&#xD;
+	for(AirPlane plane : airPlanes){&#xD;
+		logReport.append(plane.getLogReport()) ;&#xD;
+		logReport.append(&quot;\n&quot;);&#xD;
+	} &#xD;
+	&#xD;
+	return logReport.toString();	&#xD;
+</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_f4HOkNEDEeeYto9s6-HOGQ" name="getTotalIncome" method="_f9s5M9EDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4HOkdEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f4H1oNEDEeeYto9s6-HOGQ" name="getTotalProfit" method="_f9s5NdEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4H1odEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f4IcsNEDEeeYto9s6-HOGQ" name="getLogReport" method="_f9tgQtEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4IcsdEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f8rlgNEDEeeYto9s6-HOGQ" name="AddPlane" method="_f9tgQNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f8rlgdEDEeeYto9s6-HOGQ" name="airPlane" type="_f4KR4NEDEeeYto9s6-HOGQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f4KR4NEDEeeYto9s6-HOGQ" name="AirPlane">
+        <ownedAttribute xmi:id="_f9WT4NEDEeeYto9s6-HOGQ" name="id" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9WT4tEDEeeYto9s6-HOGQ" name="numberOfPlanes" visibility="private" isStatic="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9W68NEDEeeYto9s6-HOGQ" value="0"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9W68tEDEeeYto9s6-HOGQ" name="name" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9W69NEDEeeYto9s6-HOGQ" name="numberOfSeats" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9XiANEDEeeYto9s6-HOGQ" name="isInTheAirport">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9XiAdEDEeeYto9s6-HOGQ" value="true"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9XiAtEDEeeYto9s6-HOGQ" name="logReport" type="_f9A8sdEDEeeYto9s6-HOGQ" isReadOnly="true" association="_f-IXAdEDEeeYto9s6-HOGQ">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9YJENEDEeeYto9s6-HOGQ" value="new StringBuilder()"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9tgRtEDEeeYto9s6-HOGQ" name="AirPlane" specification="_f4LgANEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9tgR9EDEeeYto9s6-HOGQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9tgSNEDEeeYto9s6-HOGQ" name="numberOfSeats">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9tgSdEDEeeYto9s6-HOGQ" type="_f4KR4NEDEeeYto9s6-HOGQ" direction="return"/>
+          <language>java</language>
+          <body>++numberOfPlanes;&#xD;
+	id = numberOfPlanes;&#xD;
+	&#xD;
+	this.name = name;&#xD;
+	this.numberOfSeats = numberOfSeats;	&#xD;
+	&#xD;
+	addLog(&quot;\n&quot; + this.toString());&#xD;
+	addLog(&quot;\n=======================&quot;);&#xD;
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9uHUNEDEeeYto9s6-HOGQ" name="toString" specification="_f4MHFdEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9uHUdEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return &quot;AirPlane: &quot; + name + &quot; [id= &quot; + id + &quot; ]&quot;;&#xD;
+</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9uHUtEDEeeYto9s6-HOGQ" name="addLog" specification="_f4OjUdEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9uHU9EDEeeYto9s6-HOGQ" name="logPiece">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>logReport.append(logPiece) ;&#xD;
+</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_f4LgANEDEeeYto9s6-HOGQ" name="AirPlane" method="_f9tgRtEDEeeYto9s6-HOGQ">
+          <eAnnotations xmi:id="_f4MHEtEDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_f4MHE9EDEeeYto9s6-HOGQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_f4MHENEDEeeYto9s6-HOGQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4MHEdEDEeeYto9s6-HOGQ" name="numberOfSeats">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4MHFNEDEeeYto9s6-HOGQ" type="_f4KR4NEDEeeYto9s6-HOGQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f4MHFdEDEeeYto9s6-HOGQ" name="toString" method="_f9uHUNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4MuINEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f4OjUdEDEeeYto9s6-HOGQ" name="addLog" method="_f9uHUtEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4OjUtEDEeeYto9s6-HOGQ" name="logPiece">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f4QYgNEDEeeYto9s6-HOGQ" name="AirPlaneFlyingSimulator">
+        <generalization xmi:id="_f9CK0NEDEeeYto9s6-HOGQ" general="_f8uBwdEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9YwINEDEeeYto9s6-HOGQ" name="plane" visibility="private" type="_f4KR4NEDEeeYto9s6-HOGQ" association="_f-I-EdEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9YwItEDEeeYto9s6-HOGQ" name="delay" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9ZXMdEDEeeYto9s6-HOGQ" name="counter" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9uHVNEDEeeYto9s6-HOGQ" name="AirPlaneFlyingSimulator" specification="_f8vP4NEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9uHVdEDEeeYto9s6-HOGQ" name="plane" type="_f4KR4NEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f9uHVtEDEeeYto9s6-HOGQ" name="delay">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9uHV9EDEeeYto9s6-HOGQ" type="_f4QYgNEDEeeYto9s6-HOGQ" direction="return"/>
+          <language>java</language>
+          <body>this.plane = plane;&#xD;
+		this.delay = delay;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9uHWNEDEeeYto9s6-HOGQ" name="run" specification="_f4RmoNEDEeeYto9s6-HOGQ">
+          <language>java</language>
+          <body>synchronized(plane) {&#xD;
+			&#xD;
+			while(MockAirCompany.flightSimulaterOnOff) {&#xD;
+				&#xD;
+				while(counter&lt;=20) {			&#xD;
+					if(!MockAirCompany.flightSimulaterOnOff) {&#xD;
+						plane.addLog(String.format(&quot;\nDelayed: %s&quot;, LocalDateTime.now().toString()));&#xD;
+						BookingUI.textArea_FlightSimulator.setText(plane.getLogReport());&#xD;
+						plane.setIsInTheAirport(true); &#xD;
+						return;&#xD;
+					}&#xD;
+					toWait(delay);&#xD;
+					counter++;&#xD;
+				}&#xD;
+				//toWait(delay * 20);&#xD;
+				&#xD;
+				plane.setIsInTheAirport(false);			&#xD;
+				plane.addLog(String.format(&quot;\nTake-Off: %s&quot;, LocalDateTime.now().toString()));&#xD;
+				plane.addLog(&quot;\nFlying:&quot;);&#xD;
+				for(int i=1; i&lt;=6;i++) { // 1 minute&#xD;
+					plane.addLog(&quot; ... &quot;);&#xD;
+					if(BookingUI.autologgerOnOff) {&#xD;
+						BookingUI.textArea_FlightSimulator.setText(plane.getLogReport());&#xD;
+					}&#xD;
+					if(!MockAirCompany.flightSimulaterOnOff) {&#xD;
+						plane.addLog(String.format(&quot;\nEmergency landing: %s&quot;, LocalDateTime.now().plusMinutes(1).toString()));&#xD;
+						BookingUI.textArea_FlightSimulator.setText(plane.getLogReport());&#xD;
+						plane.setIsInTheAirport(true); &#xD;
+						return;&#xD;
+					}&#xD;
+					toWait(10);        &#xD;
+				}&#xD;
+&#xD;
+				plane.addLog(String.format(&quot;\nLanding: %s&quot;, LocalDateTime.now().plusMinutes(3).toString()));&#xD;
+				plane.addLog(String.format(&quot;\nRefueled: %s&quot;, LocalDateTime.now().plusMinutes(6).toString()));&#xD;
+				if(BookingUI.autologgerOnOff)&#xD;
+					BookingUI.textArea_FlightSimulator.setText(plane.getLogReport());&#xD;
+				plane.setIsInTheAirport(true); &#xD;
+				toWait(20);&#xD;
+				plane.addLog(String.format(&quot;\nReturnd to gate: %s&quot;, LocalDateTime.now().plusMinutes(10).toString()));&#xD;
+				if(BookingUI.autologgerOnOff)&#xD;
+					BookingUI.textArea_FlightSimulator.setText(plane.getLogReport());&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9uHWdEDEeeYto9s6-HOGQ" name="toWait" specification="_f4S0wdEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9uHWtEDEeeYto9s6-HOGQ" name="time">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>try {&#xD;
+			Thread.sleep(time * 1000);&#xD;
+		} catch (InterruptedException e) {&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_f4RmoNEDEeeYto9s6-HOGQ" name="run" method="_f9uHWNEDEeeYto9s6-HOGQ"/>
+        <ownedOperation xmi:id="_f4S0wdEDEeeYto9s6-HOGQ" name="toWait" visibility="private" method="_f9uHWdEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4S0wtEDEeeYto9s6-HOGQ" name="time">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f8vP4NEDEeeYto9s6-HOGQ" name="AirPlaneFlyingSimulator" method="_f9uHVNEDEeeYto9s6-HOGQ">
+          <eAnnotations xmi:id="_f8vP49EDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_f8vP5NEDEeeYto9s6-HOGQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_f8vP4dEDEeeYto9s6-HOGQ" name="plane" type="_f4KR4NEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f8vP4tEDEeeYto9s6-HOGQ" name="delay">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f8vP5dEDEeeYto9s6-HOGQ" type="_f4QYgNEDEeeYto9s6-HOGQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f4Up8NEDEeeYto9s6-HOGQ" name="BookingDesk">
+        <ownedAttribute xmi:id="_f9Z-QNEDEeeYto9s6-HOGQ" name="flights" type="_f4dM0NEDEeeYto9s6-HOGQ" isOrdered="true" isReadOnly="true" association="_f-JlINEDEeeYto9s6-HOGQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9Z-QdEDEeeYto9s6-HOGQ" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9Z-QtEDEeeYto9s6-HOGQ" value="new ArrayList&lt;>()"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9Z-Q9EDEeeYto9s6-HOGQ" name="pricelist" visibility="private" type="_f4u5oNEDEeeYto9s6-HOGQ" association="_f-JlI9EDEeeYto9s6-HOGQ">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9Z-RNEDEeeYto9s6-HOGQ" value="new SeatPrices()"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9alUdEDEeeYto9s6-HOGQ" name="menu" type="_f4khkNEDEeeYto9s6-HOGQ" isReadOnly="true" association="_f-KMMdEDEeeYto9s6-HOGQ">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9alUtEDEeeYto9s6-HOGQ" value="new FlightMenuBooking()"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9alU9EDEeeYto9s6-HOGQ" name="totalIncomeTickets" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9alVNEDEeeYto9s6-HOGQ" name="totalCustomerCostTickets" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9uuYNEDEeeYto9s6-HOGQ" name="BookingDesk" specification="_f4V4ENEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9uuYdEDEeeYto9s6-HOGQ" type="_f4Up8NEDEeeYto9s6-HOGQ" direction="return"/>
+          <language>java</language>
+          <body>totalIncomeTickets=0;&#xD;
+		totalCustomerCostTickets=0;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9uuYtEDEeeYto9s6-HOGQ" name="AddFlight" specification="_f8weANEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9uuY9EDEeeYto9s6-HOGQ" name="flight" type="_f4dM0NEDEeeYto9s6-HOGQ"/>
+          <language>java</language>
+          <body>flights.add(flight) ;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9uuZNEDEeeYto9s6-HOGQ" name="setPrices" specification="_f4WfINEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9uuZdEDEeeYto9s6-HOGQ" name="firstClassPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9uuZtEDEeeYto9s6-HOGQ" name="economyClassPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>pricelist.setFirstClassTicketPrice(firstClassPrice);&#xD;
+		pricelist.setEconomyClassTicketPrice(economyClassPrice);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9uuZ9EDEeeYto9s6-HOGQ" name="resetTotalCustomerCostTickets" specification="_f4XGMNEDEeeYto9s6-HOGQ">
+          <language>java</language>
+          <body>totalCustomerCostTickets=0;		&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9vVcNEDEeeYto9s6-HOGQ" name="bookFlightAndSeats" specification="_f4XGMdEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9vVcdEDEeeYto9s6-HOGQ" name="flightIndex">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9vVctEDEeeYto9s6-HOGQ" name="seatClassIndex">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9vVc9EDEeeYto9s6-HOGQ" name="numberOfSeats">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9vVdNEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String returnString = &quot;&quot;;&#xD;
+		&#xD;
+		Flight flight = flights.get(flightIndex);		&#xD;
+		String  className = seatClassIndex==0 ? SeatClass.ECONOMY.toString() : SeatClass.FIRST.toString();&#xD;
+&#xD;
+		Boolean isPlaneInAirport = isPlaneInAirportByFlight(flight) ;&#xD;
+		if(!isPlaneInAirport) {&#xD;
+			return &quot;The plane is not in the airport. \nPlease try another flight.&quot;;	&#xD;
+		}&#xD;
+				&#xD;
+		Boolean isPossibleToBook = SeatsBooking.book(flight, seatClassIndex, numberOfSeats);				&#xD;
+		if(isPossibleToBook) {		&#xD;
+		int price = seatClassIndex==0 ? pricelist.getEconomyClassTicketPrice() : pricelist.getFirstClassTicketPrice();&#xD;
+		int total=numberOfSeats*price;&#xD;
+		totalIncomeTickets+=total;&#xD;
+		totalCustomerCostTickets+=total;		&#xD;
+		returnString = String.format(&#xD;
+				&quot;\nBOOKED: &quot;+ &quot;\nFlight: &quot;+ flight.getName()+&quot;\nSeat(s): &quot; + numberOfSeats +&quot;, %s&quot; +&quot;\nCost: &quot;+ total+&quot; SEK&quot; ,&#xD;
+			                      	className);	&#xD;
+		} else {&#xD;
+			int availableSeatsOfTheClass = seatClassIndex==0 ? flight.getNumberOfSeatsEconomyClassAvailable() : flight.getNumberOfSeatsFirstClassAvailable();&#xD;
+			returnString = String.format(&#xD;
+					       &quot;There are only %d %s Class Seat(s) Available. \nYou are welcome to check available seat(s) in another class.&quot;,&#xD;
+					       availableSeatsOfTheClass, className);&#xD;
+		}&#xD;
+		&#xD;
+		return returnString;&#xD;
+		</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9vVddEDEeeYto9s6-HOGQ" name="isPlaneInAirportByFlight" specification="_f8xFENEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9vVdtEDEeeYto9s6-HOGQ" name="flight" type="_f4dM0NEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f9vVd9EDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return flight.getAirplane().getIsInTheAirport();	&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9vVeNEDEeeYto9s6-HOGQ" name="bookFoodMenu" specification="_f4XtQdEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9vVedEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// TODO Auto-generated method stub&#xD;
+		&#xD;
+		return null;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_f4V4ENEDEeeYto9s6-HOGQ" name="BookingDesk" method="_f9uuYNEDEeeYto9s6-HOGQ">
+          <eAnnotations xmi:id="_f4V4EdEDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_f4V4EtEDEeeYto9s6-HOGQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_f4V4E9EDEeeYto9s6-HOGQ" type="_f4Up8NEDEeeYto9s6-HOGQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f4WfINEDEeeYto9s6-HOGQ" name="setPrices" method="_f9uuZNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4WfIdEDEeeYto9s6-HOGQ" name="firstClassPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4WfItEDEeeYto9s6-HOGQ" name="economyClassPrice">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f4XGMNEDEeeYto9s6-HOGQ" name="resetTotalCustomerCostTickets" method="_f9uuZ9EDEeeYto9s6-HOGQ"/>
+        <ownedOperation xmi:id="_f4XGMdEDEeeYto9s6-HOGQ" name="bookFlightAndSeats" method="_f9vVcNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4XGMtEDEeeYto9s6-HOGQ" name="flightIndex">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4XGM9EDEeeYto9s6-HOGQ" name="seatClassIndex">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4XGNNEDEeeYto9s6-HOGQ" name="numberOfSeats">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4XtQNEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f4XtQdEDEeeYto9s6-HOGQ" name="bookFoodMenu" method="_f9vVeNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4XtQtEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f8weANEDEeeYto9s6-HOGQ" name="AddFlight" method="_f9uuYtEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f8weAdEDEeeYto9s6-HOGQ" name="flight" type="_f4dM0NEDEeeYto9s6-HOGQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f8xFENEDEeeYto9s6-HOGQ" name="isPlaneInAirportByFlight" visibility="private" method="_f9vVddEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f8xFEdEDEeeYto9s6-HOGQ" name="flight" type="_f4dM0NEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f8xsINEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f4aJgNEDEeeYto9s6-HOGQ" name="Customer">
+        <ownedAttribute xmi:id="_f9bMYNEDEeeYto9s6-HOGQ" name="id">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9cagNEDEeeYto9s6-HOGQ" name="firstName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9dooNEDEeeYto9s6-HOGQ" name="lastName">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9v8itEDEeeYto9s6-HOGQ" name="Customer" specification="_f4bXoNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9v8i9EDEeeYto9s6-HOGQ" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9v8jNEDEeeYto9s6-HOGQ" name="firstName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9v8jdEDEeeYto9s6-HOGQ" name="lastName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9v8jtEDEeeYto9s6-HOGQ" type="_f4aJgNEDEeeYto9s6-HOGQ" direction="return"/>
+          <language>java</language>
+          <body>super();&#xD;
+		this.firstName = firstName;&#xD;
+		this.lastName = lastName;&#xD;
+		this.id=id;&#xD;
+		&#xD;
+		&#xD;
+	&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_f4bXoNEDEeeYto9s6-HOGQ" name="Customer" method="_f9v8itEDEeeYto9s6-HOGQ">
+          <eAnnotations xmi:id="_f4b-sdEDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_f4b-stEDEeeYto9s6-HOGQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_f4bXodEDEeeYto9s6-HOGQ" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4bXotEDEeeYto9s6-HOGQ" name="firstName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4b-sNEDEeeYto9s6-HOGQ" name="lastName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4b-s9EDEeeYto9s6-HOGQ" type="_f4aJgNEDEeeYto9s6-HOGQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f4dM0NEDEeeYto9s6-HOGQ" name="Flight">
+        <ownedAttribute xmi:id="_f9e2wNEDEeeYto9s6-HOGQ" name="name" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9e2wdEDEeeYto9s6-HOGQ" name="airplane" type="_f4KR4NEDEeeYto9s6-HOGQ" isReadOnly="true" association="_f-KzQdEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9e2wtEDEeeYto9s6-HOGQ" name="numberOfSeatsFirstClass" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9e2w9EDEeeYto9s6-HOGQ" name="numberOfSeatsEconomyClass" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9e2xNEDEeeYto9s6-HOGQ" name="numberOfSeatsFirstClassAvailable" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9fd0NEDEeeYto9s6-HOGQ" name="numberOfSeatsEconomyClassAvailable" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9wjkNEDEeeYto9s6-HOGQ" name="Flight" specification="_f8y6QNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9wjkdEDEeeYto9s6-HOGQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9wjktEDEeeYto9s6-HOGQ" name="airplane" type="_f4KR4NEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f9wjk9EDEeeYto9s6-HOGQ" name="numberOfSeatsFirstClass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9wjlNEDEeeYto9s6-HOGQ" type="_f4dM0NEDEeeYto9s6-HOGQ" direction="return"/>
+          <language>java</language>
+          <body>this.name = name;&#xD;
+		this.airplane = airplane;&#xD;
+		this.numberOfSeatsFirstClass = numberOfSeatsFirstClass;&#xD;
+		&#xD;
+		this.numberOfSeatsEconomyClass = airplane.getNumberOfSeats() - numberOfSeatsFirstClass;&#xD;
+		&#xD;
+	    numberOfSeatsFirstClassAvailable = numberOfSeatsFirstClass;     &#xD;
+	    numberOfSeatsEconomyClassAvailable = numberOfSeatsEconomyClass;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9wjldEDEeeYto9s6-HOGQ" name="bookFirstClassSeats" specification="_f4fCANEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9wjltEDEeeYto9s6-HOGQ" name="numberOfSeats">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>numberOfSeatsFirstClassAvailable = &#xD;
+				numberOfSeatsFirstClassAvailable > numberOfSeats ? &#xD;
+						numberOfSeatsFirstClassAvailable - numberOfSeats :&#xD;
+						0;	&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9wjl9EDEeeYto9s6-HOGQ" name="bookEconomyClassSeats" specification="_f4fpENEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9wjmNEDEeeYto9s6-HOGQ" name="numberOfSeats">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>numberOfSeatsEconomyClassAvailable = &#xD;
+				numberOfSeatsEconomyClassAvailable > numberOfSeats ? &#xD;
+						numberOfSeatsEconomyClassAvailable - numberOfSeats :&#xD;
+						0;	&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_f4fCANEDEeeYto9s6-HOGQ" name="bookFirstClassSeats" method="_f9wjldEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4fCAdEDEeeYto9s6-HOGQ" name="numberOfSeats">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f4fpENEDEeeYto9s6-HOGQ" name="bookEconomyClassSeats" method="_f9wjl9EDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4fpEdEDEeeYto9s6-HOGQ" name="numberOfSeats">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f8y6QNEDEeeYto9s6-HOGQ" name="Flight" method="_f9wjkNEDEeeYto9s6-HOGQ">
+          <eAnnotations xmi:id="_f8y6RNEDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_f8y6RdEDEeeYto9s6-HOGQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_f8y6QdEDEeeYto9s6-HOGQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f8y6QtEDEeeYto9s6-HOGQ" name="airplane" type="_f4KR4NEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f8y6Q9EDEeeYto9s6-HOGQ" name="numberOfSeatsFirstClass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f8y6RtEDEeeYto9s6-HOGQ" type="_f4dM0NEDEeeYto9s6-HOGQ" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f4g3MNEDEeeYto9s6-HOGQ" name="FlightMenu">
+        <ownedAttribute xmi:id="_f9fd0dEDEeeYto9s6-HOGQ" name="menu" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <qualifier xmi:id="_f9gE4dEDEeeYto9s6-HOGQ">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </qualifier>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9fd0tEDEeeYto9s6-HOGQ" value="new HashMap&lt;String, Integer>()"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9xKoNEDEeeYto9s6-HOGQ" name="FlightMenu" specification="_f80vcdEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9xKodEDEeeYto9s6-HOGQ" name="foo" type="_f4trgNEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f9xKotEDEeeYto9s6-HOGQ" type="_f4g3MNEDEeeYto9s6-HOGQ" direction="return"/>
+          <language>java</language>
+          <body>menu = init(foo);&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9xKo9EDEeeYto9s6-HOGQ" name="init" specification="_f81Wg9EDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9xKpNEDEeeYto9s6-HOGQ" name="foo" type="_f4trgNEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f9xKpdEDEeeYto9s6-HOGQ" type="_f80IYdEDEeeYto9s6-HOGQ" direction="return"/>
+          <language>java</language>
+          <body>if (foo.name().equals(SeatClass.ECONOMY.toString())) {&#xD;
+			&#xD;
+			menu.put(&quot;Homemade Italian Lasagna&quot;, 120);&#xD;
+			menu.put(&quot;Italian Spaghetti Bolognese&quot;, 120);&#xD;
+			menu.put(&quot;Swedish Meatballs&quot;, 120);&#xD;
+			menu.put(&quot;Sparkling Water&quot;, 20);&#xD;
+			menu.put(&quot;Dry Whiskey&quot;, 120);&#xD;
+			menu.put(&quot;Carlsberg Export&quot;, 60);&#xD;
+			menu.put(&quot;Coca cola&quot;, 20);&#xD;
+			menu.put(&quot;Fanta&quot;, 20);&#xD;
+			menu.put(&quot;Sprite&quot;, 20);&#xD;
+			menu.put(&quot;Orange juice&quot;, 25);&#xD;
+			menu.put(&quot;Snickers, 150g&quot;, 20);&#xD;
+			menu.put(&quot;Cheetos, 250g&quot;, 30);&#xD;
+			menu.put(&quot;Chips, 250g&quot;, 25);&#xD;
+			menu.put(&quot;Marabou, 200g&quot;, 30);&#xD;
+			menu.put(&quot;Fresh Bun right from the oven&quot;, 15);&#xD;
+			&#xD;
+		}&#xD;
+&#xD;
+		else if (foo.name().equals(SeatClass.FIRST.toString())) {&#xD;
+			&#xD;
+			&#xD;
+			menu.put(&quot;Cooked Clams with spicy cream sauce&quot;, 180);&#xD;
+			menu.put(&quot;Fresh Lobster with fried tomatoes&quot;, 230);&#xD;
+			menu.put(&quot;Seafood Soup&quot;, 140);&#xD;
+			menu.put(&quot;Italian Spaghetti Carbonara&quot;, 90);&#xD;
+			menu.put(&quot;Grilled Entrecote with Bearnaise sauce&quot;, 160);&#xD;
+			menu.put(&quot;Sparkling Water&quot;, 25);&#xD;
+			menu.put(&quot;Dry Whiskey&quot;, 120);&#xD;
+			menu.put(&quot;Carlsberg Export&quot;, 60);&#xD;
+			menu.put(&quot;Coca cola&quot;, 25);&#xD;
+			menu.put(&quot;Fanta&quot;, 25);&#xD;
+			menu.put(&quot;Sprite&quot;, 25);&#xD;
+			menu.put(&quot;Orange juice&quot;, 30);&#xD;
+			menu.put(&quot;Snickers, 150g&quot;, 20);&#xD;
+			menu.put(&quot;Cheetos, 250g&quot;, 30);&#xD;
+			menu.put(&quot;Chips, 250g&quot;, 25);&#xD;
+			menu.put(&quot;Marabou, 200g&quot;, 30);&#xD;
+			menu.put(&quot;Fresh Bun right from the oven&quot;, 15);&#xD;
+			&#xD;
+		}&#xD;
+		return menu;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9xKptEDEeeYto9s6-HOGQ" name="getMenu" specification="_f4heQNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9xKp9EDEeeYto9s6-HOGQ" type="_f80IYdEDEeeYto9s6-HOGQ" direction="return"/>
+          <language>java</language>
+          <body>return menu;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9xKqNEDEeeYto9s6-HOGQ" name="setMenu" specification="_f9EAANEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9xKqdEDEeeYto9s6-HOGQ" name="menu" type="_f80IYdEDEeeYto9s6-HOGQ"/>
+          <language>java</language>
+          <body>this.menu = menu;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_f4heQNEDEeeYto9s6-HOGQ" name="getMenu" method="_f9xKptEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9DY8dEDEeeYto9s6-HOGQ" type="_f80IYdEDEeeYto9s6-HOGQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f80vcdEDEeeYto9s6-HOGQ" name="FlightMenu" method="_f9xKoNEDEeeYto9s6-HOGQ">
+          <eAnnotations xmi:id="_f81WgNEDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_f81WgdEDEeeYto9s6-HOGQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_f80vctEDEeeYto9s6-HOGQ" name="foo" type="_f4trgNEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f81WgtEDEeeYto9s6-HOGQ" type="_f4g3MNEDEeeYto9s6-HOGQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f81Wg9EDEeeYto9s6-HOGQ" name="init" method="_f9xKo9EDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f81WhNEDEeeYto9s6-HOGQ" name="foo" type="_f4trgNEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f9DY8NEDEeeYto9s6-HOGQ" type="_f80IYdEDEeeYto9s6-HOGQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f9EAANEDEeeYto9s6-HOGQ" name="setMenu" method="_f9xKqNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9EAAdEDEeeYto9s6-HOGQ" name="menu" type="_f80IYdEDEeeYto9s6-HOGQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f4khkNEDEeeYto9s6-HOGQ" name="FlightMenuBooking">
+        <ownedAttribute xmi:id="_f9gE4tEDEeeYto9s6-HOGQ" name="fmenu" visibility="package" type="_f4g3MNEDEeeYto9s6-HOGQ" association="_f-LaUdEDEeeYto9s6-HOGQ">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9gr8NEDEeeYto9s6-HOGQ" value="new FlightMenu(SeatClass.FIRST)"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9gr8tEDEeeYto9s6-HOGQ" name="emenu" visibility="package" type="_f4g3MNEDEeeYto9s6-HOGQ" association="_f-MBYNEDEeeYto9s6-HOGQ">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9gr89EDEeeYto9s6-HOGQ" value="new FlightMenu(SeatClass.ECONOMY)"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9hTANEDEeeYto9s6-HOGQ" name="totalIncomeFood" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9hTAdEDEeeYto9s6-HOGQ" value="0"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9hTAtEDEeeYto9s6-HOGQ" name="totalCustomerCostFood" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9hTA9EDEeeYto9s6-HOGQ" value="0"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9xKqtEDEeeYto9s6-HOGQ" name="GetTotalCustomerCostFood" specification="_f4lIoNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9xKq9EDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return totalCustomerCostFood;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9xxsNEDEeeYto9s6-HOGQ" name="resetTotalCustomerCostFood" specification="_f4lIotEDEeeYto9s6-HOGQ">
+          <language>java</language>
+          <body>totalCustomerCostFood=0;		&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9xxsdEDEeeYto9s6-HOGQ" name="foodMenuOrderItems" specification="_f4lvsNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9xxstEDEeeYto9s6-HOGQ" name="customerid">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9xxs9EDEeeYto9s6-HOGQ" name="foodkey">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9xxtNEDEeeYto9s6-HOGQ" name="amount">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9xxtdEDEeeYto9s6-HOGQ" name="passangerClass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9xxttEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>FlightMenu thisMenu = getCorrectMenu(passangerClass);&#xD;
+		getTotalPrice(foodkey, passangerClass, amount); &#xD;
+		return &quot;\nOrdered: &quot; + amount + &quot; &quot; + foodkey + &quot;\nCost: &quot;&#xD;
+			+ thisMenu.getMenu().get(foodkey).intValue()*amount	+ &quot; SEK.&quot;;	&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9xxt9EDEeeYto9s6-HOGQ" name="foodMenuUnOrderItems" specification="_f4mWwdEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9xxuNEDEeeYto9s6-HOGQ" name="customerid">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9xxudEDEeeYto9s6-HOGQ" name="foodkey">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9xxutEDEeeYto9s6-HOGQ" name="amount">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9xxu9EDEeeYto9s6-HOGQ" name="passangerClass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9xxvNEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>FlightMenu thisMenu = getCorrectMenu(passangerClass);&#xD;
+		getTotalMinusPrice(foodkey, passangerClass, amount);&#xD;
+		return &quot;\nRemoved: &quot; + amount + &quot; &quot; + foodkey + &quot;\nRemoved Cost: &quot;&#xD;
+		+  thisMenu.getMenu().get(foodkey).intValue()*amount	+ &quot; SEK.&quot; ;&#xD;
+	&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9xxvdEDEeeYto9s6-HOGQ" name="newCustomer" specification="_f4m91dEDEeeYto9s6-HOGQ">
+          <language>java</language>
+          <body>resetTotalCustomerCostFood();	&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9xxvtEDEeeYto9s6-HOGQ" name="getCorrectMenu" specification="_f4nk4NEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9xxv9EDEeeYto9s6-HOGQ" name="passangerClass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9xxwNEDEeeYto9s6-HOGQ" type="_f4g3MNEDEeeYto9s6-HOGQ" direction="return"/>
+          <language>java</language>
+          <body>if(passangerClass == 0) {&#xD;
+			return emenu;&#xD;
+		}else {			&#xD;
+			return fmenu;			&#xD;
+		}		&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9yYwNEDEeeYto9s6-HOGQ" name="getTotalPrice" specification="_f4oL8NEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9yYwdEDEeeYto9s6-HOGQ" name="foodkey">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9yYwtEDEeeYto9s6-HOGQ" name="passangerClass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9yYw9EDEeeYto9s6-HOGQ" name="amount">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9yYxNEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>int menuPrice =  0; // important that this stay here.&#xD;
+&#xD;
+		if (passangerClass == 1) {&#xD;
+			Iterator it1 = fmenu.getMenu().entrySet().iterator();&#xD;
+			while (it1.hasNext()) {&#xD;
+				Map.Entry pair = (Map.Entry) it1.next();&#xD;
+				if (pair.getKey().equals(foodkey)) {&#xD;
+					menuPrice += (Integer) pair.getValue();&#xD;
+					// it1.remove(); // avoids a ConcurrentModificationException&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+&#xD;
+		else {&#xD;
+			if (passangerClass == 0) {&#xD;
+				Iterator&lt;Map.Entry&lt;String, Integer>> it1 = emenu.getMenu().entrySet().iterator();&#xD;
+				while (it1.hasNext()) {&#xD;
+					Map.Entry&lt;String, Integer> pair = (Map.Entry) it1.next();&#xD;
+					if (pair.getKey().equals(foodkey)) {&#xD;
+						menuPrice += (Integer) pair.getValue();&#xD;
+						//it1.remove(); // avoids a ConcurrentModificationException&#xD;
+					}&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		totalCustomerCostFood += (menuPrice*amount);&#xD;
+		totalIncomeFood+= (menuPrice*amount); // need fix&#xD;
+		return totalCustomerCostFood;		&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9yYxdEDEeeYto9s6-HOGQ" name="getTotalMinusPrice" specification="_f4ozANEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9yYxtEDEeeYto9s6-HOGQ" name="foodkey">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9yYx9EDEeeYto9s6-HOGQ" name="passangerClass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9yYyNEDEeeYto9s6-HOGQ" name="amount">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9yYydEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>int menuPrice = 0;&#xD;
+		&#xD;
+		if (passangerClass == 1) {&#xD;
+			Iterator it1 = fmenu.getMenu().entrySet().iterator();&#xD;
+			while (it1.hasNext()) {&#xD;
+				Map.Entry pair = (Map.Entry) it1.next();&#xD;
+				if (pair.getKey().equals(foodkey)) {&#xD;
+					menuPrice += (Integer) pair.getValue();&#xD;
+				}				&#xD;
+			}			&#xD;
+		}&#xD;
+		&#xD;
+		else {&#xD;
+			if (passangerClass == 0) {&#xD;
+				Iterator&lt;Map.Entry&lt;String, Integer>> it1 = emenu.getMenu().entrySet().iterator();&#xD;
+				while (it1.hasNext()) {&#xD;
+					Map.Entry&lt;String, Integer> pair = (Map.Entry) it1.next();&#xD;
+					if (pair.getKey().equals(foodkey)) {&#xD;
+						menuPrice += (Integer) pair.getValue();						&#xD;
+					}&#xD;
+				}	&#xD;
+			}		&#xD;
+					}&#xD;
+		totalCustomerCostFood -= (menuPrice*amount);&#xD;
+		totalIncomeFood-= (menuPrice*amount); &#xD;
+		return totalCustomerCostFood;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_f4lIoNEDEeeYto9s6-HOGQ" name="GetTotalCustomerCostFood" method="_f9xKqtEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4lIodEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f4lIotEDEeeYto9s6-HOGQ" name="resetTotalCustomerCostFood" visibility="private" method="_f9xxsNEDEeeYto9s6-HOGQ"/>
+        <ownedOperation xmi:id="_f4lvsNEDEeeYto9s6-HOGQ" name="foodMenuOrderItems" method="_f9xxsdEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4lvsdEDEeeYto9s6-HOGQ" name="customerid">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4lvstEDEeeYto9s6-HOGQ" name="foodkey">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4lvs9EDEeeYto9s6-HOGQ" name="amount">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4lvtNEDEeeYto9s6-HOGQ" name="passangerClass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4mWwNEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f4mWwdEDEeeYto9s6-HOGQ" name="foodMenuUnOrderItems" method="_f9xxt9EDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4m90NEDEeeYto9s6-HOGQ" name="customerid">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4m90dEDEeeYto9s6-HOGQ" name="foodkey">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4m90tEDEeeYto9s6-HOGQ" name="amount">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4m909EDEeeYto9s6-HOGQ" name="passangerClass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4m91NEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f4m91dEDEeeYto9s6-HOGQ" name="newCustomer" method="_f9xxvdEDEeeYto9s6-HOGQ"/>
+        <ownedOperation xmi:id="_f4nk4NEDEeeYto9s6-HOGQ" name="getCorrectMenu" visibility="private" method="_f9xxvtEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4nk4dEDEeeYto9s6-HOGQ" name="passangerClass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f83LsNEDEeeYto9s6-HOGQ" type="_f4g3MNEDEeeYto9s6-HOGQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f4oL8NEDEeeYto9s6-HOGQ" name="getTotalPrice" visibility="private" method="_f9yYwNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4oL8dEDEeeYto9s6-HOGQ" name="foodkey">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4oL8tEDEeeYto9s6-HOGQ" name="passangerClass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4oL89EDEeeYto9s6-HOGQ" name="amount">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4oL9NEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f4ozANEDEeeYto9s6-HOGQ" name="getTotalMinusPrice" visibility="private" method="_f9yYxdEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4ozAdEDEeeYto9s6-HOGQ" name="foodkey">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4ozAtEDEeeYto9s6-HOGQ" name="passangerClass">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4ozA9EDEeeYto9s6-HOGQ" name="amount">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f4ozBNEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f4qBINEDEeeYto9s6-HOGQ" name="MockAirCompany">
+        <ownedAttribute xmi:id="_f9h6ENEDEeeYto9s6-HOGQ" name="flightSimulaterOnOff" isStatic="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9h6EdEDEeeYto9s6-HOGQ" value="false"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9ihIdEDEeeYto9s6-HOGQ" name="airCompany" visibility="private" type="_f4GngNEDEeeYto9s6-HOGQ" association="_f-MBY9EDEeeYto9s6-HOGQ">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9ihItEDEeeYto9s6-HOGQ" value="new AirCompany()"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9ihJNEDEeeYto9s6-HOGQ" name="planes" visibility="private" isStatic="true" type="_f4KR4NEDEeeYto9s6-HOGQ" isOrdered="true" association="_f-MocdEDEeeYto9s6-HOGQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9ihJdEDEeeYto9s6-HOGQ" value="*"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9yYytEDEeeYto9s6-HOGQ" name="MockAirCompany" specification="_f4rPQNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9yYy9EDEeeYto9s6-HOGQ" type="_f4qBINEDEeeYto9s6-HOGQ" direction="return"/>
+          <language>java</language>
+          <body>airCompany.AddPlane(new AirPlane(&quot;Boeing 747&quot;, 10)); &#xD;
+		airCompany.AddPlane(new AirPlane(&quot;Boeing 777&quot;, 10)); &#xD;
+		airCompany.AddPlane(new AirPlane(&quot;Boeing 800&quot;, 10)); &#xD;
+		&#xD;
+		planes = airCompany.getAirPlanes();&#xD;
+		&#xD;
+		BookingDesk bookingDesk = airCompany.getBookingDesk();&#xD;
+&#xD;
+		//Flights&#xD;
+		bookingDesk.AddFlight(new Flight(&quot;ARN - GOT MegaFlight 1440&quot;, planes.get(0), 5));&#xD;
+		bookingDesk.AddFlight(new Flight(&quot;ARN - GOT MegaFlight 1450&quot;, planes.get(1), 5)); &#xD;
+		bookingDesk.AddFlight(new Flight(&quot;ARN - GOT MegaFlight 1460&quot;, planes.get(2), 5)); &#xD;
+		&#xD;
+		//Prices		&#xD;
+		bookingDesk.setPrices(20000, 5000); &#xD;
+		&#xD;
+		//Simulator&#xD;
+		//flightSimulatorOnOff();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9yYzNEDEeeYto9s6-HOGQ" name="flightSimulatorOnOff" specification="_f4r2UNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9yYzdEDEeeYto9s6-HOGQ" name="checked">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if(checked)	{&#xD;
+			PlanesDispatcherSimulator(planes);&#xD;
+			flightSimulaterOnOff=true;&#xD;
+		}&#xD;
+		else {&#xD;
+			flightSimulaterOnOff=false;&#xD;
+		}&#xD;
+		&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9y_0NEDEeeYto9s6-HOGQ" name="Get" specification="_f4r2UtEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9y_0dEDEeeYto9s6-HOGQ" type="_f4GngNEDEeeYto9s6-HOGQ" direction="return"/>
+          <language>java</language>
+          <body>return airCompany;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9y_0tEDEeeYto9s6-HOGQ" name="PlanesDispatcherSimulator" specification="_f9FOINEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9y_09EDEeeYto9s6-HOGQ" name="planes" type="_f8Z4sdEDEeeYto9s6-HOGQ"/>
+          <language>java</language>
+          <body>for (int i = 0; i&lt;planes.size(); i++) {									&#xD;
+				sendOff(planes.get(i), planes.size()-i);&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9y_1NEDEeeYto9s6-HOGQ" name="sendOff" specification="_f83ywdEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9y_1dEDEeeYto9s6-HOGQ" name="plane" type="_f4KR4NEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f9y_1tEDEeeYto9s6-HOGQ" name="delay">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if(!plane.getIsInTheAirport()) {	&#xD;
+			return;	&#xD;
+		}&#xD;
+		&#xD;
+		AirPlaneFlyingSimulator flySimulator = new AirPlaneFlyingSimulator(plane, delay);&#xD;
+		Thread thr = new Thread(flySimulator);&#xD;
+		thr.start();&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_f4rPQNEDEeeYto9s6-HOGQ" name="MockAirCompany" method="_f9yYytEDEeeYto9s6-HOGQ">
+          <eAnnotations xmi:id="_f4rPQdEDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_f4rPQtEDEeeYto9s6-HOGQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_f4rPQ9EDEeeYto9s6-HOGQ" type="_f4qBINEDEeeYto9s6-HOGQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f4r2UNEDEeeYto9s6-HOGQ" name="flightSimulatorOnOff" isStatic="true" method="_f9yYzNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4r2UdEDEeeYto9s6-HOGQ" name="checked">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f4r2UtEDEeeYto9s6-HOGQ" name="Get" method="_f9y_0NEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f83ywNEDEeeYto9s6-HOGQ" type="_f4GngNEDEeeYto9s6-HOGQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f83ywdEDEeeYto9s6-HOGQ" name="sendOff" isStatic="true" method="_f9y_1NEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f84Z0NEDEeeYto9s6-HOGQ" name="plane" type="_f4KR4NEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f84Z0dEDEeeYto9s6-HOGQ" name="delay">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f9FOINEDEeeYto9s6-HOGQ" name="PlanesDispatcherSimulator" isStatic="true" method="_f9y_0tEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9FOIdEDEeeYto9s6-HOGQ" name="planes" type="_f8Z4sdEDEeeYto9s6-HOGQ"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_f4trgNEDEeeYto9s6-HOGQ" name="SeatClass">
+        <ownedLiteral xmi:id="_f4uSkdEDEeeYto9s6-HOGQ" name="ECONOMY"/>
+        <ownedLiteral xmi:id="_f4uSktEDEeeYto9s6-HOGQ" name="FIRST"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f4u5oNEDEeeYto9s6-HOGQ" name="SeatPrices">
+        <ownedAttribute xmi:id="_f9jIMdEDEeeYto9s6-HOGQ" name="firstClassTicketPrice">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9jvQNEDEeeYto9s6-HOGQ" name="economyClassTicketPrice">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f4vgsNEDEeeYto9s6-HOGQ" name="SeatsBooking">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9y_19EDEeeYto9s6-HOGQ" name="book" specification="_f85A4NEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9y_2NEDEeeYto9s6-HOGQ" name="flight" type="_f4dM0NEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f9y_2dEDEeeYto9s6-HOGQ" name="flightClassIndex">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9y_2tEDEeeYto9s6-HOGQ" name="numberOfSeats">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9y_29EDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Boolean isDone = false; 	&#xD;
+	int availableSeats = flightClassIndex==0 ? flight.getNumberOfSeatsEconomyClassAvailable() : flight.getNumberOfSeatsFirstClassAvailable();		&#xD;
+	if(availableSeats >= numberOfSeats) {			&#xD;
+		bookSeatsOfTheClass(flight, flightClassIndex, numberOfSeats);&#xD;
+		isDone = true; &#xD;
+	}		&#xD;
+		return isDone;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9y_3NEDEeeYto9s6-HOGQ" name="bookSeatsOfTheClass" specification="_f85n89EDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9y_3dEDEeeYto9s6-HOGQ" name="flight" type="_f4dM0NEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f9y_3tEDEeeYto9s6-HOGQ" name="flightClassIndex">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f9y_39EDEeeYto9s6-HOGQ" name="numberOfSeats">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (flightClassIndex==0) {&#xD;
+			flight.bookEconomyClassSeats(numberOfSeats);&#xD;
+		} else {&#xD;
+			flight.bookFirstClassSeats(numberOfSeats);&#xD;
+		} &#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_f85A4NEDEeeYto9s6-HOGQ" name="book" isStatic="true" method="_f9y_19EDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f85A4dEDEeeYto9s6-HOGQ" name="flight" type="_f4dM0NEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f85n8NEDEeeYto9s6-HOGQ" name="flightClassIndex">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f85n8dEDEeeYto9s6-HOGQ" name="numberOfSeats">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f85n8tEDEeeYto9s6-HOGQ" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f85n89EDEeeYto9s6-HOGQ" name="bookSeatsOfTheClass" visibility="private" isStatic="true" method="_f9y_3NEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f85n9NEDEeeYto9s6-HOGQ" name="flight" type="_f4dM0NEDEeeYto9s6-HOGQ"/>
+          <ownedParameter xmi:id="_f85n9dEDEeeYto9s6-HOGQ" name="flightClassIndex">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_f85n9tEDEeeYto9s6-HOGQ" name="numberOfSeats">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-HI5NEDEeeYto9s6-HOGQ" name="" memberEnd="_f-HI5dEDEeeYto9s6-HOGQ _f9VFwNEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-HI5dEDEeeYto9s6-HOGQ" name="" type="_f4GngNEDEeeYto9s6-HOGQ" association="_f-HI5NEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-Hv8dEDEeeYto9s6-HOGQ" name="" memberEnd="_f-Hv8tEDEeeYto9s6-HOGQ _f9Vs0NEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-Hv8tEDEeeYto9s6-HOGQ" name="" type="_f4GngNEDEeeYto9s6-HOGQ" association="_f-Hv8dEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-IXAdEDEeeYto9s6-HOGQ" name="" memberEnd="_f-IXAtEDEeeYto9s6-HOGQ _f9XiAtEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-IXAtEDEeeYto9s6-HOGQ" name="" type="_f4KR4NEDEeeYto9s6-HOGQ" association="_f-IXAdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-I-EdEDEeeYto9s6-HOGQ" name="" memberEnd="_f-I-EtEDEeeYto9s6-HOGQ _f9YwINEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-I-EtEDEeeYto9s6-HOGQ" name="" type="_f4QYgNEDEeeYto9s6-HOGQ" association="_f-I-EdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-JlINEDEeeYto9s6-HOGQ" name="" memberEnd="_f-JlIdEDEeeYto9s6-HOGQ _f9Z-QNEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-JlIdEDEeeYto9s6-HOGQ" name="" type="_f4Up8NEDEeeYto9s6-HOGQ" association="_f-JlINEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-JlI9EDEeeYto9s6-HOGQ" name="" memberEnd="_f-JlJNEDEeeYto9s6-HOGQ _f9Z-Q9EDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-JlJNEDEeeYto9s6-HOGQ" name="" type="_f4Up8NEDEeeYto9s6-HOGQ" association="_f-JlI9EDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-KMMdEDEeeYto9s6-HOGQ" name="" memberEnd="_f-KMMtEDEeeYto9s6-HOGQ _f9alUdEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-KMMtEDEeeYto9s6-HOGQ" name="" type="_f4Up8NEDEeeYto9s6-HOGQ" association="_f-KMMdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-KzQdEDEeeYto9s6-HOGQ" name="" memberEnd="_f-KzQtEDEeeYto9s6-HOGQ _f9e2wdEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-KzQtEDEeeYto9s6-HOGQ" name="" type="_f4dM0NEDEeeYto9s6-HOGQ" association="_f-KzQdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-LaUdEDEeeYto9s6-HOGQ" name="" memberEnd="_f-LaUtEDEeeYto9s6-HOGQ _f9gE4tEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-LaUtEDEeeYto9s6-HOGQ" name="" type="_f4khkNEDEeeYto9s6-HOGQ" association="_f-LaUdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-MBYNEDEeeYto9s6-HOGQ" name="" memberEnd="_f-MBYdEDEeeYto9s6-HOGQ _f9gr8tEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-MBYdEDEeeYto9s6-HOGQ" name="" type="_f4khkNEDEeeYto9s6-HOGQ" association="_f-MBYNEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-MBY9EDEeeYto9s6-HOGQ" name="" memberEnd="_f-MBZNEDEeeYto9s6-HOGQ _f9ihIdEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-MBZNEDEeeYto9s6-HOGQ" name="" type="_f4qBINEDEeeYto9s6-HOGQ" association="_f-MBY9EDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-MocdEDEeeYto9s6-HOGQ" name="" memberEnd="_f-MoctEDEeeYto9s6-HOGQ _f9ihJNEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-MoctEDEeeYto9s6-HOGQ" name="" type="_f4qBINEDEeeYto9s6-HOGQ" association="_f-MocdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_f22qUNEDEeeYto9s6-HOGQ" name="UI">
+      <packagedElement xmi:type="uml:Class" xmi:id="_f3tl8NEDEeeYto9s6-HOGQ" name="BookingUI">
+        <ownedAttribute xmi:id="_f9IRcNEDEeeYto9s6-HOGQ" name="frame" type="_f8UZINEDEeeYto9s6-HOGQ" association="_f97isNEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9JfkNEDEeeYto9s6-HOGQ" name="comboBox_flight" visibility="private" type="_f8djENEDEeeYto9s6-HOGQ" association="_f98JwdEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9KGodEDEeeYto9s6-HOGQ" name="comboBox_passangerClass" visibility="private" type="_f8djENEDEeeYto9s6-HOGQ" association="_f98w0dEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9KtstEDEeeYto9s6-HOGQ" name="comboBox_food_menu" visibility="private" type="_f8djENEDEeeYto9s6-HOGQ" association="_f99X4dEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9LUwtEDEeeYto9s6-HOGQ" name="spinner_ticketsQuantity" visibility="private" type="_f8eKIdEDEeeYto9s6-HOGQ" association="_f99X5NEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9L70dEDEeeYto9s6-HOGQ" name="spinner_foodQuantity" visibility="private" type="_f8eKIdEDEeeYto9s6-HOGQ" association="_f99-8dEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9Mi4NEDEeeYto9s6-HOGQ" name="btnAdd_Food" visibility="private" type="_f8f_UdEDEeeYto9s6-HOGQ" association="_f9-mAdEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9Mi4tEDEeeYto9s6-HOGQ" name="btnRemove_Food" visibility="private" type="_f8f_UdEDEeeYto9s6-HOGQ" association="_f9_NEdEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9NJ8dEDEeeYto9s6-HOGQ" name="textPane_TotalIncome" visibility="private" type="_f8h0gdEDEeeYto9s6-HOGQ" association="_f9_NFNEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9NJ89EDEeeYto9s6-HOGQ" name="textPane_Profit" visibility="private" type="_f8h0gdEDEeeYto9s6-HOGQ" association="_f9_0IdEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9NxAdEDEeeYto9s6-HOGQ" name="textPane_TotalSum" visibility="private" type="_f8h0gdEDEeeYto9s6-HOGQ" association="_f-AbMdEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9OYENEDEeeYto9s6-HOGQ" name="textPane_TotalMenuPrice" visibility="private" type="_f8h0gdEDEeeYto9s6-HOGQ" association="_f-BCQNEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9OYEtEDEeeYto9s6-HOGQ" name="textPane_TotalFlightPrice" visibility="private" type="_f8h0gdEDEeeYto9s6-HOGQ" association="_f-BCQ9EDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9O_INEDEeeYto9s6-HOGQ" name="btnButton_BookFlight" visibility="private" type="_f8f_UdEDEeeYto9s6-HOGQ" association="_f-BpUdEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9O_ItEDEeeYto9s6-HOGQ" name="chckbxNewCheckBox_OnOff" visibility="private" type="_f8k30dEDEeeYto9s6-HOGQ" association="_f-CQYdEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9PmMdEDEeeYto9s6-HOGQ" name="chckbxNewCheckBox_AutoLogger" visibility="private" type="_f8k30dEDEeeYto9s6-HOGQ" association="_f-C3cNEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9PmM9EDEeeYto9s6-HOGQ" name="autologgerOnOff" isStatic="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9QNQNEDEeeYto9s6-HOGQ" value="true"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9QNQtEDEeeYto9s6-HOGQ" name="textArea_FlightSimulator" isStatic="true" type="_f8fYQdEDEeeYto9s6-HOGQ" association="_f-C3c9EDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9Q0UNEDEeeYto9s6-HOGQ" name="textArea_Booking_Food_And_Flight" visibility="private" type="_f8fYQdEDEeeYto9s6-HOGQ" association="_f-DegdEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9Q0UtEDEeeYto9s6-HOGQ" name="airCompany" visibility="private" type="_f4GngNEDEeeYto9s6-HOGQ" association="_f-EFkdEDEeeYto9s6-HOGQ">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9Q0U9EDEeeYto9s6-HOGQ" value="new MockAirCompany().Get()"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9RbYdEDEeeYto9s6-HOGQ" name="bookingDesk" visibility="private" type="_f4Up8NEDEeeYto9s6-HOGQ" association="_f-EFlNEDEeeYto9s6-HOGQ">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9RbYtEDEeeYto9s6-HOGQ" value="airCompany.getBookingDesk()"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9RbZNEDEeeYto9s6-HOGQ" name="flights" visibility="private" type="_f4dM0NEDEeeYto9s6-HOGQ" isOrdered="true" association="_f-EsodEDEeeYto9s6-HOGQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9SCcNEDEeeYto9s6-HOGQ" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9SCcdEDEeeYto9s6-HOGQ" value="new ArrayList&lt;>(bookingDesk.getFlights())"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9SCc9EDEeeYto9s6-HOGQ" name="menu" visibility="private" type="_f4khkNEDEeeYto9s6-HOGQ" association="_f-FTsdEDEeeYto9s6-HOGQ">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9SpgNEDEeeYto9s6-HOGQ" value="bookingDesk.getMenu()"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_f9SpgtEDEeeYto9s6-HOGQ" name="newCustomer" visibility="private" type="_f4aJgNEDEeeYto9s6-HOGQ" association="_f-F6wNEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9TQkdEDEeeYto9s6-HOGQ" name="textField_Customer_Id" visibility="private" type="_f8kQwNEDEeeYto9s6-HOGQ" association="_f-F6w9EDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9TQk9EDEeeYto9s6-HOGQ" name="textField_FirstName" visibility="private" type="_f8kQwNEDEeeYto9s6-HOGQ" association="_f-Gh0dEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9T3odEDEeeYto9s6-HOGQ" name="textField_LastName" visibility="private" type="_f8kQwNEDEeeYto9s6-HOGQ" association="_f-HI4dEDEeeYto9s6-HOGQ"/>
+        <ownedAttribute xmi:id="_f9UesNEDEeeYto9s6-HOGQ" name="customerID" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f9UesdEDEeeYto9s6-HOGQ" value="0"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9p14NEDEeeYto9s6-HOGQ" name="BookingUI" specification="_f32I0NEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9p14dEDEeeYto9s6-HOGQ" type="_f3tl8NEDEeeYto9s6-HOGQ" direction="return"/>
+          <language>java</language>
+          <body>initialize();&#xD;
+		setupFoodMenu(0); // init setup of food menu .. maybe not here ... later&#xD;
+	    loadData();	    &#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9sSINEDEeeYto9s6-HOGQ" name="initialize" specification="_f33-ANEDEeeYto9s6-HOGQ">
+          <language>java</language>
+          <body>frame = new JFrame();&#xD;
+		frame.getContentPane().setBackground(Color.LIGHT_GRAY);&#xD;
+		frame.setBounds(100, 100, 1095, 796);&#xD;
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#xD;
+		;&#xD;
+		JLabel lblNewLabel = new JLabel(&quot;MegaFlight Booking System v.1.2&quot;);&#xD;
+		lblNewLabel.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 16));&#xD;
+		&#xD;
+		JPanel panel_flight = new JPanel();&#xD;
+		panel_flight.setBorder(new LineBorder(new Color(0, 0, 0)));&#xD;
+		&#xD;
+		JPanel panel_food = new JPanel();&#xD;
+		panel_food.setBorder(new LineBorder(new Color(0, 0, 0)));&#xD;
+		&#xD;
+		JPanel panel_report = new JPanel();&#xD;
+		panel_report.setBorder(new LineBorder(new Color(0, 0, 0)));&#xD;
+		&#xD;
+		JPanel panel = new JPanel();&#xD;
+		panel.setBorder(new LineBorder(new Color(0, 0, 0)));&#xD;
+		&#xD;
+		JPanel panel_1 = new JPanel();&#xD;
+		panel_1.setBorder(new LineBorder(new Color(0, 0, 0)));&#xD;
+		&#xD;
+		JPanel panel_2 = new JPanel();&#xD;
+		panel_2.setBorder(new LineBorder(new Color(0, 0, 0)));&#xD;
+		GroupLayout groupLayout = new GroupLayout(frame.getContentPane());&#xD;
+		groupLayout.setHorizontalGroup(&#xD;
+			groupLayout.createParallelGroup(Alignment.LEADING)&#xD;
+				.addGroup(groupLayout.createSequentialGroup()&#xD;
+					.addGap(12)&#xD;
+					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)&#xD;
+						.addComponent(lblNewLabel)&#xD;
+						.addGroup(groupLayout.createSequentialGroup()&#xD;
+							.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+							.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)&#xD;
+								.addComponent(panel_1, GroupLayout.PREFERRED_SIZE, 425, GroupLayout.PREFERRED_SIZE)&#xD;
+								.addGroup(groupLayout.createParallelGroup(Alignment.LEADING, false)&#xD;
+									.addComponent(panel_flight, 0, 0, Short.MAX_VALUE)&#xD;
+									.addComponent(panel_food, GroupLayout.DEFAULT_SIZE, 424, Short.MAX_VALUE)))&#xD;
+							.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+							.addComponent(panel_report, GroupLayout.PREFERRED_SIZE, 328, GroupLayout.PREFERRED_SIZE)&#xD;
+							.addGap(6)&#xD;
+							.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)&#xD;
+								.addComponent(panel_2, GroupLayout.PREFERRED_SIZE, 288, GroupLayout.PREFERRED_SIZE)&#xD;
+								.addComponent(panel, 0, 0, Short.MAX_VALUE))))&#xD;
+					.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))&#xD;
+		);&#xD;
+		groupLayout.setVerticalGroup(&#xD;
+			groupLayout.createParallelGroup(Alignment.TRAILING)&#xD;
+				.addGroup(groupLayout.createSequentialGroup()&#xD;
+					.addGap(13)&#xD;
+					.addComponent(lblNewLabel)&#xD;
+					.addPreferredGap(ComponentPlacement.UNRELATED)&#xD;
+					.addGroup(groupLayout.createParallelGroup(Alignment.LEADING)&#xD;
+						.addComponent(panel_report, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)&#xD;
+						.addGroup(groupLayout.createSequentialGroup()&#xD;
+							.addComponent(panel_1, GroupLayout.PREFERRED_SIZE, 118, GroupLayout.PREFERRED_SIZE)&#xD;
+							.addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)&#xD;
+							.addComponent(panel_flight, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)&#xD;
+							.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+							.addComponent(panel_food, GroupLayout.PREFERRED_SIZE, 284, GroupLayout.PREFERRED_SIZE))&#xD;
+						.addGroup(groupLayout.createSequentialGroup()&#xD;
+							.addComponent(panel, GroupLayout.PREFERRED_SIZE, 205, GroupLayout.PREFERRED_SIZE)&#xD;
+							.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+							.addComponent(panel_2, GroupLayout.DEFAULT_SIZE, 457, Short.MAX_VALUE)))&#xD;
+					.addGap(65))&#xD;
+		);&#xD;
+		&#xD;
+		JLabel lblNewLabel_12 = new JLabel(&quot;Flightsimulator&quot;);&#xD;
+		lblNewLabel_12.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 16));&#xD;
+		&#xD;
+		JButton btnNewButton = new JButton(&quot;Update&quot;);&#xD;
+		btnNewButton.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				autologgerOnOff=false;&#xD;
+				chckbxNewCheckBox_AutoLogger.setSelected(false);&#xD;
+				//textArea_FlightTicker.append(airCompany.getLogReport());&#xD;
+				textArea_FlightSimulator.setText(airCompany.getLogReport());&#xD;
+				&#xD;
+			}&#xD;
+		});&#xD;
+		&#xD;
+		chckbxNewCheckBox_OnOff = new JCheckBox(&quot;On/Off&quot;);&#xD;
+		chckbxNewCheckBox_OnOff.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				&#xD;
+				MockAirCompany.flightSimulatorOnOff(chckbxNewCheckBox_OnOff.isSelected());&#xD;
+			}&#xD;
+		});&#xD;
+		&#xD;
+		JScrollPane scrollPane_Simulator = new JScrollPane();&#xD;
+		&#xD;
+		chckbxNewCheckBox_AutoLogger = new JCheckBox(&quot;Autologger&quot;);&#xD;
+		chckbxNewCheckBox_AutoLogger.setSelected(true);&#xD;
+		chckbxNewCheckBox_AutoLogger.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				if(autologgerOnOff)&#xD;
+					autologgerOnOff=false;&#xD;
+				else&#xD;
+					autologgerOnOff=true;&#xD;
+			}&#xD;
+		});&#xD;
+		GroupLayout gl_panel_2 = new GroupLayout(panel_2);&#xD;
+		gl_panel_2.setHorizontalGroup(&#xD;
+			gl_panel_2.createParallelGroup(Alignment.LEADING)&#xD;
+				.addGroup(gl_panel_2.createSequentialGroup()&#xD;
+					.addContainerGap()&#xD;
+					.addGroup(gl_panel_2.createParallelGroup(Alignment.LEADING)&#xD;
+						.addComponent(scrollPane_Simulator, GroupLayout.PREFERRED_SIZE, 264, GroupLayout.PREFERRED_SIZE)&#xD;
+						.addGroup(gl_panel_2.createSequentialGroup()&#xD;
+							.addComponent(lblNewLabel_12)&#xD;
+							.addPreferredGap(ComponentPlacement.RELATED, 94, Short.MAX_VALUE)&#xD;
+							.addComponent(btnNewButton))&#xD;
+						.addGroup(gl_panel_2.createSequentialGroup()&#xD;
+							.addComponent(chckbxNewCheckBox_OnOff)&#xD;
+							.addPreferredGap(ComponentPlacement.UNRELATED)&#xD;
+							.addComponent(chckbxNewCheckBox_AutoLogger)))&#xD;
+					.addContainerGap())&#xD;
+		);&#xD;
+		gl_panel_2.setVerticalGroup(&#xD;
+			gl_panel_2.createParallelGroup(Alignment.LEADING)&#xD;
+				.addGroup(gl_panel_2.createSequentialGroup()&#xD;
+					.addContainerGap()&#xD;
+					.addGroup(gl_panel_2.createParallelGroup(Alignment.BASELINE)&#xD;
+						.addComponent(lblNewLabel_12)&#xD;
+						.addComponent(btnNewButton))&#xD;
+					.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+					.addGroup(gl_panel_2.createParallelGroup(Alignment.BASELINE)&#xD;
+						.addComponent(chckbxNewCheckBox_OnOff)&#xD;
+						.addComponent(chckbxNewCheckBox_AutoLogger))&#xD;
+					.addGap(18)&#xD;
+					.addComponent(scrollPane_Simulator, GroupLayout.DEFAULT_SIZE, 346, Short.MAX_VALUE)&#xD;
+					.addGap(12))&#xD;
+		);&#xD;
+		&#xD;
+		textArea_FlightSimulator = new JTextArea();&#xD;
+		scrollPane_Simulator.setViewportView(textArea_FlightSimulator);&#xD;
+		panel_2.setLayout(gl_panel_2);&#xD;
+		&#xD;
+		JButton btnNewCustomer = new JButton(&quot;New Customer&quot;);&#xD;
+		btnNewCustomer.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				if(textField_FirstName.getText().equals(&quot;&quot;)) {&#xD;
+					&#xD;
+					textArea_Booking_Food_And_Flight.append(&quot;Please set name of the booking person\n&quot;);&#xD;
+					return;&#xD;
+				}&#xD;
+					&#xD;
+				customerID++;&#xD;
+				newCustomer  = new Customer(customerID,textField_FirstName.toString(),textField_LastName.toString());&#xD;
+				textField_Customer_Id.setText(Integer.toString(newCustomer.getId()));&#xD;
+				&#xD;
+				textArea_Booking_Food_And_Flight.setText(&quot;Customer: &quot;+textField_FirstName.getText()+&quot; &quot;+textField_LastName.getText()+&quot;\n\n&quot;);&#xD;
+				bookingDesk.resetTotalCustomerCostTickets();&#xD;
+				textPane_TotalSum.setText(&quot;0&quot;);&#xD;
+				textPane_TotalMenuPrice.setText(&quot;0&quot;);&#xD;
+				textPane_TotalFlightPrice.setText(&quot;0&quot;);&#xD;
+				comboBox_flight.setEnabled(true);&#xD;
+				comboBox_passangerClass.setEnabled(true);&#xD;
+				spinner_ticketsQuantity.setEnabled(true);&#xD;
+				btnButton_BookFlight.setEnabled(true);&#xD;
+				comboBox_food_menu.setEnabled(true);&#xD;
+				spinner_foodQuantity.setEnabled(true);&#xD;
+				btnAdd_Food.setEnabled(true);&#xD;
+				btnRemove_Food.setEnabled(true);&#xD;
+				textField_FirstName.setText(&quot;&quot;);&#xD;
+				textField_LastName.setText(&quot;&quot;);&#xD;
+				menu.newCustomer();&#xD;
+			}&#xD;
+		});&#xD;
+		&#xD;
+		JLabel lblCustomer = new JLabel(&quot;Customer&quot;);&#xD;
+		lblCustomer.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 16));&#xD;
+		&#xD;
+		JLabel lblNewLabel_5 = new JLabel(&quot;IdNr:&quot;);&#xD;
+		&#xD;
+		textField_Customer_Id = new JTextField();&#xD;
+		textField_Customer_Id.setEditable(false);&#xD;
+		textField_Customer_Id.setColumns(10);&#xD;
+		&#xD;
+		JLabel lblNewLabel_6 = new JLabel(&quot;Surname:&quot;);&#xD;
+		&#xD;
+		textField_FirstName = new JTextField();&#xD;
+		textField_FirstName.setColumns(10);&#xD;
+		&#xD;
+		textField_LastName = new JTextField();&#xD;
+		textField_LastName.setColumns(10);&#xD;
+		&#xD;
+		JLabel lblLastname = new JLabel(&quot;Name:&quot;);&#xD;
+		GroupLayout gl_panel_1 = new GroupLayout(panel_1);&#xD;
+		gl_panel_1.setHorizontalGroup(&#xD;
+			gl_panel_1.createParallelGroup(Alignment.LEADING)&#xD;
+				.addGroup(gl_panel_1.createSequentialGroup()&#xD;
+					.addContainerGap()&#xD;
+					.addGroup(gl_panel_1.createParallelGroup(Alignment.LEADING)&#xD;
+						.addComponent(lblCustomer)&#xD;
+						.addGroup(gl_panel_1.createSequentialGroup()&#xD;
+							.addGroup(gl_panel_1.createParallelGroup(Alignment.TRAILING)&#xD;
+								.addComponent(textField_Customer_Id, 0, 0, Short.MAX_VALUE)&#xD;
+								.addComponent(lblNewLabel_5))&#xD;
+							.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+							.addGroup(gl_panel_1.createParallelGroup(Alignment.TRAILING)&#xD;
+								.addGroup(gl_panel_1.createSequentialGroup()&#xD;
+									.addComponent(lblNewLabel_6)&#xD;
+									.addGap(63))&#xD;
+								.addGroup(gl_panel_1.createSequentialGroup()&#xD;
+									.addComponent(textField_FirstName, GroupLayout.PREFERRED_SIZE, 108, GroupLayout.PREFERRED_SIZE)&#xD;
+									.addPreferredGap(ComponentPlacement.UNRELATED)))&#xD;
+							.addGroup(gl_panel_1.createParallelGroup(Alignment.LEADING)&#xD;
+								.addGroup(Alignment.TRAILING, gl_panel_1.createSequentialGroup()&#xD;
+									.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+									.addComponent(textField_LastName, GroupLayout.DEFAULT_SIZE, 133, Short.MAX_VALUE)&#xD;
+									.addGap(18)&#xD;
+									.addComponent(btnNewCustomer))&#xD;
+								.addComponent(lblLastname))))&#xD;
+					.addGap(22))&#xD;
+		);&#xD;
+		gl_panel_1.setVerticalGroup(&#xD;
+			gl_panel_1.createParallelGroup(Alignment.LEADING)&#xD;
+				.addGroup(gl_panel_1.createSequentialGroup()&#xD;
+					.addContainerGap()&#xD;
+					.addComponent(lblCustomer)&#xD;
+					.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+					.addGroup(gl_panel_1.createParallelGroup(Alignment.BASELINE)&#xD;
+						.addComponent(lblNewLabel_5)&#xD;
+						.addComponent(lblNewLabel_6)&#xD;
+						.addComponent(lblLastname))&#xD;
+					.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+					.addGroup(gl_panel_1.createParallelGroup(Alignment.BASELINE)&#xD;
+						.addComponent(btnNewCustomer)&#xD;
+						.addComponent(textField_Customer_Id, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)&#xD;
+						.addComponent(textField_FirstName, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)&#xD;
+						.addComponent(textField_LastName, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))&#xD;
+					.addContainerGap(28, Short.MAX_VALUE))&#xD;
+		);&#xD;
+		panel_1.setLayout(gl_panel_1);&#xD;
+		&#xD;
+		JLabel lblNewLabel_7 = new JLabel(&quot;Company total income :&quot;);&#xD;
+		&#xD;
+		textPane_TotalIncome = new JTextPane();&#xD;
+		textPane_TotalIncome.setEditable(false);&#xD;
+		&#xD;
+		JLabel lblNewLabel_8 = new JLabel(&quot;Profit :&quot;);&#xD;
+		&#xD;
+		textPane_Profit = new JTextPane();&#xD;
+		textPane_Profit.setEditable(false);&#xD;
+		&#xD;
+		JButton button = new JButton(&quot;Company profit&quot;);&#xD;
+		button.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+			&#xD;
+				double totalIncome = airCompany.getTotalIncome();				&#xD;
+				double totalProfit = airCompany.getTotalProfit();&#xD;
+				&#xD;
+				textPane_TotalIncome.setText(Double.toString(totalIncome)+&quot; SEK&quot;);&#xD;
+				textPane_Profit.setText(Double.toString(totalProfit)+&quot; SEK&quot;);				&#xD;
+			}&#xD;
+		});&#xD;
+		&#xD;
+		JLabel lblNewLabel_11 = new JLabel(&quot;Company Information&quot;);&#xD;
+		lblNewLabel_11.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 16));&#xD;
+		GroupLayout gl_panel = new GroupLayout(panel);&#xD;
+		gl_panel.setHorizontalGroup(&#xD;
+			gl_panel.createParallelGroup(Alignment.LEADING)&#xD;
+				.addGroup(gl_panel.createSequentialGroup()&#xD;
+					.addContainerGap()&#xD;
+					.addGroup(gl_panel.createParallelGroup(Alignment.LEADING)&#xD;
+						.addComponent(lblNewLabel_11)&#xD;
+						.addComponent(lblNewLabel_7)&#xD;
+						.addComponent(lblNewLabel_8)&#xD;
+						.addGroup(gl_panel.createParallelGroup(Alignment.TRAILING, false)&#xD;
+							.addComponent(textPane_Profit, Alignment.LEADING)&#xD;
+							.addComponent(textPane_TotalIncome, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE)))&#xD;
+					.addContainerGap(122, Short.MAX_VALUE))&#xD;
+		);&#xD;
+		gl_panel.setVerticalGroup(&#xD;
+			gl_panel.createParallelGroup(Alignment.LEADING)&#xD;
+				.addGroup(gl_panel.createSequentialGroup()&#xD;
+					.addContainerGap()&#xD;
+					.addComponent(lblNewLabel_11)&#xD;
+					.addGap(18)&#xD;
+					.addComponent(lblNewLabel_7)&#xD;
+					.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+					.addComponent(textPane_TotalIncome, GroupLayout.PREFERRED_SIZE, 21, GroupLayout.PREFERRED_SIZE)&#xD;
+					.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+					.addComponent(lblNewLabel_8)&#xD;
+					.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+					.addComponent(textPane_Profit, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)&#xD;
+					.addContainerGap(67, Short.MAX_VALUE))&#xD;
+		);&#xD;
+		panel.setLayout(gl_panel);&#xD;
+		&#xD;
+		JLabel lblFlightsTicetsBookd = new JLabel(&quot;Customer bookings and cost&quot;);&#xD;
+		lblFlightsTicetsBookd.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 16));&#xD;
+		&#xD;
+		JLabel lblNewLabel_9 = new JLabel(&quot;Total Flight Cost:&quot;);&#xD;
+		&#xD;
+		textPane_TotalFlightPrice = new JTextPane();&#xD;
+		textPane_TotalFlightPrice.setEditable(false);&#xD;
+		&#xD;
+		JLabel lblTotalFoodCost = new JLabel(&quot;Total Food Cost:&quot;);&#xD;
+		&#xD;
+		textPane_TotalMenuPrice = new JTextPane();&#xD;
+		textPane_TotalMenuPrice.setEditable(false);&#xD;
+		&#xD;
+		JLabel lblNewLabel_10 = new JLabel(&quot;Total sum :&quot;);&#xD;
+		&#xD;
+		textPane_TotalSum = new JTextPane(); &#xD;
+		textPane_TotalSum.setEditable(false);&#xD;
+		&#xD;
+		JScrollPane scrollPane = new JScrollPane();&#xD;
+		GroupLayout gl_panel_report = new GroupLayout(panel_report);&#xD;
+		gl_panel_report.setHorizontalGroup(&#xD;
+			gl_panel_report.createParallelGroup(Alignment.LEADING)&#xD;
+				.addGroup(gl_panel_report.createSequentialGroup()&#xD;
+					.addContainerGap()&#xD;
+					.addGroup(gl_panel_report.createParallelGroup(Alignment.LEADING)&#xD;
+						.addComponent(scrollPane, GroupLayout.PREFERRED_SIZE, 299, GroupLayout.PREFERRED_SIZE)&#xD;
+						.addGroup(gl_panel_report.createSequentialGroup()&#xD;
+							.addGroup(gl_panel_report.createParallelGroup(Alignment.LEADING)&#xD;
+								.addGroup(gl_panel_report.createSequentialGroup()&#xD;
+									.addComponent(lblNewLabel_9)&#xD;
+									.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+									.addComponent(lblTotalFoodCost))&#xD;
+								.addGroup(gl_panel_report.createParallelGroup(Alignment.LEADING, false)&#xD;
+									.addComponent(lblFlightsTicetsBookd)&#xD;
+									.addGroup(Alignment.TRAILING, gl_panel_report.createSequentialGroup()&#xD;
+										.addComponent(textPane_TotalFlightPrice)&#xD;
+										.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+										.addComponent(textPane_TotalMenuPrice, GroupLayout.PREFERRED_SIZE, 96, GroupLayout.PREFERRED_SIZE))))&#xD;
+							.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+							.addGroup(gl_panel_report.createParallelGroup(Alignment.LEADING)&#xD;
+								.addComponent(textPane_TotalSum, GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE)&#xD;
+								.addComponent(lblNewLabel_10))))&#xD;
+					.addContainerGap())&#xD;
+		);&#xD;
+		gl_panel_report.setVerticalGroup(&#xD;
+			gl_panel_report.createParallelGroup(Alignment.LEADING)&#xD;
+				.addGroup(gl_panel_report.createSequentialGroup()&#xD;
+					.addContainerGap()&#xD;
+					.addComponent(lblFlightsTicetsBookd)&#xD;
+					.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+					.addComponent(scrollPane, GroupLayout.DEFAULT_SIZE, 551, Short.MAX_VALUE)&#xD;
+					.addGap(18)&#xD;
+					.addGroup(gl_panel_report.createParallelGroup(Alignment.BASELINE)&#xD;
+						.addComponent(lblNewLabel_9)&#xD;
+						.addComponent(lblTotalFoodCost)&#xD;
+						.addComponent(lblNewLabel_10))&#xD;
+					.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+					.addGroup(gl_panel_report.createParallelGroup(Alignment.TRAILING)&#xD;
+						.addGroup(gl_panel_report.createParallelGroup(Alignment.LEADING)&#xD;
+							.addComponent(textPane_TotalMenuPrice, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)&#xD;
+							.addComponent(textPane_TotalFlightPrice, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))&#xD;
+						.addComponent(textPane_TotalSum, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))&#xD;
+					.addContainerGap())&#xD;
+		);&#xD;
+		&#xD;
+		textArea_Booking_Food_And_Flight = new JTextArea();&#xD;
+		textArea_Booking_Food_And_Flight.setEditable(false);&#xD;
+		textArea_Booking_Food_And_Flight.setFont(new Font(&quot;Arial&quot;, Font.PLAIN, 14));&#xD;
+		textArea_Booking_Food_And_Flight.setWrapStyleWord(true);&#xD;
+		scrollPane.setViewportView(textArea_Booking_Food_And_Flight);&#xD;
+		panel_report.setLayout(gl_panel_report);&#xD;
+		&#xD;
+		JLabel lblNewLabel_2 = new JLabel(&quot;Select Food&quot;);&#xD;
+		lblNewLabel_2.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 16));&#xD;
+		&#xD;
+		JLabel lblNewLabel_4 = new JLabel(&quot;Menu:&quot;);&#xD;
+		&#xD;
+		comboBox_food_menu = new JComboBox&lt;>();  &#xD;
+		comboBox_food_menu.setEnabled(false);&#xD;
+		&#xD;
+		spinner_foodQuantity = new JSpinner();&#xD;
+		spinner_foodQuantity.setModel(new SpinnerNumberModel(new Integer(0), new Integer(0), null, new Integer(1)));&#xD;
+		spinner_foodQuantity.setEnabled(false);&#xD;
+		&#xD;
+		btnAdd_Food = new JButton(&quot;Add&quot;);&#xD;
+		btnAdd_Food.setEnabled(false);&#xD;
+		btnAdd_Food.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				&#xD;
+&#xD;
+				String food_menu = menu.foodMenuOrderItems(customerID,comboBox_food_menu.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());&#xD;
+				&#xD;
+				&#xD;
+				textArea_Booking_Food_And_Flight.append(food_menu+&quot;\n&quot;);&#xD;
+&#xD;
+				double totalMenuCost = menu.getTotalIncomeFood();&#xD;
+				double totalcost =bookingDesk.getTotalIncomeTickets();&#xD;
+				textPane_TotalIncome.setText(Double.toString(totalcost+totalMenuCost)+&quot; SEK&quot;);&#xD;
+				textPane_Profit.setText(Double.toString((totalcost+totalMenuCost)*0.3)+&quot; SEK&quot;);&#xD;
+&#xD;
+				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()));&#xD;
+				textPane_TotalMenuPrice.setText(Integer.toString(menu.GetTotalCustomerCostFood()));&#xD;
+				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()+menu.GetTotalCustomerCostFood()));&#xD;
+&#xD;
+			}&#xD;
+		});&#xD;
+		&#xD;
+		btnRemove_Food = new JButton(&quot;Remove&quot;);&#xD;
+		btnRemove_Food.setEnabled(false);&#xD;
+		btnRemove_Food.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				&#xD;
+				String food_menu = menu.foodMenuUnOrderItems(customerID,comboBox_food_menu.getSelectedItem().toString(),(int)spinner_foodQuantity.getValue(),comboBox_passangerClass.getSelectedIndex());&#xD;
+				&#xD;
+				textArea_Booking_Food_And_Flight.append(food_menu+&quot;\n&quot;);&#xD;
+			&#xD;
+				double totalMenuCost = menu.getTotalIncomeFood();&#xD;
+				double totalcost =bookingDesk.getTotalIncomeTickets();&#xD;
+				textPane_TotalIncome.setText(Double.toString(totalcost+totalMenuCost)+&quot; SEK&quot;);&#xD;
+				textPane_Profit.setText(Double.toString((totalcost+totalMenuCost)*0.3)+&quot; SEK&quot;);&#xD;
+&#xD;
+				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()));&#xD;
+				textPane_TotalMenuPrice.setText(Integer.toString(menu.GetTotalCustomerCostFood()));&#xD;
+				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()+menu.GetTotalCustomerCostFood()));&#xD;
+&#xD;
+			}&#xD;
+		});&#xD;
+		GroupLayout gl_panel_food = new GroupLayout(panel_food);&#xD;
+		gl_panel_food.setHorizontalGroup(&#xD;
+			gl_panel_food.createParallelGroup(Alignment.LEADING)&#xD;
+				.addGroup(gl_panel_food.createSequentialGroup()&#xD;
+					.addContainerGap()&#xD;
+					.addGroup(gl_panel_food.createParallelGroup(Alignment.LEADING)&#xD;
+						.addGroup(gl_panel_food.createSequentialGroup()&#xD;
+							.addComponent(lblNewLabel_2)&#xD;
+							.addContainerGap(331, Short.MAX_VALUE))&#xD;
+						.addGroup(gl_panel_food.createSequentialGroup()&#xD;
+							.addComponent(lblNewLabel_4)&#xD;
+							.addContainerGap(355, Short.MAX_VALUE))&#xD;
+						.addGroup(gl_panel_food.createSequentialGroup()&#xD;
+							.addComponent(comboBox_food_menu, 0, 212, Short.MAX_VALUE)&#xD;
+							.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+							.addComponent(spinner_foodQuantity, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)&#xD;
+							.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+							.addComponent(btnAdd_Food)&#xD;
+							.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+							.addComponent(btnRemove_Food)&#xD;
+							.addGap(31))))&#xD;
+		);&#xD;
+		gl_panel_food.setVerticalGroup(&#xD;
+			gl_panel_food.createParallelGroup(Alignment.LEADING)&#xD;
+				.addGroup(gl_panel_food.createSequentialGroup()&#xD;
+					.addContainerGap()&#xD;
+					.addComponent(lblNewLabel_2)&#xD;
+					.addGap(18)&#xD;
+					.addComponent(lblNewLabel_4)&#xD;
+					.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+					.addGroup(gl_panel_food.createParallelGroup(Alignment.BASELINE)&#xD;
+						.addComponent(comboBox_food_menu, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)&#xD;
+						.addComponent(spinner_foodQuantity, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)&#xD;
+						.addComponent(btnAdd_Food)&#xD;
+						.addComponent(btnRemove_Food))&#xD;
+					.addGap(193))&#xD;
+		);&#xD;
+		panel_food.setLayout(gl_panel_food);&#xD;
+		&#xD;
+		JLabel lblNewLabel_1 = new JLabel(&quot;Select Flight &quot;);&#xD;
+		lblNewLabel_1.setFont(new Font(&quot;Tahoma&quot;, Font.PLAIN, 16));&#xD;
+		&#xD;
+		JLabel lblNewLabel_3 = new JLabel(&quot;Flight Nr:&quot;);&#xD;
+		&#xD;
+		comboBox_flight = new JComboBox&lt;>();&#xD;
+		comboBox_flight.setEnabled(false);&#xD;
+		&#xD;
+		JLabel lblPassangerClass = new JLabel(&quot;Class:&quot;);&#xD;
+		&#xD;
+		comboBox_passangerClass = new JComboBox&lt;>();&#xD;
+		comboBox_passangerClass.setEnabled(false);&#xD;
+		comboBox_passangerClass.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				int index = comboBox_passangerClass.getSelectedIndex();&#xD;
+				setupFoodMenu(index);&#xD;
+			}&#xD;
+		});&#xD;
+		&#xD;
+		JLabel lblTickets = new JLabel(&quot;Number Of Seats:&quot;);&#xD;
+		&#xD;
+		spinner_ticketsQuantity = new JSpinner(); &#xD;
+		spinner_ticketsQuantity.setEnabled(false);&#xD;
+		spinner_ticketsQuantity.setModel(new SpinnerNumberModel(new Integer(1), new Integer(0), null, new Integer(1)));&#xD;
+		&#xD;
+		btnButton_BookFlight = new JButton(&quot;Book&quot;); &#xD;
+		btnButton_BookFlight.setEnabled(false);&#xD;
+		btnButton_BookFlight.addActionListener(new ActionListener() {&#xD;
+			public void actionPerformed(ActionEvent e) {&#xD;
+				&#xD;
+				String sRetInfo=bookingDesk.bookFlightAndSeats(comboBox_flight.getSelectedIndex(),comboBox_passangerClass.getSelectedIndex(),&#xD;
+						(Integer) spinner_ticketsQuantity.getValue());&#xD;
+			&#xD;
+				textArea_Booking_Food_And_Flight.append(sRetInfo+&quot;\n&quot;);&#xD;
+				&#xD;
+				double totalMenuCost = menu.getTotalIncomeFood();&#xD;
+				double totalcost =bookingDesk.getTotalIncomeTickets();&#xD;
+				textPane_TotalIncome.setText(Double.toString(totalcost+totalMenuCost)+&quot; SEK&quot;);&#xD;
+				textPane_Profit.setText(Double.toString((totalcost+totalMenuCost)*0.3)+&quot; SEK&quot;);&#xD;
+&#xD;
+				textPane_TotalFlightPrice.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets())); &#xD;
+				textPane_TotalMenuPrice.setText(Integer.toString(menu.GetTotalCustomerCostFood()));&#xD;
+				textPane_TotalSum.setText(Integer.toString(bookingDesk.getTotalCustomerCostTickets()+menu.GetTotalCustomerCostFood()));&#xD;
+&#xD;
+			}&#xD;
+		});&#xD;
+		GroupLayout gl_panel_flight = new GroupLayout(panel_flight);&#xD;
+		gl_panel_flight.setHorizontalGroup(&#xD;
+			gl_panel_flight.createParallelGroup(Alignment.LEADING)&#xD;
+				.addGroup(gl_panel_flight.createSequentialGroup()&#xD;
+					.addContainerGap()&#xD;
+					.addGroup(gl_panel_flight.createParallelGroup(Alignment.LEADING, false)&#xD;
+						.addComponent(lblNewLabel_1)&#xD;
+						.addComponent(lblNewLabel_3)&#xD;
+						.addComponent(comboBox_flight, 0, 213, Short.MAX_VALUE)&#xD;
+						.addComponent(lblPassangerClass)&#xD;
+						.addComponent(comboBox_passangerClass, 0, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)&#xD;
+						.addComponent(lblTickets)&#xD;
+						.addGroup(gl_panel_flight.createSequentialGroup()&#xD;
+							.addComponent(spinner_ticketsQuantity, GroupLayout.PREFERRED_SIZE, 97, GroupLayout.PREFERRED_SIZE)&#xD;
+							.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+							.addComponent(btnButton_BookFlight, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))&#xD;
+					.addContainerGap(192, Short.MAX_VALUE))&#xD;
+		);&#xD;
+		gl_panel_flight.setVerticalGroup(&#xD;
+			gl_panel_flight.createParallelGroup(Alignment.LEADING)&#xD;
+				.addGroup(gl_panel_flight.createSequentialGroup()&#xD;
+					.addContainerGap()&#xD;
+					.addComponent(lblNewLabel_1)&#xD;
+					.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+					.addComponent(lblNewLabel_3)&#xD;
+					.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+					.addComponent(comboBox_flight, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)&#xD;
+					.addGap(18)&#xD;
+					.addComponent(lblPassangerClass)&#xD;
+					.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+					.addComponent(comboBox_passangerClass, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)&#xD;
+					.addGap(18)&#xD;
+					.addComponent(lblTickets)&#xD;
+					.addPreferredGap(ComponentPlacement.RELATED)&#xD;
+					.addGroup(gl_panel_flight.createParallelGroup(Alignment.BASELINE)&#xD;
+						.addComponent(spinner_ticketsQuantity, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)&#xD;
+						.addComponent(btnButton_BookFlight))&#xD;
+					.addContainerGap(37, Short.MAX_VALUE))&#xD;
+		);&#xD;
+		panel_flight.setLayout(gl_panel_flight);&#xD;
+		frame.getContentPane().setLayout(groupLayout);&#xD;
+		&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9sSIdEDEeeYto9s6-HOGQ" name="setupFoodMenu" specification="_f34lENEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9sSItEDEeeYto9s6-HOGQ" name="index">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>FlightMenu foodMenu;	&#xD;
+		if(index==0) {&#xD;
+			foodMenu = new FlightMenu(SeatClass.ECONOMY);&#xD;
+			Iterator&lt;String> it = foodMenu.getMenu().keySet().iterator();&#xD;
+			comboBox_food_menu.removeAllItems();&#xD;
+			while(it.hasNext())&#xD;
+			{&#xD;
+				String tmp = (String) it.next();&#xD;
+			    comboBox_food_menu.addItem((tmp));&#xD;
+			}	&#xD;
+		}&#xD;
+		else&#xD;
+		{	&#xD;
+			foodMenu = new FlightMenu(SeatClass.FIRST);&#xD;
+			Iterator&lt;String> it = foodMenu.getMenu().keySet().iterator();&#xD;
+			comboBox_food_menu.removeAllItems();&#xD;
+			while(it.hasNext())&#xD;
+			{&#xD;
+				String tmp = (String) it.next();&#xD;
+			    comboBox_food_menu.addItem((tmp));&#xD;
+			}		&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9sSI9EDEeeYto9s6-HOGQ" name="loadData" specification="_f34lEtEDEeeYto9s6-HOGQ">
+          <language>java</language>
+          <body>if(!flights.isEmpty()) {&#xD;
+			for (Flight nextFlight : flights) {&#xD;
+			comboBox_flight.addItem(nextFlight.getName());&#xD;
+			}&#xD;
+		}&#xD;
+		else {&#xD;
+			&#xD;
+			System.out.println(&quot;list Empty&quot;);&#xD;
+		}&#xD;
+		SeatClass[] passangerClassList = SeatClass.values(); // { SeatClass.ECONOMY, SeatClass.FIRST};	&#xD;
+		comboBox_passangerClass.addItem(passangerClassList[0].toString());&#xD;
+		comboBox_passangerClass.addItem(passangerClassList[1].toString());&#xD;
+						&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_f32I0NEDEeeYto9s6-HOGQ" name="BookingUI" method="_f9p14NEDEeeYto9s6-HOGQ">
+          <eAnnotations xmi:id="_f33W8NEDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_f33W8dEDEeeYto9s6-HOGQ" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_f33W8tEDEeeYto9s6-HOGQ" type="_f3tl8NEDEeeYto9s6-HOGQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f33-ANEDEeeYto9s6-HOGQ" name="initialize" visibility="private" method="_f9sSINEDEeeYto9s6-HOGQ">
+          <ownedComment xmi:id="_f90N8NEDEeeYto9s6-HOGQ">
+            <body>Initialize the contents of the frame.</body>
+          </ownedComment>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f34lENEDEeeYto9s6-HOGQ" name="setupFoodMenu" visibility="protected" method="_f9sSIdEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f34lEdEDEeeYto9s6-HOGQ" name="index">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_f34lEtEDEeeYto9s6-HOGQ" name="loadData" method="_f9sSI9EDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f4EyUNEDEeeYto9s6-HOGQ" name="MegaFlightMain">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_f9s5MNEDEeeYto9s6-HOGQ" name="main" specification="_f4FZYNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f9s5MdEDEeeYto9s6-HOGQ" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9s5MtEDEeeYto9s6-HOGQ" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>EventQueue.invokeLater(new Runnable() {&#xD;
+			public void run() {&#xD;
+				try {&#xD;
+					BookingUI window = new BookingUI();&#xD;
+					window.frame.setVisible(true);&#xD;
+					&#xD;
+				} catch (Exception e) {&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		});&#xD;
+&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_f4FZYNEDEeeYto9s6-HOGQ" name="main" isStatic="true" method="_f9s5MNEDEeeYto9s6-HOGQ">
+          <ownedParameter xmi:id="_f4GAcNEDEeeYto9s6-HOGQ" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f4GAcdEDEeeYto9s6-HOGQ" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f97isNEDEeeYto9s6-HOGQ" name="" memberEnd="_f97isdEDEeeYto9s6-HOGQ _f9IRcNEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f97isdEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f97isNEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f98JwdEDEeeYto9s6-HOGQ" name="" memberEnd="_f98JwtEDEeeYto9s6-HOGQ _f9JfkNEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f98JwtEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f98JwdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f98w0dEDEeeYto9s6-HOGQ" name="" memberEnd="_f98w0tEDEeeYto9s6-HOGQ _f9KGodEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f98w0tEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f98w0dEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f99X4dEDEeeYto9s6-HOGQ" name="" memberEnd="_f99X4tEDEeeYto9s6-HOGQ _f9KtstEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f99X4tEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f99X4dEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f99X5NEDEeeYto9s6-HOGQ" name="" memberEnd="_f99X5dEDEeeYto9s6-HOGQ _f9LUwtEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f99X5dEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f99X5NEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f99-8dEDEeeYto9s6-HOGQ" name="" memberEnd="_f99-8tEDEeeYto9s6-HOGQ _f9L70dEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f99-8tEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f99-8dEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f9-mAdEDEeeYto9s6-HOGQ" name="" memberEnd="_f9-mAtEDEeeYto9s6-HOGQ _f9Mi4NEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f9-mAtEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f9-mAdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f9_NEdEDEeeYto9s6-HOGQ" name="" memberEnd="_f9_NEtEDEeeYto9s6-HOGQ _f9Mi4tEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f9_NEtEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f9_NEdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f9_NFNEDEeeYto9s6-HOGQ" name="" memberEnd="_f9_NFdEDEeeYto9s6-HOGQ _f9NJ8dEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f9_NFdEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f9_NFNEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f9_0IdEDEeeYto9s6-HOGQ" name="" memberEnd="_f9_0ItEDEeeYto9s6-HOGQ _f9NJ89EDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f9_0ItEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f9_0IdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-AbMdEDEeeYto9s6-HOGQ" name="" memberEnd="_f-AbMtEDEeeYto9s6-HOGQ _f9NxAdEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-AbMtEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-AbMdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-BCQNEDEeeYto9s6-HOGQ" name="" memberEnd="_f-BCQdEDEeeYto9s6-HOGQ _f9OYENEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-BCQdEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-BCQNEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-BCQ9EDEeeYto9s6-HOGQ" name="" memberEnd="_f-BCRNEDEeeYto9s6-HOGQ _f9OYEtEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-BCRNEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-BCQ9EDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-BpUdEDEeeYto9s6-HOGQ" name="" memberEnd="_f-BpUtEDEeeYto9s6-HOGQ _f9O_INEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-BpUtEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-BpUdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-CQYdEDEeeYto9s6-HOGQ" name="" memberEnd="_f-CQYtEDEeeYto9s6-HOGQ _f9O_ItEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-CQYtEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-CQYdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-C3cNEDEeeYto9s6-HOGQ" name="" memberEnd="_f-C3cdEDEeeYto9s6-HOGQ _f9PmMdEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-C3cdEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-C3cNEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-C3c9EDEeeYto9s6-HOGQ" name="" memberEnd="_f-C3dNEDEeeYto9s6-HOGQ _f9QNQtEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-C3dNEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-C3c9EDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-DegdEDEeeYto9s6-HOGQ" name="" memberEnd="_f-DegtEDEeeYto9s6-HOGQ _f9Q0UNEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-DegtEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-DegdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-EFkdEDEeeYto9s6-HOGQ" name="" memberEnd="_f-EFktEDEeeYto9s6-HOGQ _f9Q0UtEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-EFktEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-EFkdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-EFlNEDEeeYto9s6-HOGQ" name="" memberEnd="_f-EFldEDEeeYto9s6-HOGQ _f9RbYdEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-EFldEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-EFlNEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-EsodEDEeeYto9s6-HOGQ" name="" memberEnd="_f-EsotEDEeeYto9s6-HOGQ _f9RbZNEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-EsotEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-EsodEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-FTsdEDEeeYto9s6-HOGQ" name="" memberEnd="_f-FTstEDEeeYto9s6-HOGQ _f9SCc9EDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-FTstEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-FTsdEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-F6wNEDEeeYto9s6-HOGQ" name="" memberEnd="_f-F6wdEDEeeYto9s6-HOGQ _f9SpgtEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-F6wdEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-F6wNEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-F6w9EDEeeYto9s6-HOGQ" name="" memberEnd="_f-F6xNEDEeeYto9s6-HOGQ _f9TQkdEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-F6xNEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-F6w9EDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-Gh0dEDEeeYto9s6-HOGQ" name="" memberEnd="_f-Gh0tEDEeeYto9s6-HOGQ _f9TQk9EDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-Gh0tEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-Gh0dEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_f-HI4dEDEeeYto9s6-HOGQ" name="" memberEnd="_f-HI4tEDEeeYto9s6-HOGQ _f9T3odEDEeeYto9s6-HOGQ">
+        <ownedEnd xmi:id="_f-HI4tEDEeeYto9s6-HOGQ" name="" type="_f3tl8NEDEeeYto9s6-HOGQ" association="_f-HI4dEDEeeYto9s6-HOGQ"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_fmvxwNEDEeeYto9s6-HOGQ">
+      <eAnnotations xmi:id="_fm1RUNEDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_fm6w4NEDEeeYto9s6-HOGQ" base_Package="_feGMENEDEeeYto9s6-HOGQ">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f4MuIdEDEeeYto9s6-HOGQ" base_Element="_f4MHFdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Annotations xmi:id="_f4N8QNEDEeeYto9s6-HOGQ" base_Element="_f4MHFdEDEeeYto9s6-HOGQ">
+    <annotations xmi:id="_f4OjUNEDEeeYto9s6-HOGQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f4SNsNEDEeeYto9s6-HOGQ" base_Element="_f4RmoNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Annotations xmi:id="_f4SNsdEDEeeYto9s6-HOGQ" base_Element="_f4RmoNEDEeeYto9s6-HOGQ">
+    <annotations xmi:id="_f4S0wNEDEeeYto9s6-HOGQ" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Generics xmi:id="_f4isYNEDEeeYto9s6-HOGQ" genericsValue="String, Integer" base_Element="_f4heQNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f4uSkNEDEeeYto9s6-HOGQ" base_Element="_f4trgNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8VAMNEDEeeYto9s6-HOGQ" base_Element="_f8UZINEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8WOUNEDEeeYto9s6-HOGQ" base_Element="_f8VnQNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8W1YNEDEeeYto9s6-HOGQ" base_Element="_f8WOUdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8XccdEDEeeYto9s6-HOGQ" base_Element="_f8XccNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8YqkNEDEeeYto9s6-HOGQ" base_Element="_f8YDgNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8ZRoNEDEeeYto9s6-HOGQ" base_Element="_f8YqkdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8Z4sNEDEeeYto9s6-HOGQ" base_Element="_f8ZRodEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8bG0NEDEeeYto9s6-HOGQ" base_Element="_f8Z4sdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8bt4NEDEeeYto9s6-HOGQ" base_Element="_f8bG0dEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8cU8NEDEeeYto9s6-HOGQ" base_Element="_f8bt4dEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8c8ANEDEeeYto9s6-HOGQ" base_Element="_f8cU8dEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8eKINEDEeeYto9s6-HOGQ" base_Element="_f8djENEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8exMNEDEeeYto9s6-HOGQ" base_Element="_f8eKIdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8fYQNEDEeeYto9s6-HOGQ" base_Element="_f8exMdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8f_UNEDEeeYto9s6-HOGQ" base_Element="_f8fYQdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8gmYNEDEeeYto9s6-HOGQ" base_Element="_f8f_UdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8hNcNEDEeeYto9s6-HOGQ" base_Element="_f8gmYdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8h0gNEDEeeYto9s6-HOGQ" base_Element="_f8hNcdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8ibkNEDEeeYto9s6-HOGQ" base_Element="_f8h0gdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8jCoNEDEeeYto9s6-HOGQ" base_Element="_f8ibkdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8jpsdEDEeeYto9s6-HOGQ" base_Element="_f8jpsNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8k30NEDEeeYto9s6-HOGQ" base_Element="_f8kQwNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8le4NEDEeeYto9s6-HOGQ" base_Element="_f8k30dEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8q-cdEDEeeYto9s6-HOGQ" base_Element="_f8q-cNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8uBwNEDEeeYto9s6-HOGQ" base_Element="_f8szoNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f8uo0NEDEeeYto9s6-HOGQ" base_Element="_f8uBwdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f80IYNEDEeeYto9s6-HOGQ" base_Element="_f8zhUNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f80vcNEDEeeYto9s6-HOGQ" base_Element="_f80IYdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Generics xmi:id="_f819kNEDEeeYto9s6-HOGQ" genericsValue="String, Integer" base_Element="_f81Wg9EDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f9BjwNEDEeeYto9s6-HOGQ" base_Element="_f9A8sdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Generics xmi:id="_f9EnENEDEeeYto9s6-HOGQ" genericsValue="String, Integer" base_Element="_f9EAAdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Generics xmi:id="_f9F1MNEDEeeYto9s6-HOGQ" genericsValue="AirPlane" base_Element="_f9FOIdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9I4gNEDEeeYto9s6-HOGQ" base_Element="_f9IRcNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Generics xmi:id="_f9JfkdEDEeeYto9s6-HOGQ" genericsValue="String" base_Element="_f9JfkNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9KGoNEDEeeYto9s6-HOGQ" base_Element="_f9JfkNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Generics xmi:id="_f9KtsNEDEeeYto9s6-HOGQ" genericsValue="String" base_Element="_f9KGodEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9KtsdEDEeeYto9s6-HOGQ" base_Element="_f9KGodEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Generics xmi:id="_f9LUwNEDEeeYto9s6-HOGQ" genericsValue="String" base_Element="_f9KtstEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9LUwdEDEeeYto9s6-HOGQ" base_Element="_f9KtstEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9L70NEDEeeYto9s6-HOGQ" base_Element="_f9LUwtEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9L70tEDEeeYto9s6-HOGQ" base_Element="_f9L70dEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9Mi4dEDEeeYto9s6-HOGQ" base_Element="_f9Mi4NEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9NJ8NEDEeeYto9s6-HOGQ" base_Element="_f9Mi4tEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9NJ8tEDEeeYto9s6-HOGQ" base_Element="_f9NJ8dEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9NxANEDEeeYto9s6-HOGQ" base_Element="_f9NJ89EDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9NxAtEDEeeYto9s6-HOGQ" base_Element="_f9NxAdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9OYEdEDEeeYto9s6-HOGQ" base_Element="_f9OYENEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9OYE9EDEeeYto9s6-HOGQ" base_Element="_f9OYEtEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9O_IdEDEeeYto9s6-HOGQ" base_Element="_f9O_INEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9PmMNEDEeeYto9s6-HOGQ" base_Element="_f9O_ItEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9PmMtEDEeeYto9s6-HOGQ" base_Element="_f9PmMdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9QNQdEDEeeYto9s6-HOGQ" base_Element="_f9PmM9EDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9QNQ9EDEeeYto9s6-HOGQ" base_Element="_f9QNQtEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9Q0UdEDEeeYto9s6-HOGQ" base_Element="_f9Q0UNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9RbYNEDEeeYto9s6-HOGQ" base_Element="_f9Q0UtEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9RbY9EDEeeYto9s6-HOGQ" base_Element="_f9RbYdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9SCctEDEeeYto9s6-HOGQ" base_Element="_f9RbZNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9SpgdEDEeeYto9s6-HOGQ" base_Element="_f9SCc9EDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9TQkNEDEeeYto9s6-HOGQ" base_Element="_f9SpgtEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9TQktEDEeeYto9s6-HOGQ" base_Element="_f9TQkdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9T3oNEDEeeYto9s6-HOGQ" base_Element="_f9TQk9EDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9T3otEDEeeYto9s6-HOGQ" base_Element="_f9T3odEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9UestEDEeeYto9s6-HOGQ" base_Element="_f9UesNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9Vs1NEDEeeYto9s6-HOGQ" base_Element="_f9Vs0tEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9WT4dEDEeeYto9s6-HOGQ" base_Element="_f9WT4NEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9W68dEDEeeYto9s6-HOGQ" base_Element="_f9WT4tEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9W689EDEeeYto9s6-HOGQ" base_Element="_f9W68tEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9XiA9EDEeeYto9s6-HOGQ" base_Element="_f9XiAtEDEeeYto9s6-HOGQ">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_f9YJEdEDEeeYto9s6-HOGQ" name="getLogReport" method="_f9tgRNEDEeeYto9s6-HOGQ">
+      <ownedParameter xmi:id="_f9YJEtEDEeeYto9s6-HOGQ" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9YwIdEDEeeYto9s6-HOGQ" base_Element="_f9YwINEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9ZXMNEDEeeYto9s6-HOGQ" base_Element="_f9YwItEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9ZXMtEDEeeYto9s6-HOGQ" base_Element="_f9ZXMdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9alUNEDEeeYto9s6-HOGQ" base_Element="_f9Z-Q9EDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9bMYdEDEeeYto9s6-HOGQ" base_Element="_f9bMYNEDEeeYto9s6-HOGQ">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_f9bzcNEDEeeYto9s6-HOGQ" name="getId" method="_f9vVetEDEeeYto9s6-HOGQ">
+      <eAnnotations xmi:id="_f9bzc9EDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_f9bzdNEDEeeYto9s6-HOGQ" key="synchronized"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_f9bzd9EDEeeYto9s6-HOGQ" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </associatedElement>
+    <associatedElement xmi:type="uml:Operation" xmi:id="_f9bzcdEDEeeYto9s6-HOGQ" name="setId" method="_f9v8gNEDEeeYto9s6-HOGQ">
+      <eAnnotations xmi:id="_f9bzddEDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_f9bzdtEDEeeYto9s6-HOGQ" key="synchronized"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_f9bzctEDEeeYto9s6-HOGQ" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9cagdEDEeeYto9s6-HOGQ" base_Element="_f9cagNEDEeeYto9s6-HOGQ">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_f9cagtEDEeeYto9s6-HOGQ" name="getFirstName" method="_f9v8gtEDEeeYto9s6-HOGQ">
+      <eAnnotations xmi:id="_f9dBktEDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_f9dBk9EDEeeYto9s6-HOGQ" key="synchronized"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_f9dBltEDEeeYto9s6-HOGQ" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+    <associatedElement xmi:type="uml:Operation" xmi:id="_f9dBkNEDEeeYto9s6-HOGQ" name="setFirstName" method="_f9v8hNEDEeeYto9s6-HOGQ">
+      <eAnnotations xmi:id="_f9dBlNEDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_f9dBldEDEeeYto9s6-HOGQ" key="synchronized"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_f9dBkdEDEeeYto9s6-HOGQ" name="firstName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9doodEDEeeYto9s6-HOGQ" base_Element="_f9dooNEDEeeYto9s6-HOGQ">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_f9dootEDEeeYto9s6-HOGQ" name="getLastName" method="_f9v8htEDEeeYto9s6-HOGQ">
+      <eAnnotations xmi:id="_f9dopdEDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_f9ePsNEDEeeYto9s6-HOGQ" key="synchronized"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_f9ePs9EDEeeYto9s6-HOGQ" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+    <associatedElement xmi:type="uml:Operation" xmi:id="_f9doo9EDEeeYto9s6-HOGQ" name="setLastName" method="_f9v8iNEDEeeYto9s6-HOGQ">
+      <eAnnotations xmi:id="_f9ePsdEDEeeYto9s6-HOGQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_f9ePstEDEeeYto9s6-HOGQ" key="synchronized"/>
+      </eAnnotations>
+      <ownedParameter xmi:id="_f9dopNEDEeeYto9s6-HOGQ" name="lastName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9gE4NEDEeeYto9s6-HOGQ" base_Element="_f9fd0dEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9gr8dEDEeeYto9s6-HOGQ" base_Element="_f9gE4tEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9gr9NEDEeeYto9s6-HOGQ" base_Element="_f9gr8tEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9hTBNEDEeeYto9s6-HOGQ" base_Element="_f9hTAtEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9ihINEDEeeYto9s6-HOGQ" base_Element="_f9h6ENEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9ihI9EDEeeYto9s6-HOGQ" base_Element="_f9ihIdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_f9jIMNEDEeeYto9s6-HOGQ" base_Element="_f9ihJNEDEeeYto9s6-HOGQ"/>
+  <uml:OpaqueBehavior xmi:id="_f9tgRNEDEeeYto9s6-HOGQ" name="getLogReport" specification="_f9YJEdEDEeeYto9s6-HOGQ">
+    <ownedParameter xmi:id="_f9tgRdEDEeeYto9s6-HOGQ" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return logReport.toString();&#xD;
+</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_f9vVetEDEeeYto9s6-HOGQ" name="getId" specification="_f9bzcNEDEeeYto9s6-HOGQ">
+    <ownedParameter xmi:id="_f9vVe9EDEeeYto9s6-HOGQ" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return id;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_f9v8gNEDEeeYto9s6-HOGQ" name="setId" specification="_f9bzcdEDEeeYto9s6-HOGQ">
+    <ownedParameter xmi:id="_f9v8gdEDEeeYto9s6-HOGQ" name="id">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>this.id = id;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_f9v8gtEDEeeYto9s6-HOGQ" name="getFirstName" specification="_f9cagtEDEeeYto9s6-HOGQ">
+    <ownedParameter xmi:id="_f9v8g9EDEeeYto9s6-HOGQ" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return firstName;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_f9v8hNEDEeeYto9s6-HOGQ" name="setFirstName" specification="_f9dBkNEDEeeYto9s6-HOGQ">
+    <ownedParameter xmi:id="_f9v8hdEDEeeYto9s6-HOGQ" name="firstName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>this.firstName = firstName;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_f9v8htEDEeeYto9s6-HOGQ" name="getLastName" specification="_f9dootEDEeeYto9s6-HOGQ">
+    <ownedParameter xmi:id="_f9v8h9EDEeeYto9s6-HOGQ" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return lastName;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_f9v8iNEDEeeYto9s6-HOGQ" name="setLastName" specification="_f9doo9EDEeeYto9s6-HOGQ">
+    <ownedParameter xmi:id="_f9v8idEDEeeYto9s6-HOGQ" name="lastName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>this.lastName = lastName;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:Reference xmi:id="_f98JwNEDEeeYto9s6-HOGQ" base_Element="_f97isNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f98w0NEDEeeYto9s6-HOGQ" base_Element="_f98JwdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f99X4NEDEeeYto9s6-HOGQ" base_Element="_f98w0dEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f99X49EDEeeYto9s6-HOGQ" base_Element="_f99X4dEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f99-8NEDEeeYto9s6-HOGQ" base_Element="_f99X5NEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f9-mANEDEeeYto9s6-HOGQ" base_Element="_f99-8dEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f9_NENEDEeeYto9s6-HOGQ" base_Element="_f9-mAdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f9_NE9EDEeeYto9s6-HOGQ" base_Element="_f9_NEdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f9_0INEDEeeYto9s6-HOGQ" base_Element="_f9_NFNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-AbMNEDEeeYto9s6-HOGQ" base_Element="_f9_0IdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-AbM9EDEeeYto9s6-HOGQ" base_Element="_f-AbMdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-BCQtEDEeeYto9s6-HOGQ" base_Element="_f-BCQNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-BpUNEDEeeYto9s6-HOGQ" base_Element="_f-BCQ9EDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-CQYNEDEeeYto9s6-HOGQ" base_Element="_f-BpUdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-CQY9EDEeeYto9s6-HOGQ" base_Element="_f-CQYdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-C3ctEDEeeYto9s6-HOGQ" base_Element="_f-C3cNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-DegNEDEeeYto9s6-HOGQ" base_Element="_f-C3c9EDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-EFkNEDEeeYto9s6-HOGQ" base_Element="_f-DegdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-EFk9EDEeeYto9s6-HOGQ" base_Element="_f-EFkdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-EsoNEDEeeYto9s6-HOGQ" base_Element="_f-EFlNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-FTsNEDEeeYto9s6-HOGQ" base_Element="_f-EsodEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-FTs9EDEeeYto9s6-HOGQ" base_Element="_f-FTsdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-F6wtEDEeeYto9s6-HOGQ" base_Element="_f-F6wNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-Gh0NEDEeeYto9s6-HOGQ" base_Element="_f-F6w9EDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-HI4NEDEeeYto9s6-HOGQ" base_Element="_f-Gh0dEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-HI49EDEeeYto9s6-HOGQ" base_Element="_f-HI4dEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-Hv8NEDEeeYto9s6-HOGQ" base_Element="_f-HI5NEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-IXANEDEeeYto9s6-HOGQ" base_Element="_f-Hv8dEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-I-ENEDEeeYto9s6-HOGQ" base_Element="_f-IXAdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-I-E9EDEeeYto9s6-HOGQ" base_Element="_f-I-EdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-JlItEDEeeYto9s6-HOGQ" base_Element="_f-JlINEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-KMMNEDEeeYto9s6-HOGQ" base_Element="_f-JlI9EDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-KzQNEDEeeYto9s6-HOGQ" base_Element="_f-KMMdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-LaUNEDEeeYto9s6-HOGQ" base_Element="_f-KzQdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-LaU9EDEeeYto9s6-HOGQ" base_Element="_f-LaUdEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-MBYtEDEeeYto9s6-HOGQ" base_Element="_f-MBYNEDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-MocNEDEeeYto9s6-HOGQ" base_Element="_f-MBY9EDEeeYto9s6-HOGQ"/>
+  <UMLLabProfile:Reference xmi:id="_f-NPgNEDEeeYto9s6-HOGQ" base_Element="_f-MocdEDEeeYto9s6-HOGQ"/>
+</xmi:XMI>
